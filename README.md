@@ -14,7 +14,7 @@ Die bisherige App bot bereits Artikel, Werte und Rechner, aber nicht genügend i
 - **40 individuelle interaktive Systemgrafiken** auf Basis der jeweilig eigenen Prüftabelle. Einzelne Knoten lassen sich aufklappen; es handelt sich nicht nur um dieselbe Illustration auf jeder Seite.
 - Ein **direkt anwählbares Kapitelverzeichnis** zu Beginn jedes Fachartikels, ein scrollbareres rechtes Wiki-Inhaltsverzeichnis, strukturierte Praxisbeispiele, eine Quellenbox und Fachartikelverknüpfungen.
 - **Kapitelgenaue Volltextsuche:** Neue Treffer führen direkt in eines der 182 zusätzlichen Handbuchkapitel.
-- **35 neue, eigenständige Länder-Handbuchkapitel** über CH, DE, FR, IT, AT und LI. Dazu bleiben die zwölf MISSOC-orientierten Felder pro Land erhalten.
+- **36 neue, eigenständige Länder-Handbuchkapitel** über CH, DE, FR, IT, AT und LI. Dazu bleiben die zwölf MISSOC-orientierten Felder pro Land erhalten.
 - Für jeden der 26 Kantone eine **erweiterte Systematik der wichtigen sozialhilferechtlichen Prüffelder** und ein amtlicher Gesetzeseinstieg.
 
 Alle Inhalte bestehen aus echten, unterscheidbaren themenspezifischen Abschnitten. Die bisher vorhandenen 2026-Tarifansätze, Vergleiche, Infografiken, Fachartikel, Falllabor und elf Lernrechner wurden bewusst nicht entfernt.
@@ -58,7 +58,7 @@ Die Plattform verlinkt u. a. direkt zu:
 - `handbuch-v7-versicherung.js` – 14 vertiefte Versicherungsdossiers
 - `handbuch-v7-sozialhilfe.js` – 14 vertiefte Sozialhilfe-, Mittel- und Graubünden-Dossiers
 - `handbuch-v7-spezial.js` – 12 weitere Versicherungs-, Verfahrens- und Europa-Dossiers
-- `handbuch-v7-laender.js` – 35 neue Länderkapitel
+- `handbuch-v7-laender.js` – 36 neue Länderkapitel
 - `quellen-v7.js` – zentrale amtliche Quellen nach Themenbereichen
 - `atlas-handbuch-v7.js` – redaktionelles Wiki-Rendering, interaktive Systemgrafiken, Inhaltsnavigation, Tabellen, FAQs und Praxisbeispiele
 - `atlas-v7.css` – Langformlayout und responsive Infografiken
