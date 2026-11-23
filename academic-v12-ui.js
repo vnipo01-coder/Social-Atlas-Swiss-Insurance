@@ -1,0 +1,48 @@
+/* SOCIAL ATLAS 12 – Wissenschaftliche Vertiefungsbibliothek
+ * Alle 92 Artikel: einzigartiger wissenschaftlicher Text, definierte Erkenntnisgrenze,
+ * Forschungsperspektive, fallbezogener Transfer und externe verifizierbare Quellen.
+ */
+window.ATLAS_ACADEMIC_V12=(()=>{
+"use strict";
+const D=ATLAS_DB;
+const E=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const library={
+bsv:["Bundesamt für Sozialversicherungen – Sozialversicherungen der Schweiz, Taschenstatistik 2026","https://www.bsv.admin.ch/de/svs","Amtliche Statistik","Schweizerische Systemdaten und sozialpolitische Entwicklung"],
+bfs:["Bundesamt für Statistik – Soziale Sicherheit","https://statistik.admin.ch/de/themen/soziale-sicherheit","Amtliche Statistik","Empirische Verteilungen; Definition, Jahr und Population beachten"],
+skos:["Schweizerische Konferenz für Sozialhilfe – Aktuelle Richtlinien","https://skos.ch/skos-richtlinien/aktuelle-richtlinien","Fachrichtlinien","Fachliche Bemessung; kantonale Rechtsübernahme gesondert prüfen"],
+fedlex:["Fedlex – Systematische Rechtssammlung des Bundes","https://www.fedlex.admin.ch/","Rechtsquelle","Anwendbaren Erlass, Artikel und zeitlichen Rechtsstand nachschlagen"],
+bag:["Bundesamt für Gesundheit – Gesundheitsversorgung","https://www.bag.admin.ch/","Amtliche Fachquelle","Versicherungsschutz, Leistungspflicht und Kosten getrennt prüfen"],
+missoc:["Europäische Kommission – MISSOC-Ländervergleich","https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/eu-mutual-information-system-social-protection-missoc_en","Europäischer Systemvergleich","Nationale Systeme nach vergleichbaren Sicherungszweigen untersuchen"],
+ifsw:["International Federation of Social Workers – Globale Definition Sozialer Arbeit","https://www.ifsw.org/what-is-social-work/global-definition-of-social-work/","Professioneller Bezugsrahmen","Profession, Teilhabe, soziale Gerechtigkeit und Menschenrechte"],
+ethics:["IFSW – Global Statement of Ethical Principles","https://www.ifsw.org/global-social-work-statement-of-ethical-principles/","Berufsethischer Bezugsrahmen","Normative Leitideen; nicht mit nationaler Rechtsnorm verwechseln"],
+icf:["Weltgesundheitsorganisation – International Classification of Functioning (ICF)","https://www.who.int/classifications/international-classification-of-functioning-disability-and-health","Wissenschaftliche Klassifikation","Körperfunktionen, Aktivitäten, Teilhabe und Kontext differenzieren"],
+sociology:["OpenStax – Introduction to Sociology 3e, wissenschaftliches Lehrbuch","https://openstax.org/books/introduction-sociology-3e/pages/index","Wissenschaftliches Lehrbuch","Soziologische Theorie, Methoden, Institutionen und gesellschaftliche Zusammenhänge"],
+stratification:["OpenStax – Social Stratification and Inequality","https://openstax.org/books/introduction-sociology-3e/pages/9-introduction","Wissenschaftliches Lehrbuch","Soziale Schichtung und Ungleichheit in vergleichender Perspektive"],
+psychology:["OpenStax – Psychology 2e, wissenschaftliches Lehrbuch","https://openstax.org/books/psychology-2e/pages/index","Wissenschaftliches Lehrbuch","Forschungsmethoden, Motivation, Lernen, Stress und Entwicklung"],
+who:["WHO – International Classification of Diseases (ICD-11)","https://www.who.int/standards/classifications/classification-of-diseases","Klinische Klassifikation","Diagnostische Begriffe und medizinische Zuständigkeiten einordnen"],
+nida:["National Institute on Drug Abuse – Addiction Science","https://nida.nih.gov/research-topics/addiction-science","Forschungsüberblick","Neuronale Lernprozesse und empirische Suchtforschung"],
+mi:["SAMHSA – Motivational Interviewing, TIP 35","https://www.ncbi.nlm.nih.gov/books/NBK571068/","Fachhandbuch","Motivierende Gesprächsführung, Veränderungsprozesse und Evidenz"],
+sem:["Staatssekretariat für Migration – Aufenthaltsbewilligungen","https://www.sem.admin.ch/de/aufenthaltsbewilligungen-fuer-nicht-eu-efta-angehoerige","Amtliche Rechtsinformation","Schweizer Aufenthaltsstatus und migrationsrechtliche Grundlagen"],
+unhcr:["UNHCR – Genfer Flüchtlingskonvention und Protokoll von 1967","https://www.unhcr.org/about-unhcr/overview/1951-refugee-convention","Völkerrechtlicher Ausgangspunkt","Flüchtlingsdefinition und Schutzprinzipien"],
+eu:["Europäische Kommission – EU-Migrations- und Asylpolitik","https://home-affairs.ec.europa.eu/policies/migration-and-asylum_en","EU-Rechtsinformation","EU-Verfahren und Zuständigkeiten von Schweizer Rechtslage unterscheiden"],
+un:["Vereinte Nationen – UN-Charta, Kapitel I","https://www.un.org/en/about-us/un-charter/chapter-1","Internationales Recht","Ziele der UNO, ohne unmittelbare nationale Leistungsansprüche abzuleiten"],
+unicef:["UNICEF – Übereinkommen über die Rechte des Kindes","https://www.unicef.org/child-rights-convention","Internationales Kinderrecht","Beteiligung und Schutz vor dem Hintergrund des geltenden nationalen Rechts"]
+};
+function sourcesFor(t,entry){
+const urls=new Set(),out=[];for(const key of entry[4]||[]){const ref=library[key];if(ref&&!urls.has(ref[1])){urls.add(ref[1]);out.push(ref)}}
+for(const ref of t.sources||[]){if(ref?.url?.startsWith("https://")&&!urls.has(ref.url)&&out.length<6){urls.add(ref.url);out.push([ref.label,ref.url,"Fachliche oder amtliche Primärquelle","Artikelbezogene Quelle aus dem bestehenden Atlas"])}}
+return out.slice(0,7)}
+function article(t){
+const entry=D.v12Research?.[t.id];if(!entry)return "";
+const sourceItems=sourcesFor(t,entry);
+const names=["Wissenschaftlicher Bezugsrahmen und Begriffsarbeit","Forschungsmethoden, Streitfragen und Grenzen","Transfer in die professionelle Praxis"];
+const descriptions=["Theorie und zentrale Unterscheidungen","Empirische und methodische Einordnung","Anwendung, Zuständigkeit und Fallkontext"];
+const chapters=entry.slice(0,3).map((x,i)=>'<details class="v12-chapter" '+(i===0?'open':'')+' id="v12-ch-'+i+'"><summary><span class="v12-nr">'+String(i+1).padStart(2,"0")+'</span><span class="v12-summaryMain"><strong>'+E(x[0])+'</strong><small>'+E(descriptions[i])+'</small></span><span class="v12-chevron" aria-hidden="true">⌄</span></summary><div class="v12-chBody"><p>'+E(x[1])+'</p><p class="v12-clarify"><b>Wissenschaftlicher Fokus:</b> '+E(names[i])+'. Achte darauf, ob eine Aussage des Abschnitts theoretisch, empirisch, rechtlich oder praxisbezogen ist und welcher konkrete Geltungsbereich daraus folgt.</p>'+(sourceItems[i]?'<a class="v12-read" href="'+E(sourceItems[i][1])+'" target="_blank" rel="noopener noreferrer">Weiterlesen: '+E(sourceItems[i][0])+' ↗</a>':"")+'</div></details>').join("");
+const questions=(entry[3]||[]).map((x,i)=>'<li><span>'+String(i+1).padStart(2,"0")+'</span>'+E(x)+'</li>').join("");
+const sources=sourceItems.map(x=>'<li><div class="v12-sourceHeading"><b>'+E(x[0])+'</b><span>'+E(x[2])+'</span></div><p>'+E(x[3])+'</p><a href="'+E(x[1])+'" target="_blank" rel="noopener noreferrer">Quelle im neuen Tab öffnen ↗</a></li>').join("");
+return '<section class="v12-academic" id="v12-academic"><div class="v12-intro"><span class="eyebrow">SOCIAL ATLAS · VERTIEFUNGSBIBLIOTHEK</span><h2>Wissenschaftlich weiterdenken</h2><p>Diese drei zusätzlichen Fachkapitel gehen über die Grundlagenerklärung hinaus. Sie verbinden Begriffsarbeit, wissenschaftliche Einordnung und Anwendung. Wähle aus, wie tief du in das Thema einsteigen möchtest.</p><div class="v12-actions"><button type="button" data-v12-all="open">Alle drei Kapitel öffnen</button><button type="button" data-v12-all="close">Alle schliessen</button><a href="#v12-literature" data-scroll="v12-literature">Zu Fachliteratur und Quellen ↓</a></div></div><div class="v12-chapters">'+chapters+'</div><details class="v12-questions"><summary>Forschungsfragen zur eigenständigen Vertiefung <span aria-hidden="true">⌄</span></summary><ol>'+questions+'</ol><p>Diese Fragen dienen der wissenschaftlichen Auseinandersetzung; sie ersetzen keine verbindliche Rechtsauskunft oder klinische Abklärung.</p></details><div class="v12-bibliography" id="v12-literature"><div class="v12-litHead"><span class="eyebrow">WISSENSCHAFTLICHES WEITERLESEN</span><h3>Fachliteratur, Studienzugänge und Primärquellen</h3><p>Öffne die Seiten direkt. Die Quellenarten sind bewusst unterschieden: Ein Lehrbuch erklärt theoretische Zusammenhänge, eine amtliche Rechtsquelle den geltenden Rechtsrahmen und eine Statistik empirische Daten. Kein Link wird als wortwörtlicher Einzelnachweis für jeden redaktionellen Satz ausgegeben.</p></div><ul>'+sources+'</ul></div><p class="v12-footnote">Redaktioneller Lerntext, Stand 23.11.2026. Anwendungsbedingungen und wissenschaftliche Erkenntnisse können sich ändern. Für eine akademische Arbeit sind die konkret verwendeten Originalpublikationen, Autorenschaft, Erscheinungsjahr und Seitenstellen separat zu zitieren.</p></section>'}
+function bind(){const root=document.getElementById("v12-academic");if(!root)return;for(const b of root.querySelectorAll("[data-v12-all]"))b.onclick=()=>{const open=b.dataset.v12All==="open";root.querySelectorAll(".v12-chapter").forEach(x=>{x.open=open})}}
+function toc(t){return D.v12Research?.[t.id]?'<div class="v12-toc"><span>WISSENSCHAFT</span><a href="#v12-academic" data-scroll="v12-academic">Vertiefung · 3 Kapitel</a><a href="#v12-literature" data-scroll="v12-literature">Fachliteratur & externe Quellen</a></div>':""}
+function count(){return Object.keys(D.v12Research||{}).length}
+return{article,bind,toc,count,keys:Object.keys(D.v12Research||{}),library};
+})();
