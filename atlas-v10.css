@@ -175,3 +175,12 @@
 @media(max-width:800px){.a10-homeHero{grid-template-columns:1fr}.a10-homePath{max-width:490px}.a10-actionGrid,.a10-fieldGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.a10-homeHelp{flex-direction:column;align-items:start}.a10-helpNav,.a10-labGuide>div,.a10-labSteps{grid-template-columns:1fr}.a10-formGrid{grid-template-columns:1fr}}
 @media(max-width:520px){.a10-homeHero{padding:20px}.a10-actionGrid,.a10-fieldGrid{grid-template-columns:1fr}.a10-actionCard{min-height:175px}.a10-articleHero,.a10-orientation,.a10-config,.a10-generated{padding:17px}.a10-chapter p{font-size:12.8px}.a10-helpStep{grid-template-columns:1fr}.a10-helpNav{grid-template-columns:1fr}}
 @media print{.sidebar,.topbar,.a10-toc,.a10-actions,.a10-articleTools,.a10-config,.a10-labSteps,.a10-suppInfo{display:none!important}.a10-articleGrid{display:block}.a10-generated,.a10-chapter{break-inside:avoid}.a10-solution>div{display:block!important}body{background:#fff}}
+
+/* Dezente direkte Hilfe in der Suchleiste – keine zusätzliche Hauptnavigation. */
+.a10-topHelp{display:inline-flex;align-items:center;justify-content:center;color:#98405c;background:#fff;border:1px solid #efdce2;border-radius:9px;padding:8px 11px;font-size:11px;font-weight:800;white-space:nowrap}
+.a10-topHelp:hover{background:#fff3f5;text-decoration:none}
+.a10-articleMain .v7-tableSection,.a10-articleMain .v7-faq{margin:18px 0 23px}
+.a10-articleMain .v7-tableSection h2{font-size:17px}
+.a10-articleMain .v7-question strong{font-size:12px}
+.a10-articleMain .v5-figure{margin:12px 0}
+@media(max-width:800px){.a10-topHelp{display:none}}
