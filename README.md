@@ -1,3 +1,47 @@
+# SOCIAL ATLAS – Wissenschaftliche Fachvertiefung (Ausbau 12)
+
+**Stand: 23. November 2026.** Die vertraute klassische rot-weisse Oberfläche bleibt erhalten. Jede der **92 bestehenden Artikelseiten** enthält jetzt eine ergänzende **wissenschaftliche Vertiefungsbibliothek**.
+
+## Was genau wurde erweitert?
+
+- **276 neu redaktionell verfasste, themenspezifische Fachkapitel**, jeweils drei für jeden der 92 Artikel, mit insgesamt ca. **11’100 zusätzlichen Wörtern**.
+- Die drei zusätzlichen Perspektiven unterscheiden den **wissenschaftlichen Bezugsrahmen**, **empirisch-methodische Fragen und Grenzen** sowie den **Transfer in die professionelle Praxis**. Die Inhalte sind für jeden Artikel individuell ausgearbeitet, nicht automatisch austauschbare Fülltexte.
+- Die älteren, bereits bestehenden **V7-Handbuchkapitel** sind ebenfalls über native, zugängliche `<details>`-Elemente ausklappbar. Das erste Kapitel ist zur Orientierung geöffnet; die weiteren bleiben geschlossen, bis sie angewählt werden.
+- Ein Artikel kann seine neuen Forschungskapitel **einzeln**, mit **«Alle drei Kapitel öffnen»** oder **«Alle schliessen»** anzeigen. Die beiden wissenschaftlichen Reflexionsfragen liegen in einem gesonderten ausklappbaren Bereich.
+- Jede Vertiefung bietet **anklickbare fachliche Weiterführungen** und ein Literatur- und Quellenregister mit Kennzeichnung von **Fachliteratur**, **amtlicher Statistik**, **Rechtsquelle**, **klinischer Klassifikation** und **professionsethischem Bezugsrahmen**.
+- Die **globale Suche** indexiert die 276 Vertiefungen zusätzlich zu den bisherigen Artikeln und Wissenskapiteln. Treffer führen über `?go=v12-ch-0` etc. direkt zum jeweiligen aufgeklappten Kapitel.
+- Die bestehende Seitenleiste, der rot-weisse Seitenaufbau, die themenspezifischen Infografiken, Versicherungsrechner, das Fachlexikon und das Falllabor bleiben erhalten.
+
+## Wie verwende ich die akademischen Kapitel?
+
+1. In der Wissensbibliothek einen Fachartikel öffnen, beispielsweise `#/artikel/soz-bourdieu` oder `#/artikel/sozialhilfe`.
+2. Bereits vorhandene Handbuchkapitel mit einem Klick auf die jeweilige Überschrift aufklappen.
+3. Im Artikel auf **«Wissenschaftlich vertiefen»** klicken oder im rechten Inhaltsverzeichnis **«Vertiefung · 3 Kapitel»** wählen.
+4. Je nach Interesse einen, zwei oder alle drei Vertiefungsabschnitte öffnen.
+5. **«Forschungsfragen zur eigenständigen Vertiefung»** ausklappen.
+6. Unter **«Fachliteratur, Studienzugänge und Primärquellen»** zur passenden wissenschaftlichen Fachseite navigieren.
+
+## Redaktionelle Quellenbeispiele
+
+- Sozialversicherungen und Daten: [BSV – Taschenstatistik 2026](https://www.bsv.admin.ch/de/svs)
+- Schweizerische Sozialhilfe: [SKOS – Aktuelle Richtlinien](https://skos.ch/skos-richtlinien/aktuelle-richtlinien)
+- Soziale Arbeit: [IFSW – Globale Definition](https://www.ifsw.org/what-is-social-work/global-definition-of-social-work/)
+- Soziologie: [OpenStax – Introduction to Sociology 3e](https://openstax.org/books/introduction-sociology-3e/pages/index)
+- Psychologie: [OpenStax – Psychology 2e](https://openstax.org/books/psychology-2e/pages/index)
+- Internationale Gesundheitsklassifikationen: [WHO – ICF](https://www.who.int/classifications/international-classification-of-functioning-disability-and-health) und [WHO – ICD](https://www.who.int/standards/classifications/classification-of-diseases)
+- Migration/Flüchtlingsschutz: [UNHCR – Genfer Flüchtlingskonvention](https://www.unhcr.org/about-unhcr/overview/1951-refugee-convention)
+- Europäischer Systemvergleich: [Europäische Kommission – MISSOC](https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/eu-mutual-information-system-social-protection-missoc_en)
+- Suchtpolitik: [BAG – Vier-Säulen-Suchtpolitik](https://www.bag.admin.ch/de/vier-saeulen-politik)
+- Suchtberatung: [SAMHSA – Motivational Interviewing, TIP 35](https://www.ncbi.nlm.nih.gov/books/NBK571068/)
+
+**Wichtige redaktionelle Grenze:** Die neu geschriebenen Texte sind **didaktische wissenschaftliche Einordnungen**, keine peer-reviewten Originalstudien. Die extern verlinkten Quellen dienen als passende Ausgangspunkte zur Überprüfung und Vertiefung; sie werden nicht als Einzelnachweis für jeden Satz ausgegeben. Für akademische Arbeiten sind Originalautorinnen und -autoren, Jahr, Werk, Seite und geeignete wissenschaftliche Fachliteratur separat zu zitieren. Rechtsstand, leistungsrechtliche Tarife und klinische Diagnosen dürfen nicht aus diesen Zusammenfassungen allein abgeleitet werden.
+
+## Neue Dateien
+
+`academic-v12-insurance.js`, `academic-v12-socialpolicy.js`, `academic-v12-migration.js`, `academic-v12-society.js`, `academic-v12-health.js`, `academic-v12-ui.js`, `atlas-academic-v12.css`. In `atlas-v4.js`, `atlas-handbuch-v7.js` und `index.html` wurden die neuen Lernfunktionen integriert.
+
+---
+
 # SOCIAL ATLAS – Klassische Oberfläche wiederhergestellt
 
 **Gestaltungsstand: 23. November 2026.** Auf ausdrücklichen Wunsch wurde das vertraute rot-weisse Layout von Version 9 wiederhergestellt. Die zwischenzeitlich in Version 10 und 11 eingeführte neue Startseite, die aufklappbaren Navigationsgruppen und das geänderte Artikellayout wurden zurückgenommen.
