@@ -9,7 +9,7 @@
  KVG:"https://www.fedlex.admin.ch/eli/cc/1995/1328_1328_1328/de",
  UVG:"https://www.fedlex.admin.ch/eli/cc/1982/1676_1676_1676/de",
  AVIG:"https://www.fedlex.admin.ch/eli/cc/1982/2184_2184_2184/de",
- FamZG:"https://www.fedlex.admin.ch/",
+ FamZG:"https://www.fedlex.admin.ch/eli/cc/2008/51/de",
  OR:"https://www.fedlex.admin.ch/eli/cc/27/317_321_377/de",
  EU:"https://eur-lex.europa.eu/eli/reg/2004/883/oj"
 };
