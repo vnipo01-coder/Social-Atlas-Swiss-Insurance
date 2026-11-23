@@ -4,7 +4,7 @@
  */
 window.ATLAS_V7=(()=>{
 "use strict";
-const D=ATLAS_DB, H=D.v7Deep||{}, E=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;":"&quot;","'":"&#39;"}[c]));
+const D=ATLAS_DB, H=D.v7Deep||{}, E=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const T=id=>D.topics.find(x=>x.id===id), url=id=>"#/artikel/"+encodeURIComponent(id);
 const get=(id)=>H[id];
 const hashColour={Altersvorsorge:"#ad1f3c",Invalidität:"#a84262",Erwerbsausfall:"#b74b51",Gesundheit:"#aa315a","Familie & Dienst":"#b7607b",Sozialhilfe:"#9d1d3a",Querschnitt:"#a04459",Kantone:"#c24a62",Europa:"#9b3048"};
