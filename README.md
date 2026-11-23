@@ -1,65 +1,62 @@
-# SOCIAL ATLAS 5.0 – illustrierte Enzyklopädie der sozialen Sicherheit
+# SOCIAL ATLAS 6.0 – Tarife, Berechnungen und umfassende Fachdossiers
 
-**GitHub Pages:** https://vnipo01-coder.github.io/Social-Atlas-Swiss-Insurance/
+**Website:** https://vnipo01-coder.github.io/Social-Atlas-Swiss-Insurance/
 
-Eigenständige, mobil nutzbare rot-weisse Wissensplattform mit recherchierten Erläuterungen zur Schweizer sozialen Sicherheit und den Nachbarländern.
+Die Version 6 führt die illustrierte, vernetzte Enzyklopädie aus Version 5 weiter und ergänzt sie um eine **strukturierte Tarifdatenbank für das Referenzjahr 2026** sowie interaktive Rechenmodelle.
 
-## Version 5 – neue Funktionen
+## Funktionen Version 6
 
-- **40 ausführlichere Fachartikel**. Jeder Artikel enthält mindestens drei zusätzliche themenspezifische Fachdossier-Kapitel, die bisherigen Grundlagenabschnitte, einen individuellen visuellen Prüfpfad, ein grosses Schaubild, wissenschaftliche Einordnung, Praxisbeispiele, Gesetzesreferenzen und Querverweise.
-- **58 ausgewählte Rechtsreferenzen**, verlinkt mit amtlichen Erlassen (BV, ATSG, AHVG, IVG, ELG, BVG, KVG, UVG, AVIG, FamZG, OR, EU-Verordnung 883/2004 sowie kantonale Grundlagen). Ein Link kann zur Gesetzessammlung statt direkt zu einem einzelnen Absatz führen.
-- **54 thematische Beziehungen** im interaktiven Systemgraphen mit Zoom, Verschieben und Verknüpfung zur Wissensbibliothek.
-- **4 originale SVG-Infografiken** zu Drei-Säulen-Vorsorge, Sozialhilfe-Fünf-Säulen-Modell, europäischen Sicherungssystemen und Leistungskoordination. Zusätzlich hat jedes Dossier einen spezifischen visuellen Prüffluss.
-- **6 Länderprofile**, jetzt je zwölf aufklappbare sozialpolitische Vergleichsdimensionen (72 Felder insgesamt). Die Gliederung orientiert sich an MISSOC der Europäischen Kommission; die Texte sind eigene vereinfachte Einordnungen und keine Übernahme der EU-Datenbank.
-- **26 Kantone** mit Sozialhilfeprofilen und je mindestens einem Einstieg zum kantonalen Sozialhilfegesetz nach der SKOS-Rechtsübersicht; vertiefte kantonale Handbuch- und Praxisquellen bislang vor allem für Graubünden.
-- **Quellenboxen und weiterführende Recherche**: amtliche Links, eigene wissenschaftliche Einordnungen, Wikipedia-Suchlinks und Literaturrecherche. Die App kopiert keine Wikipedia-Texte und behandelt Wikipedia nicht als massgebende Rechtsquelle.
-- **Durchsuchbarkeit**: Die Suche berücksichtigt auch die zusätzlichen Dossierkapitel; Merkliste speichert gewählte Artikel lokal im Browser.
-- **Falllabor und lokaler Fallgenerator**: sechs Grundszenarien, Kantonwahl, individuell variierbare fiktive Fallkonstellationen, Checklisten, Quellen und Druckfunktion.
-- **Wissensassistent**: längere, regelbasierte Antworten mit passenden Dossierpassagen und Rechtsquellen. **Dies ist kein generatives KI-Sprachmodell.**
+- **40 Fachdossiers** mit einfachen Grundlagen, vertieften Kapiteln, Verknüpfungen, Grafiken, wissenschaftlichen Einordnungen und Rechtsquellen.
+- **160 einzelne Tarif- und Leistungsansätze** mit Zeitbezug, Geltungsbereich, Erläuterungen und offiziellen Quellen. Enthält u. a. AHV-/IV-Renten, Hilflosenentschädigungen, Assistenzbeitrag, AHV-/ALV-Beiträge, EL-Pauschalen, BVG-Grenzbeträge, Säule 3a, KVG-Kostenbeteiligung, FamZ und Sozialhilfe.
+- **2026er Familienzulagen für alle 26 Kantone**, darunter Kinder-, Ausbildungs-, teilweise Geburts- und Adoptionszulagen sowie Arbeitgeberbeiträge an die *kantonalen* Familienausgleichskassen. Mehrfachwerte (z. B. 215/268) sind mit Alters- oder Kinderzahlregeln versehen und dürfen nicht pauschal verallgemeinert werden.
+- **11 interaktive Lernrechner**, etwa für Arbeitnehmerbeiträge AHV/IV/EO/ALV, BVG-Lohn, KVG-Franchise/Selbstbehalt, EL-Differenz, Sozialhilfe-Budgetmodell Graubünden, ALV 70/80 %, die 13. AHV-Altersrente, EO-Mutterschaft, 3a-Einzahlung, bundesrechtliche Familienzulagen und kantonale Familienzulagen.
+- Jeder Artikel erhält eine neue Rubrik **„Aktuelle Beträge und Bemessungsgrundlagen“** sowie **„Wie werden Leistungen und Beiträge ermittelt?“** mit einer individuellen fachlichen Erklärung und einem didaktischen Rechenbeispiel. Wo keine allgemeine Pauschale existiert, wird das ausdrücklich erklärt.
+- Bestehende Infografiken, vernetztes SVG-Systemdiagramm, Falllabor, Wissensassistent, Suchfunktion, 58 ausgewählte Normen, sechs Länder mit zwölf Vergleichsbereichen und kantonale Gesetzeseinstiege bleiben verfügbar.
+- Der Kantonsvergleich zeigt nun tatsächliche kantonale Familienzulagen 2026, nicht mehr nur allgemeine Strukturen.
 
-## Struktur
+## Bedienung
 
-Die aktuell eingebundenen Dateien werden in dieser Reihenfolge geladen:
+- `#/tarife` – die gesamte Tarifsammlung nach Stichwort und Bereich durchsuchen
+- `#/rechner` – einen von elf Rechnern auswählen und Werte interaktiv ändern
+- `#/artikel/ahv`, `#/artikel/bvg`, `#/artikel/el` usw. – Tarifinformationen direkt im Artikel
+- `#/kanton/GR` und andere Kantonsprofile – kantonale Familienzulagen sowie die Sozialhilfe-Rechtsquellen
+- `#/vergleich` – zwei Kantone gegenüberstellen, einschliesslich Familienzulagen 2026
 
-1. `knowledge-v4.js` – Kern-Wissensdatenbank
-2. `atlas-expansion-v4.js` – weitere Themen und Länder-Kapitel
-3. `dossiers-v5.js` – ausführliche Leitdossiers
-4. `dossiers-v5-extra.js` – Fachdossierkapitel für die weiteren Themen
-5. `europe-v5.js` – europäische Vergleichsmatrix
-6. `law-expansion-v5.js` – zusätzliche ausgewählte Normen
-7. `cantonal-laws-v5.js` – amtliche Gesetzeseinstiege für 26 Kantone
-8. `atlas-visuals-v5.js` – Visualisierung und redaktionelle Seitenbausteine
-9. `atlas-v4.js` – App-Logik, Suche, Navigation, Graph und Falllabor
+## Gültigkeit und fachliche Warnungen
 
-Design in `atlas-v4.css` und `atlas-v5.css`, Bilddateien unter `assets/`. Die älteren nicht eingebundenen Dateien bleiben für die Versionshistorie im Repository.
+**Referenzjahr 2026, redaktionell überprüft am 23.11.2026.** Die App lädt statische Daten und aktualisiert die Tarife nicht automatisch. Für 2027 werden die offiziellen Jahresansätze neu zu prüfen sein.
 
-## Wissenschaftliche und amtliche Quellen
+**Die Beispielrechner sind keine rechtsverbindlichen Anspruchsrechner.** Sie veranschaulichen Formeln mit angenommenen Eingabedaten. Sie prüfen nicht vollständig Versicherungsstatus, Wartezeiten, Unterstellungsregeln, Rentenskalen, Haushaltsdefinitionen, Vermögensrecht, kommunale Mietzinsrichtlinien, allfällige Ausnahmen und individuelle Verfügungen. Keine persönlichen Klientendaten eingeben.
 
-- [Bundesamt für Sozialversicherungen – Drei Säulen](https://www.bsv.admin.ch/de/dreisaeulensystem)
-- [Bundesamt für Sozialversicherungen – 2026 Sozialversicherungsstatistik](https://www.bsv.admin.ch/de/svs)
-- [BSV – 13. AHV-Altersrente](https://www.bsv.admin.ch/de/umsetzung-13-ahv-rente)
-- [SKOS – Grundbedarf](https://skos.ch/skos-richtlinien/grundbedarf-fuer-den-lebensunterhalt)
-- [SKOS – rechtliche Umsetzung](https://skos.ch/skos-richtlinien/entstehung-und-bedeutung)
-- [Graubünden – Sozialhilfe-Handbuch](https://www.gr.ch/DE/institutionen/verwaltung/dvs/soa/beratung/sozialhilfe-handbuch/Seiten/default.aspx)
-- [Fedlex – amtliches Bundesrecht](https://www.fedlex.admin.ch/)
-- [WHO – ICF](https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health)
-- [EU-Kommission – MISSOC](https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/eu-mutual-information-system-social-protection-missoc_en)
-- [EUR-Lex – Verordnung 883/2004](https://eur-lex.europa.eu/eli/reg/2004/883/oj)
+**160 Datensätze bedeuten nicht, dass jedes mögliche Detail aller 40 Systeme und sechs Länder vollständig erfasst wäre.** Tarifwerte sind bewusst auf gut überprüfbare 2026er Schweizer Ansätze fokussiert. Europäische Leistungsbeträge und viele kantonale Sozialhilfekennzahlen sind noch nicht als vollständige und validierte Zeitreihen hinterlegt. Alle 26 Kantone besitzen einen Gesetzeseinstieg und Familienzulagenwerte; nur Graubünden besitzt zusätzliche vertiefte Sozialhilfe-Primärquellen und einen illustrierten vereinfachten Sozialhilferechner.
 
-## Grenzen der Version 5
+**Statische Wissenssuche, keine echte KI:** Der Assistent stellt aus lokalen redaktionellen Texten passende Erklärungen zusammen. Er generiert keine auf Basis aktuell abgerufener Quellen verifizierte KI-Rechtsauskunft. Für eine echte KI-Integration wäre eine sichere Backend-Anbindung mit Quellenprüfungen erforderlich. Keine API-Schlüssel in GitHub Pages speichern.
 
-Die in der App enthaltenen 40 Fachartikel sind **noch keine vollständige Reproduktion des geltenden Rechts**, und die 58 Referenzen stellen eine **kuratierte Auswahl** dar. Einzelne Quellenlinks und der genaue rechtliche Stand sind vor professionellen Entscheidungen zu überprüfen.
+## Neue V6-Dateien
 
-**Alle 26 Kantone sind als Profile zugänglich**, aber bei 25 Kantonen sind Mietzinslimiten, Grundbedarfsansätze, kommunale Vollzugspraxis, Fristen und einzelne Rechtsartikel noch nicht systematisch verifiziert. Nur Graubünden ist mit mehreren offiziellen kantonalen Primärquellen vertieft erschlossen. Diese Lücken sind transparent gekennzeichnet; keine erfundenen Zahlen.
+- `tariffs-v6.js` – 65 bundesrechtliche und einzelne kantonale Referenzbeträge sowie Quellen
+- `familienzulagen-kantone-v6.js` – zusätzliche 95 2026er Daten der 26 kantonalen Familienzulagensysteme
+- `calculator-v6.js` – Tarifansicht, Quellenhinweise, elf interaktive Lernrechner und Integration in Fach-/Kantons-/Länderartikel
+- `atlas-v6.css` – responsive Tabellen, Erklärungen und Rechner-Oberfläche
+- `atlas-v4.js` – weiterhin zentrale SPA-App-Logik, erweitert für V6
+- `index.html` – lädt die V6-Dateien in der richtigen Reihenfolge nach den grundlegenden Wissensdaten
 
-Auch die sechs Länderprofile enthalten eine fachliche Einführung und zwölf qualitative Vergleichsbereiche, **noch keinen vollständigen nationalen Normenkatalog mit sämtlichen Leistungssätzen**. Die aktuelle MISSOC-Datenbank und nationalen Behörden bleiben bei echten grenzüberschreitenden Fällen massgebend.
+## Amtliche Grundlagen (Auswahl)
 
-**Die wissenschaftlichen Erklärungen sind redaktionelle Einordnungen**, nicht mit einer Peer-Review-Studie gleichzusetzen. Wikipedia und Literatur-Suchlinks dienen der Vertiefung. 
+- [BSV: Renten, Beiträge, EL und BVG – gültig ab 01.01.2026](https://www.bsv.admin.ch/dam/bsv/de/dokumente/ahv/uebersichten/renten-und-beitraege-20260101.pdf.download.pdf/renten-und-beitraege-20260101.pdf)
+- [BSV: Beiträge an Sozialversicherungen](https://www.bsv.admin.ch/de/beitraege-im-ueberblick)
+- [BSV: Familienzulagen 2026 nach Kantonen](https://www.bsv.admin.ch/dam/de/sd-web/acU7RgJgeisY/Arten%20und%20Ans%C3%A4tze%20der%20Familienzulagen_2026.pdf)
+- [BSV: Berufliche Vorsorge](https://www.bsv.admin.ch/de/altersvorsorge-beruflichen-vorsorge)
+- [BSV: 13. AHV-Altersrente](https://www.bsv.admin.ch/de/umsetzung-13-ahv-rente)
+- [BAG: KVG Kostenbeteiligung](https://www.bag.admin.ch/de/krankenversicherung-kostenbeteiligung-fuer-in-der-schweiz-wohnhafte-versicherte)
+- [SECO: Arbeitslosenversicherung und Leistungen](https://www.onlineformulare-ffe.arbeit.swiss/de/stellensuchende/versicherungsleistungen)
+- [SKOS: Grundbedarf](https://skos.ch/skos-richtlinien/grundbedarf-fuer-den-lebensunterhalt)
+- [Graubünden: Grundbedarfsentscheid](https://www.gr.ch/DE/Medien/Mitteilungen/MMStaka/2024/Seiten/2024112101.aspx)
+- [Graubünden: Familienzulagen-Ausführungsbestimmungen BR 548.120](https://www.gr-lex.gr.ch/data/548.120/de)
+- [SKOS: Kantonale Rechtsgrundlagen](https://skos.ch/skos-richtlinien/rechtliches/rechtsgrundlagen/)
 
-**Der lokale Wissensassistent ist keine KI mit eigenständiger Quellenrecherche.** Für verlässliche frei formulierte KI-Antworten mit aktuell geprüften Belegen wird eine geschützte Backend-Anbindung gebraucht. API-Schlüssel dürfen niemals in einem öffentlichen GitHub-Pages-Repository gespeichert werden.
+## GitHub Pages
 
-## Veröffentlichen
+Settings → Pages → Deploy from a branch → `main` → `/ (root)`. Statische Seite ohne Build-Tool.
 
-GitHub → Settings → Pages → Deploy from a branch → `main` → `/ (root)`. Die Web-App funktioniert ohne Build-Prozess.
-
-Redaktioneller Bearbeitungsstand: **23. November 2026**.
+Bearbeitungsstand: **23. November 2026**.
