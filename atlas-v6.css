@@ -1,0 +1,58 @@
+/* SOCIAL ATLAS V6 · mobile-first tarif atlas */
+:root{--v6-red:#ad233e;--v6-pink:#fff0f3;--v6-edge:#ecd9df}
+.v6-head{margin-bottom:17px}.v6-head h2{margin:7px 0}.v6-head p{max-width:80ch}
+.v6-articleRates,.v6-method,.v6-cantonTariffs,.v6-countryTariffs,.v6-homeRates{margin:30px 0 40px;scroll-margin-top:106px}
+.v6-rateSummary{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px;margin:17px 0 22px}
+.v6-rateMini{display:flex;flex-direction:column;gap:7px;padding:17px 16px;background:linear-gradient(137deg,#fff,#fff5f7);border:1px solid #f0d9df;border-radius:13px;min-height:122px;color:#622f40}
+.v6-rateMini:hover{text-decoration:none;border-color:#d891a3}.v6-rateMini small{font-size:11px;font-weight:700;color:#9c6a7a;line-height:1.45}
+.v6-rateMini strong{font:800 clamp(18px,2vw,24px) Manrope,sans-serif;line-height:1.25;color:#b32442}
+.v6-rateMini span{font-size:10px;color:#976f7c}
+.v6-rateGroup{margin:18px 0 22px}.v6-rateGroup h3{margin:12px 0;font-size:15px}
+.v6-overflow{max-width:100%;overflow-x:auto;border:1px solid #ead6dc;border-radius:13px;background:white;overscroll-behavior-x:contain}
+.v6-rateTable{min-width:620px;width:100%;border-collapse:collapse;text-align:left}
+.v6-rateTable thead{background:#fff0f3}.v6-rateTable th{padding:11px 14px;color:#9f4058;font-size:10.5px;white-space:nowrap;letter-spacing:.02em}
+.v6-rateTable td{padding:12px 14px;border-top:1px solid #f2e8eb;vertical-align:top;font-size:11.5px;color:#745a65}
+.v6-rateTable td:first-child{width:32%}.v6-rateTable td:nth-child(2){width:18%}.v6-rateTable td:nth-child(3){width:19%}
+.v6-rateTable td strong{display:block;color:#52303c;font-size:12px;line-height:1.5}.v6-rateTable td b{display:block;font:800 15px Manrope;color:#ac2945;white-space:normal}
+.v6-rateTable td small{display:block;margin-top:5px;font-size:10px;color:#9c818b;line-height:1.55}
+.v6-rateTable td a{color:#a82945;font-weight:700;font-size:11px;line-height:1.7;overflow-wrap:anywhere}
+.v6-rateTable tr:hover td{background:#fffafa}
+.v6-tariffMaster td:first-child{width:34%}
+.v6-status{display:block;font-size:10.5px;color:#805a68}
+.v6-year{margin:18px 0;background:#fbf5f4;padding:13px 17px;border-left:3px solid #d78c9d;color:#866773;font-size:11px;line-height:1.8}
+.v6-noRate{border:1px dashed #e8c8d1;background:#fff9f9;border-radius:13px;padding:20px 21px;margin:17px 0}
+.v6-noRate strong{color:#9a3c53;font-size:13px}
+.v6-noRate p{color:#856470;font-size:12px;line-height:1.85;margin-top:8px}
+.v6-methodGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin:18px 0 14px}
+.v6-methodItem{position:relative;background:white;border:1px solid #ead9df;border-radius:13px;padding:17px;min-height:173px}
+.v6-methodItem strong{display:block;font-size:13px;color:#5f3542;margin:13px 0 3px}
+.v6-methodItem p{font-size:11.5px;line-height:1.8;color:#826773;margin:4px 0}
+.v6-bubble{height:25px;width:25px;display:grid;place-items:center;background:#b52440;border-radius:8px;font-size:12px;color:white;font-weight:800}
+.v6-methodLinks{display:flex;gap:15px;flex-wrap:wrap;margin:13px 0 20px;font-size:12px;font-weight:700}
+.v6-note{border:1px solid #f0d5dc;border-left:4px solid #c0415a;background:#fff6f7;border-radius:0 11px 11px 0;padding:14px 17px;color:#795160;font-size:12px;line-height:1.8;margin:18px 0}
+.v6-note strong{color:#9c324a}.v6-note p{font-size:12px;color:#795160;margin:4px 0}
+.v6-calcPicker{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:20px 0}
+.v6-calcChoose{display:flex;align-items:center;text-align:left;gap:10px;min-height:67px;padding:12px;border-radius:12px;background:white;border:1px solid #ecd8dd;color:#6c3c4b}
+.v6-calcChoose span{display:grid;place-items:center;flex:none;background:#fff0f3;color:#b32a45;border-radius:10px;width:39px;height:39px;font:800 12px Manrope}
+.v6-calcChoose strong{font-size:11.3px;line-height:1.45}
+.v6-calcChoose:hover{background:#fff7f8;border-color:#d99bad}.v6-calcChoose.selected{border-color:#ac2a45;background:#fff0f3;box-shadow:0 0 0 2px #f2cdd7}
+.v6-calcArea{border:1px solid #e8cbd3;border-radius:17px;background:white;overflow:hidden;box-shadow:0 16px 35px #8a3b4a0a}
+.v6-calcHeading{background:linear-gradient(120deg,#fff4f5,#fff);padding:23px 24px;border-bottom:1px solid #f1e1e5}
+.v6-calcHeading h2{margin:8px 0 6px}.v6-calcHeading p{margin:0}
+.v6-calcFields{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;padding:20px 24px}
+.v6-field{display:flex;flex-direction:column;gap:7px;font-size:11px;color:#815968;font-weight:800;line-height:1.4}
+.v6-field .input,.v6-field .select{width:100%;max-width:100%;background:#fffafb}
+.v6-mainResult{background:#a91d39;color:white;border-radius:12px;padding:22px 25px;margin:18px 24px}
+.v6-mainResult small{display:block;color:#fbd3db;font-weight:800;letter-spacing:.12em;font-size:10px;margin-bottom:10px}
+.v6-mainResult strong{display:block;font:800 clamp(19px,3vw,30px) Manrope;line-height:1.3}
+.v6-calcLines{padding:3px 24px 17px}
+.v6-calcLine{display:flex;justify-content:space-between;gap:15px;align-items:center;border-bottom:1px solid #f1e6e9;padding:12px 1px}
+.v6-calcLine span b{display:block;color:#67424f;font-size:12px}.v6-calcLine small{display:block;font-size:10.5px;color:#9c7c87;margin-top:3px}
+.v6-calcLine strong{color:#9e2b44;font:800 13px Manrope;text-align:right;white-space:nowrap}
+.v6-calcArea .v6-note{margin:17px 24px}.v6-calcSource{font-size:11px;padding:0 24px 24px}
+.v6-sourceGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin:18px 0}
+.v6-sourceGrid a{display:block;border:1px solid #ecdae0;border-radius:10px;background:white;padding:14px;font-size:11px;line-height:1.6}
+.v6-sourceGrid a:hover{background:#fff6f7;text-decoration:none}
+@media(max-width:950px){.v6-methodGrid{grid-template-columns:1fr}.v6-methodItem{min-height:auto}.v6-rateSummary{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:570px){.v6-rateSummary{grid-template-columns:1fr 1fr;gap:7px}.v6-rateMini{padding:12px;min-height:105px}.v6-rateMini strong{font-size:16px}.v6-calcPicker{grid-template-columns:repeat(2,minmax(0,1fr))}.v6-calcChoose{min-height:76px;padding:10px}.v6-calcChoose span{display:none}.v6-calcHeading{padding:17px}.v6-calcFields{padding:16px}.v6-mainResult{margin:12px 16px;padding:17px}.v6-calcLines{padding:3px 16px}.v6-calcArea .v6-note{margin:15px 16px}.v6-calcSource{padding:0 16px 18px}.v6-calcLine strong{font-size:11px;white-space:normal}.v6-calcLine{align-items:flex-start}}
+@media print{.v6-calcPicker,.v6-calcChoose,.v6-methodLinks{display:none!important}.v6-rateTable{min-width:0}.v6-overflow{overflow:visible}}
