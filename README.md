@@ -1,72 +1,118 @@
-# SOCIAL ATLAS 7.0 – die illustrierte Wissensenzyklopädie
+# SOCIAL ATLAS 9.0
 
-**Website:** https://vnipo01-coder.github.io/Social-Atlas-Swiss-Insurance/
+**Interaktive rot-weisse Wissensplattform über Schweizer Sozialversicherungen, Sozialhilfe, Migration, Soziale Arbeit, Soziologie, Psychologie, Neurowissenschaften und Sucht.**
 
-SOCIAL ATLAS ist eine redaktionell kuratierte, interaktive Lern- und Wissensplattform über die Schweizer Sozialversicherungen, die kantonale Sozialhilfe, sozialversicherungsrechtliche Verfahren und die europäischen Systeme. Sie wurde als statische GitHub-Pages-Web-App umgesetzt.
+**Live-URL (GitHub Pages, nach Veröffentlichung durch GitHub):** https://vnipo01-coder.github.io/Social-Atlas-Swiss-Insurance/
 
-## Version 7: die inhaltliche Erweiterung
+## Was ist enthalten?
 
-Die bisherige App bot bereits Artikel, Werte und Rechner, aber nicht genügend inhaltliche Tiefe. V7 ergänzt deshalb **alle 40 Fachartikel** mit einem vollständigen zusätzlichen Handbuchband. Die Ergänzungen bestehen aus:
+- **92 ausführlich erschlossene Themen**, davon **34 neue interdisziplinäre Fachdossiers** zu Sozialer Arbeit, Soziologie, Psychologie, Neurowissenschaften und Sucht; die ursprünglichen 40 Sozialversicherungs-/Sozialhilfethemen und 18 Migrationsartikel bleiben bestehen.
+- **107 redaktionell formulierte, alphabetisch suchbare Fachbegriffe** mit Direktverweisen in vertiefte Artikel.
+- **139 neue wissenschaftliche Fachkapitel und 104 dazugehörige FAQ-Fragen** in V9, ergänzend zu den bereits bestehenden Handbuchkapiteln aus V7 und Migrationserweiterungen aus V8.
+- **16 eigens zugewiesene wissenschaftliche Schaubilder** und **4 ursprüngliche themenspezifische SVGs**. Keine identische obligatorische Sechs-Karten-Grafik mehr auf sämtlichen Artikeln.
+- **4 zusätzliche interdisziplinäre Falllaborsituationen** zu Krise, Wohnen/Armut, Sucht mit Schulden und Rehabilitation nach Schlaganfall; das bestehende Falllabor bleibt erhalten.
+- Interaktives Systemnetz mit Sozialversicherung, Migration und den neuen Wissenschaftsbereichen.
+- Tariftabellen und Lernrechner für Schweizer Leistungen (Referenzjahr 2026), Kantonsfamilienzulagen 2026, kantonale Gesetzeseinstiege und sechs europäische Länderprofile.
 
-- **182 neu geschriebene, fachbezogene Vertiefungskapitel** über Versicherungsstatus, Anspruchsvoraussetzungen, Verfahren, Berechnung und Koordination.
-- **160 individuelle Fachfragen mit Antworten**. Sie erläutern häufige Missverständnisse, besondere Regeln und die Grenzen einfacher Faustformeln.
-- **241 Prüftabellenzeilen**. Jede Zeile ordnet einem konkreten Prüfbereich die erforderliche Tatsachenabklärung und passende Rechtsgrundlagen oder Dokumente zu.
-- **40 individuelle interaktive Systemgrafiken** auf Basis der jeweilig eigenen Prüftabelle. Einzelne Knoten lassen sich aufklappen; es handelt sich nicht nur um dieselbe Illustration auf jeder Seite.
-- Ein **direkt anwählbares Kapitelverzeichnis** zu Beginn jedes Fachartikels, ein scrollbareres rechtes Wiki-Inhaltsverzeichnis, strukturierte Praxisbeispiele, eine Quellenbox und Fachartikelverknüpfungen.
-- **Kapitelgenaue Volltextsuche:** Neue Treffer führen direkt in eines der 182 zusätzlichen Handbuchkapitel.
-- **36 neue, eigenständige Länder-Handbuchkapitel** über CH, DE, FR, IT, AT und LI. Dazu bleiben die zwölf MISSOC-orientierten Felder pro Land erhalten.
-- Für jeden der 26 Kantone eine **erweiterte Systematik der wichtigen sozialhilferechtlichen Prüffelder** und ein amtlicher Gesetzeseinstieg.
+## Warum wurde die Infografik-Logik geändert?
 
-Alle Inhalte bestehen aus echten, unterscheidbaren themenspezifischen Abschnitten. Die bisher vorhandenen 2026-Tarifansätze, Vergleiche, Infografiken, Fachartikel, Falllabor und elf Lernrechner wurden bewusst nicht entfernt.
+### Problem der Vorversionen
+
+Bis V8 wurden zum Teil dieselben SVGs kategorieweise in fachfremde Artikel kopiert. Zusätzlich zeigte das lange Handbuch praktisch überall **dasselbe Sechs-Felder-Layout**, nur mit ausgetauschten Begriffen. Das konnte eine thematische Spezifität vortäuschen, die das Diagramm selbst nicht besass.
+
+### Bereinigte Regel in V9
+
+1. Die SVG **Drei Säulen** ist nur im Hauptartikel zur AHV eingebettet.
+2. Die SVG **Fünf Bereiche der Sozialhilfe** ist als **eigenes Praxis- und Denkmodell** gekennzeichnet und nur im Sozialhilfe-Grundlagenartikel eingebettet. Sie ist **keine gesetzlich verankerte Fünf-Säulen-Norm**.
+3. Die SVG **Europäisches Vergleichsraster** gehört nur in den Europa-Grundlagenartikel, nicht identisch auf die sechs einzelnen Länderseiten.
+4. Die SVG **Leistungsabklärung** ist als didaktische Querschnittsgrafik nur dem ATSG-Grundlagenartikel zugeordnet. Sie legt **keine verbindliche Reihenfolge** fest.
+5. Die früheren visuellen generischen Prüfschrittbänder und sechs identischen Handbuchboxen wurden aus den Artikeln entfernt; die eigentlichen schriftlichen Prüftabellen bleiben.
+6. **16 neue didaktische Fachgrafiken** sind nur genau den fachlich passenden Artikel-IDs zugeordnet, zum Beispiel:
+   - Drei analytische Ebenen der Sozialen Arbeit
+   - Case-Management-Vorgehensweise
+   - Vier Kapitalarten nach Bourdieu
+   - Soziale Netzwerkkarte
+   - Wechselspiel von Stress und Ressourcen
+   - ICF und Teilhabe
+   - Belohnungs-/Lernzusammenhänge
+   - Die **vier Säulen der Schweizer Suchtpolitik**
+   - Biopsychosoziales Suchtverständnis
+   - Motivierendes Gespräch mit vier überlappenden Prozessen
+7. Im **separaten Infografikbereich** lassen sich die ursprünglichen SVGs und alle 16 neuen Modelle ansehen. Die Modelle sind zusätzlich ausschliesslich in ihren jeweiligen fachlich zutreffenden Artikeln eingebettet.
+8. Wenn keine spezifische Grafik vorhanden ist, wird keine schematische Ersatzgrafik erfunden: Der Artikel bleibt mit Kapiteln, Fakten und Prüftabelle vollständig lesbar.
+
+**Wichtig:** Die fachlichen Grafiken enthalten keine ausgedachten Zahlen, nicht überprüfte kausale Hirnmodelle oder medizinische Diagnosen. Jede Grafik erläutert ihren Modellcharakter und verweist auf eine Fachquelle.
+
+## Neue Inhalte Version 9
+
+| Wissensgebiet | Schwerpunkte |
+| --- | --- |
+| Soziale Arbeit | Profession und Mandate, Lebenswelt, systemische Perspektive, Case Management, Empowerment, Partizipation, Ethik, Kindesschutz |
+| Soziologie | Soziale Ungleichheit, Armut, Bourdieus Kapitaltheorie, Intersektionalität, Stigma, Sozialraum, soziale Netzwerke, Sozialisation, Inklusion/Exklusion |
+| Psychologie | Grundlagen, Stress und Coping, Trauma, Motivation, Krise und psychosoziale Unterstützung |
+| Neurowissenschaften | Gehirnfunktionen, Neuroplastizität, Motivation/Belohnungslernen, WHO-ICF und biopsychosoziales Modell |
+| Sucht & Gesundheit | Abhängigkeit und ICD-11, Schweizer Vier-Säulen-Politik, Schadensminderung, Suchtberatung, Komorbidität, Recovery |
+
+Die vorhandenen Versicherungs-, Sozialhilfe- und Migrationsartikel erhalten **ausgewählte themenspezifische Querverweise** zur wissenschaftlichen Perspektive, ohne dass die Rechts- oder Leistungsinformation durch eine psychologische oder soziologische Deutung ersetzt wird.
+
+### Wichtige Quellen
+
+- [IFSW – Globale Definition Sozialer Arbeit](https://www.ifsw.org/what-is-social-work/global-definition-of-social-work/)
+- [IFSW – Berufsethische Grundsätze](https://www.ifsw.org/global-social-work-statement-of-ethical-principles/)
+- [OpenStax – Sozialstratifikation](https://openstax.org/books/introduction-sociology-3e/pages/9-1-what-is-social-stratification)
+- [Oxford Academic – Bourdieu und die Kapitalarten](https://academic.oup.com/edited-volume/28103/chapter/212224008)
+- [Harvard University Library – Intersektionalität](https://guides.library.harvard.edu/hks/belonging-community-connection/intersectionality)
+- [WHO – ICF](https://www.who.int/classifications/international-classification-of-functioning-disability-and-health)
+- [WHO – ICD-11 und diagnostische Anforderungen](https://www.who.int/publications-detail-redirect/9789240077263)
+- [BAG – Vier-Säulen-Suchtpolitik](https://www.bag.admin.ch/de/vier-saeulen-politik)
+- [Infodrog – Schadensminderung](https://www.infodrog.ch/de/wissen/praeventionslexikon/schadensminderung.html)
+- [SAMHSA – Motivierende Gesprächsführung, TIP 35](https://www.ncbi.nlm.nih.gov/books/NBK571068/)
+
+Diese Quellen sind fachliche Grundlagen und Rechercheeinstiege. Sie ersetzen **keine Einzelaussagenprüfung der gesamten redaktionellen Artikel**. Aussagen, die spezifische Theorien oder klinische Kriterien betreffen, erfordern die jeweilige konkrete Fachliteratur und den entsprechenden Geltungskontext.
 
 ## Navigation
 
-- `#/wissen` – Hauptverzeichnis der 40 Fachartikel
-- `#/artikel/ahv`, `#/artikel/iv`, `#/artikel/el`, `#/artikel/sozialhilfe` – umfassende Handbuchseiten
-- `#/tarife` – 160 für 2026 erfasste Tarif- und Leistungsansätze
-- `#/rechner` – elf vereinfachte Rechenmodelle mit Quell- und Gültigkeitshinweisen
-- `#/kantone` – alle 26 Kantone, Familienzulagen und kantonale Gesetze
-- `#/laender` – sechs nationale Systeme mit je zwölf Vergleichsbereichen und zusätzlichen ausführlichen Handbuchkapiteln
-- `#/netzwerk` – interaktiver Graph der Versicherungs- und Unterstützungszweige
-- `#/infografiken` – vier skalierbare Original-SVG-Infografiken
-- `#/falllabor` – interaktive Fälle und gesetzesbezogene Prüfwege
+- `#/start` – Startseite
+- `#/wissen` – umfassende Fachbibliothek
+- `#/sozialwissenschaften` – fünf Wissensgebiete mit 34 neuen Fachartikeln
+- `#/fachlexikon` – alphabetisches 107-Begriffe-Fachlexikon
+- `#/glossar` – bestehender Alias zum neuen Fachlexikon
+- `#/artikel/soz-bourdieu` – Beispiel Soziologie
+- `#/artikel/neuro-icf` – Beispiel Neurowissenschaft/ICF
+- `#/artikel/sucht-viersaeulen` – Beispiel Suchtpolitik mit eigener Infografik
+- `#/infografiken` – kuratierte Galerie mit vier SVGs und 16 fachbezogenen Visualisierungen
+- `#/migration` – Schweizer Aufenthaltsstatus und internationale Schutzgrundlagen
+- `#/netzwerk` – übergreifender Wissensgraph
+- `#/tarife` und `#/rechner` – 2026er Tarifübersicht und didaktische Rechenmodelle
 
-## Quellensystem und methodische Grenzen
+## Redaktions- und Sicherheitsgrenzen
 
-Die Plattform verlinkt u. a. direkt zu:
+- **Rechtsinformationen**: redaktioneller Wissensstand vom 23.11.2026. Vor rechtsverbindlichen Entscheidungen immer geltende Bundes- und Kantonsnormen, Zuständigkeiten und Fallfakten prüfen.
+- **Tarife und Geldbeträge**: statisch gespeichert, Bezugsjahr 2026; nicht automatisch aktuelle Ansätze für 2027. Bundespauschalen an Kantone sind keine persönlichen Auszahlungsansprüche.
+- **Psychologie und Neurobiologie**: wissenschaftliche Modelle vereinfachen komplexe Prozesse. Begriffe wie Neuroplastizität oder Dopamin begründen keine garantierten Effekte, ferndiagnostischen Aussagen oder einheitlichen Behandlungswege.
+- **Sucht**: ICD-11-Diagnosen und medizinische Behandlung gehören zu qualifizierten Fachpersonen. Die App bietet keine Anleitungen zur Eigenmedikation, zu riskanten Entzügen oder zum Konsum.
+- **Beratung**: Hilfsmittel für Lernen und Orientierung, **keine klinische Diagnostik**, kein rechtliches Gutachten und keine medizinische Beratung.
+- **KI-Assistent**: bestehender regelbasierter lokaler Wissensassistent; kein angeschlossenes Echtzeit-Sprachmodell. Öffentliche GitHub-Pages-Skripts enthalten keine vertraulichen API-Schlüssel.
+- **Datenschutz**: Keine echten Klientendaten oder vertraulichen Gesundheitsinformationen in Lernbeispiel-Felder eintragen.
 
-- [BSV – Taschenstatistik der Sozialversicherungen 2026](https://www.bsv.admin.ch/de/svs)
-- [BSV – ATSG-Notiz 2026](https://www.bsv.admin.ch/de/atsg-notiz-2026)
-- [BSV – Werte für 2026](https://www.bsv.admin.ch/dam/bsv/de/dokumente/ahv/uebersichten/renten-und-beitraege-20260101.pdf.download.pdf/renten-und-beitraege-20260101.pdf)
-- [SKOS – aktuelle Richtlinien](https://skos.ch/skos-richtlinien/aktuelle-richtlinien)
-- [SKOS – kantonale Rechtsgrundlagen](https://skos.ch/skos-richtlinien/rechtliches/rechtsgrundlagen/)
-- [BAG – Krankenversicherung](https://www.bag.admin.ch/)
-- [Fedlex – Bundesgesetzgebung](https://www.fedlex.admin.ch/)
-- [Europäische Kommission – MISSOC](https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/eu-mutual-information-system-social-protection-missoc_en)
-- [WHO – ICF-Klassifikation](https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health)
+## V9-Technik
 
-**Fachliche Vorsicht:** Die Angaben sind didaktische, redaktionelle Zusammenfassungen. Eine Verlinkung zu einem allgemeinen amtlichen Portal ist **keine individuelle Satz-für-Satz-Validierung sämtlicher Aussagen**. Amtliche Erlasse, Spezialrichtlinien, Rechtsprechung und gültige Tarifblätter müssen vor einer rechtsverbindlichen Entscheidung gesondert konsultiert werden.
+Neue Dateien im GitHub-Root:
 
-**Tarife:** Die Tariftabelle stammt aus dem vorherigen V6-Ausbau und bezieht sich auf das **Referenzjahr 2026**. Sie aktualisiert sich nicht automatisch. Nicht alle möglichen Tarifverträge, Versicherungsprodukte und Zahlbeträge für sämtliche Personengruppen sind erfasst. In Ländern ausserhalb der Schweiz sind spezifische nationale Leistungsbeträge noch nicht als vollständige rechtlich überprüfte Datensätze gespeichert.
+- `social-sciences-core-v9.js` – Datenmodell, Quellensystem und Handbuchintegration
+- `social-work-v9.js` – acht tiefere Dossiers
+- `sociology-v9.js` – zehn tiefere Dossiers
+- `psychology-neuroscience-v9.js` – neun Dossiers
+- `addiction-v9.js` – sieben Dossiers
+- `interdisciplinary-lexicon-v9.js` – 107 Fachbegriffe
+- `social-sciences-final-v9.js` – Quellenprüfung, Netzwerk und neue Fallbeispiele
+- `infographics-quality-v9.js` – genau definierte Themenvisualisierungen und Galerie
+- `interdisciplinary-ui-v9.js` – Lexikon, Wissenschaftsübersicht und interdisziplinäre Querverweise
+- `atlas-v9.css` – neue responsiv gestaltete Wiki-, Infografik- und Lexikonoberflächen
+- `atlas-v4.js`, `atlas-visuals-v5.js`, `atlas-handbuch-v7.js` und `index.html` – integrierte Änderungen der bestehenden App.
 
-**Kantone:** Für alle 26 Kantone bestehen Gesetzeslinks und Familienzulagenansätze 2026. Die Sozialhilfevorschriften werden als Themen und Prüffelder erschlossen. Eine vollständige verifizierte Datenbank aller kommunalen Mietzinslimiten, sozialen Sonderregeln, Sanktionen, Fristen und Unterstützungsansätze besteht **noch nicht**. Graubünden ist mit seinen kantonalen Primärquellen vertiefter als andere Kantone hinterlegt.
+**Tests**: JavaScript-Module statisch geprüft; 34 wissenschaftliche Artikel und 107 Begriffe in der Datenstruktur gezählt; 20 typische Seitenrouten als simuliertes Rendering erfolgreich geprüft. Dies ist **kein vollständiger Test im echten GitHub-Pages-Browser**.
 
-**KI:** Der Wissensassistent funktioniert als lokale, regelbasierte Suche und Textzusammenstellung. Er ist kein an eine aktuelle Online-Recherche angeschlossenes KI-Sprachmodell. Ein echtes Sprachmodell benötigt einen geschützten Backend-Dienst. **Niemals geheime API-Schlüssel in einem öffentlichen GitHub-Pages-Repository speichern.**
+**Veröffentlichung**: GitHub Pages → Deploy from branch → `main` → `/ (root)`. Keine Build-Tools erforderlich.
 
-## V7-Dateien
-
-- `handbuch-v7-versicherung.js` – 14 vertiefte Versicherungsdossiers
-- `handbuch-v7-sozialhilfe.js` – 14 vertiefte Sozialhilfe-, Mittel- und Graubünden-Dossiers
-- `handbuch-v7-spezial.js` – 12 weitere Versicherungs-, Verfahrens- und Europa-Dossiers
-- `handbuch-v7-laender.js` – 36 neue Länderkapitel
-- `quellen-v7.js` – zentrale amtliche Quellen nach Themenbereichen
-- `atlas-handbuch-v7.js` – redaktionelles Wiki-Rendering, interaktive Systemgrafiken, Inhaltsnavigation, Tabellen, FAQs und Praxisbeispiele
-- `atlas-v7.css` – Langformlayout und responsive Infografiken
-- `atlas-v4.js` – existierende App-Logik, erweitert um alle neuen Wissensmodule und Kapitel-Suche
-- `index.html` – GitHub-Pages-Einstieg, lädt alle Version-7-Dateien nach den früheren Datenebenen
-
-## GitHub Pages
-
-GitHub → Settings → Pages → Build and deployment → Deploy from a branch → `main` → `/ (root)` → Save. Die App benötigt keinen zusätzlichen Build-Server.
-
-Redaktioneller Arbeitsstand: **23. November 2026**.
+**Redaktioneller Stand:** 23. November 2026.
