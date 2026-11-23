@@ -11,7 +11,7 @@ Eigenständige, mobil nutzbare rot-weisse Wissensplattform mit recherchierten Er
 - **54 thematische Beziehungen** im interaktiven Systemgraphen mit Zoom, Verschieben und Verknüpfung zur Wissensbibliothek.
 - **4 originale SVG-Infografiken** zu Drei-Säulen-Vorsorge, Sozialhilfe-Fünf-Säulen-Modell, europäischen Sicherungssystemen und Leistungskoordination. Zusätzlich hat jedes Dossier einen spezifischen visuellen Prüffluss.
 - **6 Länderprofile**, jetzt je zwölf aufklappbare sozialpolitische Vergleichsdimensionen (72 Felder insgesamt). Die Gliederung orientiert sich an MISSOC der Europäischen Kommission; die Texte sind eigene vereinfachte Einordnungen und keine Übernahme der EU-Datenbank.
-- **26 Kantone** mit Sozialhilfeprofilen; vertiefte belegte kantonale Quellen bislang vor allem für Graubünden.
+- **26 Kantone** mit Sozialhilfeprofilen und je mindestens einem Einstieg zum kantonalen Sozialhilfegesetz nach der SKOS-Rechtsübersicht; vertiefte kantonale Handbuch- und Praxisquellen bislang vor allem für Graubünden.
 - **Quellenboxen und weiterführende Recherche**: amtliche Links, eigene wissenschaftliche Einordnungen, Wikipedia-Suchlinks und Literaturrecherche. Die App kopiert keine Wikipedia-Texte und behandelt Wikipedia nicht als massgebende Rechtsquelle.
 - **Durchsuchbarkeit**: Die Suche berücksichtigt auch die zusätzlichen Dossierkapitel; Merkliste speichert gewählte Artikel lokal im Browser.
 - **Falllabor und lokaler Fallgenerator**: sechs Grundszenarien, Kantonwahl, individuell variierbare fiktive Fallkonstellationen, Checklisten, Quellen und Druckfunktion.
@@ -27,8 +27,9 @@ Die aktuell eingebundenen Dateien werden in dieser Reihenfolge geladen:
 4. `dossiers-v5-extra.js` – Fachdossierkapitel für die weiteren Themen
 5. `europe-v5.js` – europäische Vergleichsmatrix
 6. `law-expansion-v5.js` – zusätzliche ausgewählte Normen
-7. `atlas-visuals-v5.js` – Visualisierung und redaktionelle Seitenbausteine
-8. `atlas-v4.js` – App-Logik, Suche, Navigation, Graph und Falllabor
+7. `cantonal-laws-v5.js` – amtliche Gesetzeseinstiege für 26 Kantone
+8. `atlas-visuals-v5.js` – Visualisierung und redaktionelle Seitenbausteine
+9. `atlas-v4.js` – App-Logik, Suche, Navigation, Graph und Falllabor
 
 Design in `atlas-v4.css` und `atlas-v5.css`, Bilddateien unter `assets/`. Die älteren nicht eingebundenen Dateien bleiben für die Versionshistorie im Repository.
 
