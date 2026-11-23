@@ -29,7 +29,7 @@ const rows=[
 ["GE","311/411","415/515","2073/3073","2073/3073",2.22,"Erster Betrag für erstes/zweites Kind, zweiter ab drittem Kind. Geburt/Adoption zweiter Betrag bei Mehrlingen/Mehradoptionen; weitere Sonderregeln."],
 ["JU",275,325,1500,1500,2.75,""]
 ];
-const indexed={};rows.forEach(([c,k,e,g,a,fak,note])=>indexed[c]={child:k,education:e,birth:g,adoption:a,employerFAK:fak,note};
+const indexed={};rows.forEach(([c,k,e,g,a,fak,note])=>indexed[c]={child:k,education:e,birth:g,adoption:a,employerFAK:fak,note});
 const push=(c,title,value,unit,scope,detail,status)=>D.v6.rates.push({id:"famzkanton-"+D.v6.rates.length,topics:["famz"],group:"Familienzulagen nach Kanton 2026",label:c+" – "+title,value,unit,detail,when:"2026",scope:"Kanton "+c+" / "+scope,status,source:SOURCE});
 rows.forEach(([c,k,e,g,a,fak,note])=>{
 let childExplain=note||"Kantonaler FamZG-Ansatz für anspruchsberechtigte Kinder. Bedingungen und Konkurrenzregeln gelten.";
@@ -39,6 +39,6 @@ if(g!==null)push(c,"Geburtszulage",g,"CHF / einmalig","Geburt",note||"Einmalige 
 if(a!==null)push(c,"Adoptionszulage",a,"CHF / einmalig","Adoption",note||"Einmalige kantonale Zulage unter gesetzlichen Voraussetzungen.","BSV-Kantonstabelle");
 push(c,"Beitragssatz der kantonalen FAK (Arbeitgeber)",fak,"% Lohnsumme","Nur die kantonale Familienausgleichskasse","Nicht als schweizweit einheitlicher Arbeitgeberbeitrag oder als allgemeiner Arbeitnehmendenabzug verwenden; zusätzliche Fonds und weitere FAK können abweichen.","BSV-Kantonstabelle");
 });
-D.v6.familyCantons=indexed;D.v6.familySource=SOURCE;
+D.v6.familyCantons=indexed;D.v6.familySource=SOURCE;D.v6.sources.family2026=SOURCE;
 D.v6.familyNotice="Die Daten gelten für das Jahr 2026 und stammen aus der BSV-Tabelle. Bei Einträgen wie 265/285 sind gesetzlich bezeichnete Gruppen gemeint (meist Kinderzahl oder Alter). Werte sind keine garantierten persönlichen Ansprüche. Die ausgewiesenen FAK-Prozentsätze gelten nur für die kantonale Familienausgleichskasse; weitere Kassen, Fonds und kantonale Arbeitnehmerbeiträge können abweichen.";
 })();
