@@ -1,4 +1,12 @@
-# SOCIAL ATLAS 9.0
+# SOCIAL ATLAS – Klassische Oberfläche wiederhergestellt
+
+**Gestaltungsstand: 23. November 2026.** Auf ausdrücklichen Wunsch wurde das vertraute rot-weisse Layout von Version 9 wiederhergestellt. Die zwischenzeitlich in Version 10 und 11 eingeführte neue Startseite, die aufklappbaren Navigationsgruppen und das geänderte Artikellayout wurden zurückgenommen.
+
+**Erhalten bleiben die fachlichen Weiterentwicklungen:** 92 Themen der Wissensbibliothek, 107 Lexikonbegriffe, interaktive Infografiken, das Migrationsdossier und die neu ergänzten wissenschaftlichen Fachvertiefungen für acht zentrale Themen. Der Lernfall-Generator aus Version 10 bleibt erhalten; seine Lösungsskizze ist zunächst eingeklappt und kann nach eigener Bearbeitung geöffnet werden. Die ausführliche Bedienungsanleitung ist weiterhin unter `#/hilfe` erreichbar.
+
+Die Dateien `atlas-v10.css` und `atlas-v11.css` werden **nicht mehr geladen**, weil sie globale Gestaltungselemente verändert hatten. Stattdessen enthält `atlas-classic.css` nur die notwendigen lokalen Styles für Anleitung, Lernfall-Generator und die neuen Facherklärungen. `atlas-v4.js` baut wieder die klassische V9-Oberfläche auf. `atlas-editorial-v10.js`, `atlas-learning-v10.js` und `atlas-depth-v11.js` bleiben als Inhalts- und Funktionsmodule eingebunden.
+
+## Frühere Projektdokumentation (Version 9)
 
 **Interaktive rot-weisse Wissensplattform über Schweizer Sozialversicherungen, Sozialhilfe, Migration, Soziale Arbeit, Soziologie, Psychologie, Neurowissenschaften und Sucht.**
 
