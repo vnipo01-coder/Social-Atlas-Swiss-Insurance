@@ -1,0 +1,62 @@
+/* SOCIAL ATLAS 12 — leise, ausklappbare Forschungsbibliothek.
+ * Nicht die klassische Oberfläche überschreiben. Nur artikelbezogene Elemente.
+ */
+.v12-academic{margin:36px 0 45px;scroll-margin-top:100px}
+.v12-intro{border-left:4px solid #a82c48;border-top:1px solid #ecd9e0;border-right:1px solid #ecd9e0;border-bottom:1px solid #ecd9e0;background:#fff9fa;border-radius:0 13px 13px 0;padding:22px 23px}
+.v12-intro h2{margin:9px 0 12px;font-size:clamp(20px,2.8vw,28px);color:#592c3d}
+.v12-intro p{font-size:13px;line-height:1.95;color:#715a66;max-width:78ch}
+.v12-actions{display:flex;flex-wrap:wrap;gap:8px;margin:17px 0 0}
+.v12-actions button,.v12-actions>a{background:#fff;border:1px solid #e8cbd3;color:#9d3651;font:750 11px inherit;cursor:pointer;border-radius:8px;padding:10px 13px;text-decoration:none}
+.v12-actions button:hover,.v12-actions>a:hover{background:#fff0f3;border-color:#c78094}
+.v12-chapters{display:grid;gap:12px;margin:19px 0}
+.v12-chapter{border:1px solid #e8d6dc;background:white;border-radius:12px;overflow:hidden;scroll-margin-top:120px}
+.v12-chapter[open]{border-color:#d2a0ae;box-shadow:0 5px 16px rgba(137,41,65,.045)}
+.v12-chapter>summary{cursor:pointer;list-style:none;display:flex;gap:15px;align-items:center;padding:17px 18px;min-height:74px}
+.v12-chapter>summary::-webkit-details-marker{display:none}
+.v12-chapter>summary:focus-visible,.v12-legacySummary:focus-visible{outline:3px solid #ab536b;outline-offset:-4px}
+.v12-nr{font:800 13px Manrope,sans-serif;color:#fff;background:#b02e4b;border-radius:9px;min-width:38px;height:38px;display:grid;place-items:center}
+.v12-summaryMain{display:flex;flex-direction:column;gap:5px;flex:1;min-width:0}
+.v12-summaryMain strong{font-size:14px;color:#613c4a;line-height:1.55}
+.v12-summaryMain small{font-size:10.5px;line-height:1.6;color:#99808a}
+.v12-chevron{font-size:22px;color:#a95a71;transition:transform .16s}
+.v12-chapter[open] .v12-chevron,.v12-legacyAccordion[open] .v12-legacyChevron{transform:rotate(180deg)}
+.v12-chBody{padding:5px 24px 25px 71px;border-top:1px solid #f0e3e6}
+.v12-chBody p{font-size:14px;line-height:1.98;color:#584e55;max-width:85ch;margin:18px 0}
+.v12-chBody .v12-clarify{background:#faf6f7;border-left:3px solid #d7a3b1;border-radius:0 7px 7px 0;padding:12px 15px;font-size:12.5px;color:#7d626e}
+.v12-read{display:inline-flex;border:1px solid #dfc3ce;border-radius:8px;background:#fff;color:#a22d49;font-size:11.5px;font-weight:750;padding:11px 14px;line-height:1.55}
+.v12-read:hover{background:#fff3f6}
+.v12-questions{border:1px solid #eed9df;background:#fff9fa;border-radius:12px;margin:21px 0;overflow:hidden}
+.v12-questions>summary{list-style:none;cursor:pointer;padding:18px 20px;font-weight:800;font-size:13px;display:flex;justify-content:space-between;align-items:center;color:#703c51}
+.v12-questions>summary::-webkit-details-marker{display:none}
+.v12-questions ol{padding:8px 25px 12px;list-style:none;counter-reset:go}
+.v12-questions li{display:flex;gap:15px;line-height:1.75;font-size:12.7px;margin:12px 0;color:#614b56}
+.v12-questions li span{color:#b22e4c;font-weight:850;font-size:11px}
+.v12-questions>p{padding:0 25px 17px;color:#907685;font-size:11px;line-height:1.8}
+.v12-bibliography{scroll-margin-top:115px;margin:27px 0 17px}
+.v12-litHead{border-bottom:1px solid #e6d2d9;padding-bottom:14px}
+.v12-litHead h3{font-size:19px;color:#5d3748;margin:8px 0}
+.v12-litHead p{color:#7c626f;font-size:12.3px;line-height:1.9;max-width:82ch}
+.v12-bibliography>ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:11px;list-style:none;padding:0;margin:18px 0}
+.v12-bibliography>ul>li{padding:17px;border-radius:11px;background:#fff;border:1px solid #ead9de}
+.v12-sourceHeading{display:flex;gap:9px;flex-direction:column}
+.v12-sourceHeading b{color:#623b4a;font-size:12.2px;line-height:1.55}
+.v12-sourceHeading span{font-size:10px;color:#a83b55}
+.v12-bibliography li>p{font-size:11.5px;line-height:1.75;color:#866c77;margin:10px 0}
+.v12-bibliography li>a{font-weight:750;font-size:11px;color:#a72d4a}
+.v12-footnote{font-size:10.5px;color:#91818a;line-height:1.8;padding:10px 0}
+.v12-toc{display:grid;gap:7px;border-top:1px solid #e6d3da;margin-top:14px;padding-top:14px}
+.v12-toc>span{font-size:10px;color:#aa2d49;font-weight:850;letter-spacing:.06em}
+.v12-toc a{font-size:11px;line-height:1.55;padding:5px 0}
+.v12-legacyAccordion{border:1px solid #eddfe4!important;border-radius:12px!important;background:#fff;overflow:hidden;padding:0!important;margin:13px 0!important;scroll-margin-top:115px}
+.v12-legacySummary{display:flex;align-items:center;gap:13px;cursor:pointer;list-style:none;padding:18px 20px;background:#fff}
+.v12-legacySummary::-webkit-details-marker{display:none}
+.v12-legacySummary .v7-chapterKicker{display:flex;align-items:center;gap:6px;flex:0 0 auto;margin:0}
+.v12-legacySummary .v7-chapterKicker>span{min-width:30px;min-height:30px;display:grid;place-items:center;background:#b43855;color:#fff;border-radius:8px;font-size:10px}
+.v12-legacySummary .v7-chapterKicker>b{display:none}
+.v12-legacySummary>strong{font-size:14px;line-height:1.6;color:#5e394a;flex:1}
+.v12-legacyChevron{font-size:22px;color:#b7667f;transition:transform .16s}
+.v12-legacyContent{padding:8px 23px 21px 62px;border-top:1px solid #f0e5e9}
+.v12-legacyContent p{line-height:1.98;font-size:13.8px;max-width:86ch;color:#625560}
+.v12-legacyContent .v7-chapterActions{margin-top:14px}
+@media(max-width:650px){.v12-chBody{padding:8px 17px 20px}.v12-bibliography>ul{grid-template-columns:1fr}.v12-intro{padding:18px}.v12-chapter>summary{padding:12px}.v12-legacyContent{padding:12px 16px 18px}.v12-legacySummary{padding:13px}.v12-chBody p{font-size:13px}.v12-legacyContent p{font-size:13px}}
+@media print{.v12-academic details{break-inside:avoid}.v12-legacyAccordion{break-inside:avoid}.v12-actions{display:none}.v12-bibliography>ul{display:block}.v12-bibliography>ul>li{break-inside:avoid;margin-bottom:8px}}
