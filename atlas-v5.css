@@ -1,0 +1,78 @@
+/* SOCIAL ATLAS 5.0 — Editorial Encyclopedia. Ergänzung zum robusten v4-Layout. */
+:root{--red:#af1734;--red-dark:#86162b;--blush:#fff0f3;--line:#e9dce0;--bg:#fbf9f8;--ink:#341e28;--muted:#776973}
+html{scroll-padding-top:96px}
+.content{max-width:1390px}
+.articlemain>section{scroll-margin-top:105px}
+.articlemain>section:not(.v5-research){margin-bottom:33px}
+.articlemain>section>p{font-size:14px;line-height:1.91;max-width:88ch}
+.articlemain>.v5-process,.articlemain>.v5-countryintro{margin:27px 0}
+.v5-figure{margin:19px 0 23px;background:white;border:1px solid #ead8dd;border-radius:16px;padding:12px;box-shadow:0 12px 31px #80324609;overflow:hidden}
+.v5-figure img{display:block;width:100%;height:auto;border-radius:10px;aspect-ratio:auto;max-height:600px;object-fit:contain;background:#fff8f9}
+.v5-figure figcaption{color:#997986;font-size:10.5px;line-height:1.55;padding:10px 6px 2px}
+.v5-sectiontop .eyebrow{display:block;margin-bottom:5px}
+.v5-sectiontop h2{margin:6px 0 12px}
+.v5-sectiontop p{max-width:83ch}
+.v5-links{display:flex;align-items:center;flex-wrap:wrap;gap:9px 18px;font-size:12px;font-weight:700;color:var(--red-dark);margin:12px 0}
+.v5-links a{display:inline-flex;align-items:center;gap:5px;border-bottom:1px solid #d5a0ad;padding:4px 0}
+.v5-stages{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:9px;margin:17px 0}
+.v5-stage{min-height:152px;border:1px solid #eccdd5;background:linear-gradient(145deg,#fff,#fff7f8);border-radius:13px;padding:15px 15px 14px;position:relative;box-shadow:0 8px 25px #73324608}
+.v5-stage:not(:last-child):after{content:'›';position:absolute;right:-12px;top:42%;font-size:26px;color:#c26077;z-index:2}
+.v5-num{font:800 24px Manrope,sans-serif;color:#bb2340;line-height:1.2}
+.v5-stage p{font-size:11.5px;margin:13px 0 0;color:#755662;line-height:1.65}
+.v5-chapterIndex{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;margin:17px 0 28px}
+.v5-chapterIndex a{font-size:11.5px;font-weight:700;color:#885161;border:1px solid #f1d5dc;border-radius:9px;padding:10px 12px;background:white;line-height:1.5}
+.v5-chapterIndex a:hover{background:#fff1f3;text-decoration:none}
+.v5-chapter{background:#fff;border:1px solid #eddee2;border-left:4px solid #c23851;border-radius:0 13px 13px 0;padding:20px 22px;margin:16px 0;scroll-margin-top:108px}
+.v5-chapter h3{font-size:17px;margin:6px 0 13px}
+.v5-chapter p{max-width:90ch;line-height:1.9;font-size:13.3px;margin-bottom:12px}
+.v5-chapter p:last-child{margin-bottom:0}
+.v5-chapterNumber{font:800 10px Manrope,sans-serif;color:#c1536b;letter-spacing:.12em}
+.v5-academic{background:linear-gradient(115deg,#fff2f5,#fff 72%);border:1px solid #f1cdd6;border-radius:15px;padding:24px;margin:18px 0}
+.v5-academic h2{font-size:20px;margin:10px 0}
+.v5-academic h3{font-size:17px;margin:10px 0}
+.v5-academic p{color:#785363;line-height:1.87;font-size:13.3px}
+.v5-academic .count{font-size:10px;color:#aa8792}
+.v5-examples{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:13px;margin:18px 0}
+.v5-example{border:1px solid #edd6dc;border-radius:12px;padding:18px;background:#fff}
+.v5-example p{font-size:12.5px;line-height:1.85}
+.v5-sidepanel{background:#fff5f6;border:1px solid #edcbd4;border-radius:13px;padding:17px 16px;margin-top:17px}
+.v5-sidepanel h3{font-size:14px;margin:8px 0}
+.v5-sidepanel p,.v5-sidepanel span{font-size:11px;line-height:1.7;display:block;color:#87626d}
+.v5-sidepanel a{display:block;font-size:11px;font-weight:700;padding:8px 0;border-bottom:1px solid #f1dbe0}
+.v5-sidepanel hr{border:0;border-top:1px solid #eacdd4;margin:13px 0}
+.v5-sidepanel b{font-size:10.5px}
+.v5-rail-note{font-size:10px;color:#977481;line-height:1.65;margin-top:12px}
+.v5-feature{display:grid;grid-template-columns:.8fr 1.5fr;gap:24px;align-items:center;background:#fff;border:1px solid #eedde1;border-radius:19px;padding:19px 22px;margin-bottom:32px;box-shadow:0 10px 27px #8b2d4510}
+.v5-featuretext{padding:10px 8px}
+.v5-featuretext h2{font-size:24px;margin:9px 0}
+.v5-featuretext p{font-size:12.5px;line-height:1.8}
+.v5-feature .v5-figure{margin:0;box-shadow:none;padding:6px}
+.v5-feature .v5-figure img{max-height:370px}
+.v5-imagecard{display:block;background:white;border:1px solid #eedfe2;padding:10px 10px 16px;border-radius:12px;transition:transform .16s,border-color .16s}
+.v5-imagecard:hover{text-decoration:none;transform:translateY(-2px);border-color:#d899a8}
+.v5-imagecard img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;border-radius:7px;background:#fff2f4}
+.v5-imagecard strong{display:block;font-size:12px;color:#66313f;margin:12px 5px 3px}
+.v5-imagecard small{display:block;font-size:11px;color:#9c7c87;margin:0 5px}
+.v5-countryintro{margin:23px 0 29px}
+.v5-countryintro .v5-figure img{max-height:540px}
+.v5-countrydetail{border-top:1px solid #ead9df;padding-top:12px;margin:26px 0}
+.v5-countrydetail>p{max-width:85ch}
+.v5-dimGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin:22px 0 30px}
+.v5-dim{background:#fff;border:1px solid #ebdce1;border-radius:12px;overflow:hidden;align-self:start}
+.v5-dim[open]{border-color:#d59dac;box-shadow:0 10px 25px #9c284014}
+.v5-dim summary{display:flex;align-items:center;gap:11px;cursor:pointer;padding:16px 15px;list-style:none}
+.v5-dim summary::-webkit-details-marker{display:none}
+.v5-dim summary strong{flex:1;color:#65404d;font-size:12px;line-height:1.45}
+.v5-dimN{font:800 12px Manrope,sans-serif;color:#b62b45}
+.v5-arrow{font-size:20px;color:#b75f72}
+.v5-dim[open] .v5-arrow{transform:rotate(45deg)}
+.v5-dimContent{padding:0 18px 17px 40px}
+.v5-dimContent p{font-size:12px;line-height:1.85}
+.v5-dimContent a{font-size:11px;font-weight:700}
+.v5-cantonaddition .v5-figure img{max-height:550px}
+.v5-caseintro .v5-figure img{max-height:490px}
+.v5-caseintro{margin:12px 0 28px}
+@media(max-width:1050px){.v5-feature{grid-template-columns:1fr}.v5-feature .v5-figure img{max-height:none}}
+@media(max-width:800px){.v5-stages{grid-template-columns:repeat(2,minmax(0,1fr))}.v5-stage:not(:last-child):after{display:none}.v5-dimGrid{grid-template-columns:1fr}.v5-feature{padding:13px}.v5-featuretext{padding:7px}.v5-chapter{padding:15px 17px}.v5-figure{padding:7px}.v5-examples{grid-template-columns:1fr}.v5-academic{padding:17px}}
+@media(max-width:475px){.v5-stages{grid-template-columns:1fr}.v5-stage{min-height:auto}.v5-featuretext h2{font-size:21px}.v5-chapterIndex{grid-template-columns:1fr}}
+@media print{.v5-sidepanel,.v5-links,.v5-imagecard{display:none!important}.v5-academic,.v5-chapter{break-inside:avoid}.v5-dimGrid{grid-template-columns:1fr}}
