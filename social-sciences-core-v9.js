@@ -35,8 +35,7 @@ const questions=o.questions||[];
 const matrix=o.matrix||[];
 D.topics.push({id:o.id,title:o.title,short:o.short||o.title.slice(0,7),category:o.category,summary:o.summary,
 sections:[],steps:o.steps||o.chapters.slice(0,5).map(ch=>"Fachlich einordnen: "+ch[0]),related:o.related||[],sources:srcs,lawIds:o.lawIds||[],caution:o.caution||"Fachliche Modelle vereinfachen Wirklichkeit. Sie ersetzen keine individuelle Rechtsprüfung und keine klinische Diagnose.",dossier:{chapters:[],examples:o.examples||[],focus:o.focus||"Theorie und Praxis",research:o.research||"Begriffe, Entstehungsgeschichte, Geltungsbereich, Grenzen und Anwendbarkeit im Feld der Sozialen Arbeit sind getrennt zu beurteilen."}});
-D.v7Deep[o.id]={chapters:o.chapters,faq:questions,matrix:matrix.length?matrix:[
-["Begriff und Theorie","Was wird beschrieben, was nicht?","Fachquelle und Kontext"],["Einzelfall","Welche Ressourcen und Belastungen sind tatsächlich erkennbar?","Fallaufnahme und Gespräch"],["System","Welche institutionellen und gesellschaftlichen Faktoren wirken?","Sozialraum und Netzwerke"],["Handlung","Welche Intervention ist angemessen und freiwillig möglich?","Zielvereinbarung"],["Evaluation","Wie wird Wirkung erkennbar, welche Grenzen bestehen?","Fachliche Reflexion"]]};
+D.v7Deep[o.id]={chapters:o.chapters,faq:questions,matrix:matrix.length?matrix:o.chapters.map((ch,i)=>[ch[0],(ch[2]||ch[1]||"").slice(0,215),"Fachkapitel "+(i+1)+(srcs[0]?" · "+srcs[0].label:"")])};
 D.v9Science.created.push(o.id);
 (o.related||[]).filter(id=>D.topics.some(t=>t.id===id)).forEach(id=>D.edges.push({from:o.id,to:id,label:"fachlicher Bezug"}));
 };
