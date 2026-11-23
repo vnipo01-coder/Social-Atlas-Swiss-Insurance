@@ -32,6 +32,18 @@ const example=[
 {id:"neuro-icf-reha",title:"Schlaganfall, Teilhabe und berufliche Wiedereingliederung",situation:"Nach einem Schlaganfall erlebt eine Person Einschränkungen im Alltag. Über Klinik, IV, Arbeitgeber und Sozialdienst werden Hilfen besprochen.",topics:["neuro-icf","iv","iveingliederung","sa-case","sa-empowerment"],questions:["Welche körperlichen Funktionen und Aktivitäten sind betroffen?","Welche Umweltbarrieren und Ressourcen bestehen?","Welcher Träger entscheidet über Hilfsmittel, Eingliederung oder Rente?","Wie wird die Sicht der Person einbezogen?"],steps:["Medizinische Befunde und alltagsbezogene Einschränkungen getrennt erfassen.","Teilhabewünsche und Umweltfaktoren nach ICF strukturieren.","Zuständigkeiten der Versicherungen prüfen.","Ziele und Massnahmen interprofessionell abstimmen.","Verlauf, Teilhabe und Versorgungslücken evaluieren."]}
 ];
 for(const c of example)if(!D.cases.some(x=>x.id===c.id))D.cases.push(c);
+const evidence={
+sociology:{label:"OpenStax – Introduction to Sociology 3e, offenes akademisches Lehrbuch",url:"https://openstax.org/books/introduction-sociology-3e/pages/1-introduction"},
+stratification:{label:"OpenStax – What Is Social Stratification?",url:"https://openstax.org/books/introduction-sociology-3e/pages/9-1-what-is-social-stratification"},
+socialization:{label:"OpenStax – Socialization Across the Life Course",url:"https://openstax.org/books/introduction-sociology-3e/pages/5-4-socialization-across-the-life-course"},
+bourdieu:{label:"Oxford Academic – Bourdieu's Capital(s): A Sociological Concept",url:"https://academic.oup.com/edited-volume/28103/chapter/212224008"},
+intersection:{label:"Harvard University Library – Intersektionalität und Kimberlé Crenshaw",url:"https://guides.library.harvard.edu/hks/belonging-community-connection/intersectionality"},
+mi:{label:"SAMHSA – Motivational Interviewing, TIP 35 (Fachpublikation)",url:"https://www.ncbi.nlm.nih.gov/books/NBK571068/"},
+nida:{label:"NIDA – Drugs, Brains and Behavior, Grundlagen",url:"https://nida.nih.gov/sites/default/files/soa_2014.pdf"}
+};
+Object.assign(S.sources,evidence);
+for(const t of D.topics.filter(t=>t.category==="Soziologie")){t.sources=[evidence.sociology];if(["soz-ungleichheit","soz-armut","soz-exklusion"].includes(t.id))t.sources.push(evidence.stratification);if(t.id==="soz-sozialisation")t.sources.push(evidence.socialization);if(t.id==="soz-bourdieu")t.sources.push(evidence.bourdieu);if(t.id==="soz-intersektionalitaet")t.sources.push(evidence.intersection)}
+for(const [id,extra] of [["sucht-beratung",evidence.mi],["neuro-belohnung",evidence.nida],["neuro-plastizitaet",evidence.nida]]){const t=D.topics.find(x=>x.id===id);if(t)t.sources.push(extra)}
 S.quality={
 version:"9.0",date:"2026-11-23",exclusiveAssets:{"three-pillars":"ahv","social-assistance":"sozialhilfe","europe-systems":"europa","coordination":"atsg"},
 removed:"Alte kategorieweite Bildwiederholungen und das identische Sechs-Felder-Template wurden entfernt.",
