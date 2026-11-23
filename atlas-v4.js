@@ -40,7 +40,7 @@ $("caseResult").innerHTML='<div class="note"><b>Ausgangslage · '+E(c.title)+'</
 function generator(){return window.ATLAS_LEARN_V10?.generator()||missing()}
 function generatedCase(){
 const c=D.cases.find(x=>x.id===$("genCase").value)||D.cases[0],cc=region($("genCanton").value);
-const rawAge=Number($("genAge").value),age=Number.isFinite(rawAge)?Math.max(0,Math.min(110,Math.round(rawAge))):42;
+const ageInput=$("genAge").value.trim(),rawAge=ageInput===""?NaN:Number(ageInput),age=Number.isFinite(rawAge)?Math.max(0,Math.min(110,Math.round(rawAge))):42;
 const data=window.ATLAS_LEARN_V10.variant({c,canton:cc,age,house:$("genHouse").value,work:$("genWork").value,challenge:$("genChallenge").value,n:++caseNum});
 $("genResult").innerHTML=data.html;
 $("genCopy").onclick=async()=>{try{await navigator.clipboard.writeText(data.text);$("genCopy").textContent="Kopiert ✓"}catch{$("genCopy").textContent="Text markieren und kopieren"}};
@@ -101,7 +101,7 @@ function bindGraph(){graphInit();$("graphFilter").value=graphFilter;$("graphFilt
 function searchIndex(){return [
 ...D.topics.map(t=>({title:t.title,detail:t.summary,href:url(t.id),text:[t.title,t.short,t.summary,...t.sections.map(s=>s.heading),...(t.dossier?.chapters||[]).flat(),...(D.v7Deep?.[t.id]?.chapters||[]).flat(),...(D.v7Deep?.[t.id]?.faq||[]).flat()].join(" ").toLowerCase()})),
 ...D.topics.flatMap(t=>(D.v7Deep?.[t.id]?.chapters||[]).map((c,i)=>({title:t.short+": "+c[0],detail:c[1]||t.summary,href:url(t.id)+"?go=v7-chapter-"+i,text:[t.title,t.short,c[0],...c.slice(1)].join(" ").toLowerCase()}))),
-...D.v9Science.terms.map(t=>({title:t.word,detail:t.definition,href:"#/fachlexikon?q="+encodeURIComponent(t.word),text:[t.word,t.definition,t.area].join(" ").toLowerCase()})),
+...(D.v9Science?.terms||[]).map(t=>({title:t.word,detail:t.definition,href:"#/fachlexikon?q="+encodeURIComponent(t.word),text:[t.word,t.definition,t.area].join(" ").toLowerCase()})),
 ...D.laws.map(l=>({title:l.code+" – "+l.title,detail:l.meaning,href:"#/recht?q="+encodeURIComponent(l.code),text:[l.code,l.title,l.meaning].join(" ").toLowerCase()})),
 ...D.cantons.map(c=>({title:"Kanton "+c.name,detail:"Kantonsprofil Sozialhilfe",href:"#/kanton/"+c.id,text:(c.name+" "+c.id+" kanton").toLowerCase()})),
 ...D.countries.map(c=>({title:"Land "+c.name,detail:c.description,href:"#/land/"+c.id,text:[c.name,c.description,...(D.v7Countries?.[c.id]||[]).flat()].join(" ").toLowerCase()}))
