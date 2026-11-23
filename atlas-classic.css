@@ -1,0 +1,102 @@
+/* SOCIAL ATLAS Klassisches Design — zurück zur vertrauten V9-Gestaltung.
+   Nur die neuen Hilfen und Textvertiefungen erhalten Zusatzstyles;
+   KEINE globalen Sidebar-, Hero-, Karten- oder Artikelüberschreibungen. */
+.classic-help{padding:7px 12px;border:1px solid #edcbd5;border-radius:10px;color:#9e3550;font-size:11px;font-weight:800;background:#fff}
+.classic-help:hover{background:#fff3f6;text-decoration:none}
+.articlemain .a11-depth{margin:34px 0}
+.articlemain .a11-depthHead{background:#fff8f9}
+.articlemain>section{scroll-margin-top:93px}
+.articlemain p{line-height:1.8}
+.articlemain .a11-researchChapter{max-width:85ch}
+.articlemain .v7-directory{scroll-margin-top:110px}
+.a10-workHero{background:linear-gradient(125deg,#fff,#fff5f7);border:1px solid #ead6dd;border-radius:16px;padding:25px;margin-bottom:24px}
+.a10-libraryLead h1,.a10-helpHero h1,.a10-workHero h1{margin:10px 0;font-size:clamp(25px,3.2vw,35px)}
+.a10-libraryLead p,.a10-helpHero p,.a10-workHero p{font-size:13px;line-height:1.85;max-width:90ch}
+.a10-miniSteps{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.a10-miniSteps span{background:#fff;border:1px solid #efdee3;padding:8px 12px;border-radius:8px;font-size:11px;color:#a54c64;font-weight:800}
+.a10-libraryLead>a{font-size:11px;font-weight:800}
+.a10-help{max-width:960px;margin:0 auto}
+.a10-helpNav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:22px 0 30px}
+.a10-helpNav a{border:1px solid #efdee3;border-radius:9px;background:#fff;padding:12px;font-size:11px;font-weight:800}
+.a10-helpStep{display:grid;grid-template-columns:48px 1fr;gap:17px;border-bottom:1px solid #e9dbe0;padding:27px 0;scroll-margin-top:95px}
+.a10-helpStep>span{background:#b82b4c;color:#fff;font:800 14px Manrope;width:43px;height:43px;display:grid;place-items:center;border-radius:11px}
+.a10-helpStep h2{margin:1px 0 12px}
+.a10-helpStep p,.a10-helpStep li{font-size:12.8px;line-height:1.85}
+.a10-helpStep ol{padding-left:20px;margin:14px 0 20px}
+.a10-labGuide{background:#fff6f7;border:1px solid #efd7df;border-radius:15px;padding:22px;margin:20px 0 24px}
+.a10-labGuide>div,.a10-labSteps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.a10-labGuide article,.a10-labSteps>div{background:white;border:1px solid #f0dde2;border-radius:10px;padding:14px}
+.a10-labGuide b,.a10-labSteps b{font-size:11.5px;color:#8b3c53}
+.a10-labGuide p,.a10-labSteps p{font-size:11.5px;line-height:1.8;margin:8px 0}
+.a10-labGuide>p{margin:16px 0 0}
+.a10-generator{max-width:1020px;margin:0 auto}
+.a10-info{border-left:3px solid #b43552;background:#fff;padding:12px 16px;color:#875a6a;font-size:11.5px;line-height:1.85;margin-top:17px}
+.a10-labSteps{margin:20px 0 25px}
+.a10-config{border:1px solid #ebd9df;background:#fff;border-radius:16px;padding:25px;margin:18px 0}
+.a10-config h2{margin:3px 0 18px}
+.a10-formGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.a10-formGrid label{font-size:12px;font-weight:800;color:#643949}
+.a10-formGrid .input,.a10-formGrid .select{display:block;width:100%;margin:7px 0 3px}
+.a10-formGrid small{display:block;font-size:10.5px;font-weight:400;color:#9b7c88;line-height:1.6}
+.a10-configActions{display:flex;align-items:center;gap:13px;flex-wrap:wrap;margin-top:21px}
+.a10-configActions>span{font-size:10.5px;color:#a0808d}
+.a10-genEmpty{background:#fff;border:1px dashed #e5c4d0;border-radius:14px;padding:24px;margin:18px 0}
+.a10-genEmpty h3{margin:0 0 7px}
+.a10-genEmpty p{font-size:12px}
+.a10-generated{border:1px solid #e4cbd3;border-radius:15px;background:#fff;padding:24px;margin:20px 0}
+.a10-generatedHeader{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center;gap:12px}
+.a10-generatedHeader h2{margin:6px 0 13px}
+.a10-caseStory{border-left:4px solid #b62b4e;background:#fff5f7;padding:17px;margin:18px 0}
+.a10-caseStory b{font-size:12px}.a10-caseStory p{font-size:12.5px;line-height:1.9}
+.a10-task{padding:15px 0;border-bottom:1px solid #f0e4e7}
+.a10-task h3{font-size:15px}
+.a10-task p,.a10-task li{font-size:12.3px;line-height:1.9}
+.a10-task ol{padding-left:20px}
+.a10-solution{border:1px solid #dca5b5;border-radius:12px;background:#fff7f9;margin:20px 0}
+.a10-solution summary{display:flex;justify-content:space-between;align-items:center;gap:10px;cursor:pointer;list-style:none;padding:17px;color:#91344f;font-size:13px;font-weight:800}
+.a10-solution summary::-webkit-details-marker{display:none}
+.a10-solution[open] summary span:last-child{transform:rotate(45deg)}
+.a10-solution>div{padding:1px 19px 20px}
+.a10-solution p,.a10-solution li{font-size:12px;line-height:1.9}
+.a10-caseLinks{display:flex;gap:9px;flex-wrap:wrap}
+.a10-caseLinks a{border-radius:8px;background:white;border:1px solid #ebd1da;padding:8px 10px;font-size:11px}
+.a10-caseFoot{font-size:10px;color:#987883;margin-top:14px}
+.a10-assistantGuide{border:1px solid #edd6de;border-radius:14px;background:#fff9fa;padding:19px;margin:20px 0}
+.a10-assistantGuide h2{margin:3px 0 10px;font-size:17px}
+.a10-assistantGuide p{font-size:12px;line-height:1.9}
+.a10-assistantGuide>div{display:flex;flex-wrap:wrap;gap:9px}
+.a10-assistantGuide a{padding:9px;background:#fff;border:1px solid #ead3dc;border-radius:8px;font-size:10.8px;font-weight:800}
+
+/* V11 – ruhige Lesespalte, wissenschaftliche Tiefenschärfe und klare Lernwerkzeuge */
+.a11-depth{margin:32px 0 28px;padding:0;scroll-margin-top:110px}
+.a11-depthHead{padding:22px 24px;background:#fff8f9;border:1px solid #ecdce2;border-radius:15px}
+.a11-depthHead h2{margin:9px 0 12px;color:#572f40;font-size:clamp(21px,2.4vw,27px)}
+.a11-depthHead p{font-size:14px;line-height:1.8;color:#775968;margin:0}
+.a11-researchChapter{padding:26px 8px;border-bottom:1px solid #ecdee3;max-width:86ch}
+.a11-researchChapter>span{font-size:10px;color:#b03857;font-weight:800;letter-spacing:.09em}
+.a11-researchChapter h3{font-size:19px;line-height:1.4;color:#513142;margin:11px 0 15px}
+.a11-researchChapter p{font-size:14px;line-height:1.95;color:#51454c;margin:13px 0}
+.a11-researchSources{display:flex;flex-wrap:wrap;align-items:center;gap:10px;background:#faf6f7;border-radius:12px;padding:19px;margin:19px 0 10px}
+.a11-researchSources b{width:100%;font-size:12px;color:#65384c}
+.a11-researchSources a{font-size:11px;background:#fff;border:1px solid #ebd8de;border-radius:8px;padding:9px 12px}
+.a11-researchSources small{display:block;width:100%;font-size:10px;color:#876d7b;line-height:1.7}
+.a11-answerLabel{display:block;margin:18px 0 7px;font-weight:800;font-size:12px;color:#633e50}
+.a11-answer{min-height:135px;width:100%;font-size:13px;line-height:1.8}
+.a10-articleGrid{grid-template-columns:minmax(0,1fr) 218px;gap:30px}
+.a10-articleMain{max-width:930px}
+.a10-articleHero{background:#fff;border-color:#eadfe2;box-shadow:none}
+.a10-articleHero h1{line-height:1.22}
+.a10-articleMain>section{margin-bottom:40px}
+.a10-chapter{padding:27px 0 32px}
+.a10-chapter p{font-size:14px;line-height:1.95;max-width:87ch}
+.a10-toc{background:#fff;box-shadow:none}
+.a10-toc a{line-height:1.65}
+.a10-articleMeta span{background:#fdf8f9}
+.a10-actionCard,.a10-fieldGrid a{box-shadow:none}
+.a10-homeHero{background:#fff}
+.a10-homePath{background:#fff9fa}
+.a10-config{background:#fff}
+
+@media(max-width:800px){.a10-helpNav,.a10-labGuide>div,.a10-labSteps,.a10-formGrid{grid-template-columns:1fr}.classic-help{padding:6px 7px;font-size:10px}}
+@media(max-width:520px){.a10-config,.a10-generated{padding:17px}.a10-helpStep{grid-template-columns:1fr}.a10-helpNav{grid-template-columns:1fr}.classic-help{display:none}}
+@media print{.a10-config,.a10-labSteps,.a10-suppInfo{display:none!important}.a10-generated,.a11-researchChapter{break-inside:avoid}.a10-solution>div{display:block!important}}
