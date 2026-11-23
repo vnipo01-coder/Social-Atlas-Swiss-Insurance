@@ -1,7 +1,7 @@
 /* SOCIAL ATLAS 10 – transparenter, lokal generierter Lernfall statt vorgetäuschter KI-Rechtsentscheidung. */
 window.ATLAS_LEARN_V10=(()=>{
 "use strict";
-const D=ATLAS_DB,E=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;":"&quot;","'":"&#39;"}[c]));
+const D=ATLAS_DB,E=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const cases=D.cases,cantons=D.cantons;
 const formOpts=(rows)=>rows.map(x=>'<option value="'+E(x.id)+'">'+E(x.title||x.name)+'</option>').join("");
 function generator(){
