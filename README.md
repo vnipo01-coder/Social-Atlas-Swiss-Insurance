@@ -1,36 +1,54 @@
-# SOCIAL ATLAS WIKI – Soziale Sicherheit verstehen
+# SOCIAL ATLAS 4.0 – Vernetzte Enzyklopädie der sozialen Sicherheit
 
-Eine interaktive, deutschsprachige Lern- und Wissensplattform zur Schweizer Sozialversicherung, zur Sozialhilfe aller 26 Kantone und zur sozialen Sicherheit in der Schweiz und fünf Nachbarländern.
+**Live-Website:** https://vnipo01-coder.github.io/Social-Atlas-Swiss-Insurance/
 
-## Funktionen
+SOCIAL ATLAS ist eine eigenständige, statische Web-App für GitHub Pages. Sie erklärt das schweizerische Sozialversicherungssystem, kantonale Sozialhilfe und soziale Sicherheit im europäischen Kontext. Die Version 4.0 setzt auf ein **rot-weisses Wiki-Design**, nachvollziehbare Rechtsquellen und eine interaktive Wissensstruktur.
 
-- Wiki-artige Navigation und Artikelsuche
-- Grundlagenartikel zu AHV, IV, EL, BVG, ALV, KVG, UVG, EO, Familienzulagen, Sozialhilfe und weiteren Themen
-- Kantonsübersicht und Länderprofile
-- Fachstudio mit regelbasierter Suche und Quellhinweisen
-- Rechtsbibliothek mit ausgewählten Artikeln und Links zu amtlichen Gesetzesfassungen
-- Generator für didaktische Fallvarianten mit Prüfschritten und Reflexionsfragen
-- Systemgrafiken, Glossar und Quiz
+## Funktionsumfang der aktuellen Version
 
-## Veröffentlichung
+- **40 strukturierte Fachartikel** mit Vertiefungsabschnitten, Prüfschritten, Querverweisen und amtlichen Quellen.
+- **54 Beziehungen** zwischen den Themen in einem interaktiven SVG-Systemnetz. Knoten auswählen, unmittelbare Beziehungen anzeigen, zoomen, verschieben und direkt zum Fachartikel wechseln.
+- **22 ausgewählte Rechtsreferenzen** zur schweizerischen Bundesverfassung und zentralen Sozialversicherungsgesetzen sowie zum Koordinationsrecht (EU). Verweise sind thematisch verknüpft und führen zu amtlichen Texten.
+- **26 Kantonsprofile** als Navigations- und Vergleichsgrundlage; **Graubünden** besitzt vertiefte kantonsspezifische Quellen zu Sozialhilfe, Organisation und Praxis.
+- **6 Länderprofile** mit mehrteiligen Themenkapiteln zu Schweiz, Deutschland, Frankreich, Italien, Österreich und Liechtenstein.
+- **Volltextsuche**, Glossar, Vergleich von Kantonen und Ländern, Merkliste im Browser, Quiz.
+- **Falllabor** mit sechs Fallarten, Kantonwahl, offenen Sachverhaltsfragen, Prüfschritten und zugehörigen Rechtsreferenzen.
+- **Fallgenerator** mit fiktiver Person, Alter, Haushalt, Erwerbssituation, Kanton und einer zusätzlichen Herausforderung. Arbeitsblätter lassen sich kopieren und drucken.
+- **Wissensassistent (lokal)** beantwortet Fragen durch Zusammenstellung passender vorhandener Fachtexte, Prüfschritte und Rechtsquellen. **Kein KI-Sprachmodell**.
 
-Statische GitHub-Pages-Web-App: `index.html`, `style.css`, `app.js`, `studio.js`.
+## Code / technischer Aufbau
 
-GitHub → Settings → Pages → Deploy from a branch → main → / (root).
+- `index.html` – Einstiegspunkt
+- `knowledge-v4.js` – Kern-Wissensdatenbank
+- `atlas-expansion-v4.js` – vertiefende Spezialthemen und Länderprofile
+- `atlas-v4.js` – Navigation, Suche, Wissensgraph, Fälle, Generator, Quiz und Vergleich
+- `atlas-v4.css` – rot-weisses responsive Design
 
-## Transparenz und fachliche Grenzen
+Ältere Dateien (`app.js`, `style.css`, `studio.js`) bleiben vorerst für die Versionshistorie im Repository, werden aber von der aktuellen Startseite nicht geladen.
 
-**Das Wissensstudio ist keine generative KI.** Es sucht passende Textbausteine und Rechtsquellen in der lokalen Wissensdatenbank. Für eine echte KI mit frei formulierten Antworten und kontrollierter Quellenrecherche wird eine sichere serverseitige Schnittstelle benötigt. Niemals einen privaten API-Schlüssel in dieses öffentliche Repository schreiben.
+## Einschränkungen und redaktioneller Stand
 
-**Keine Rechtsberatung.** Die Plattform ist eine didaktische Orientierung, keine vollständige oder laufend aktualisierte Rechtsdatenbank. Die Gesetzesverweise sind Ausgangspunkte; Geltungsbereich, Fassungen, Übergangsrecht, Rechtsprechung und kantonale Bestimmungen sind für konkrete Fälle separat zu überprüfen. Kantonal unterschiedliche Beträge und Fristen werden bewusst nicht als verifiziert ausgegeben.
+Die 40 Artikel sind **keine vollständige Darstellung jedes einzelnen Sozialversicherungstatbestands**. Auch die 22 Rechtsverweise sind eine kuratierte Auswahl, keine erschöpfende Normendatenbank. Die Länderprofile fassen Grundstrukturen zusammen und ersetzen keine Recherche in nationalen Spezialgesetzen.
 
-## Quellen-Einstieg
+**Wichtig zu den Kantonen:** Alle 26 Kantone sind auswählbar, aber die Daten sind ungleich tief erschlossen. Nur für Graubünden sind derzeit konkrete kantonale Primärquellen vertieft eingebunden. Die App weist bewusst keine unbestätigten Grundbedarfsbeträge, Mietzinslimiten oder kantonalen Fristen aus.
 
-- [Bundesamt für Sozialversicherungen](https://www.bsv.admin.ch/)
-- [AHV/IV-Informationsstelle](https://www.ahv-iv.ch/)
-- [Bundesamt für Gesundheit](https://www.bag.admin.ch/)
-- [SKOS](https://skos.ch/)
-- [Fedlex](https://www.fedlex.admin.ch/)
-- [EUR-Lex](https://eur-lex.europa.eu/)
+**Der Wissensassistent verwendet keine echte generative KI.** Die Antworten werden aus einer lokal hinterlegten Wissensdatenbank und regelbasierten Ähnlichkeitssuchen zusammengestellt. Ein echtes Sprachmodell würde einen sicheren Backend-Dienst und eine zuverlässige Quellenabfrage benötigen. Niemals API-Schlüssel in die öffentlich zugänglichen GitHub-Pages-Dateien eintragen.
 
-Stand des Prototyps: November 2026.
+**Keine Rechtsberatung.** Rechtsgrundlagen, Rechtsprechung, Spezialfälle, Übergangsrecht, kantonale Weisungen und die aktuell gültigen Leistungsansätze sind vor einem verbindlichen Entscheid bei der zuständigen Behörde zu prüfen.
+
+## Amtliche Quellen (Auswahl)
+
+- [BSV – Schweizer Sozialversicherungssystem](https://www.bsv.admin.ch/de/uebersicht-sozialversicherungssystem)
+- [BSV – 13. AHV-Altersrente ab Dezember 2026](https://www.bsv.admin.ch/de/umsetzung-13-ahv-rente)
+- [BAG – Bundesamt für Gesundheit](https://www.bag.admin.ch/)
+- [SKOS – Richtlinien](https://skos.ch/skos-richtlinien/aktuelle-richtlinien)
+- [Sozialamt Graubünden – Sozialhilfe-Handbuch](https://www.gr.ch/DE/institutionen/verwaltung/dvs/soa/beratung/sozialhilfe-handbuch/Seiten/default.aspx)
+- [Graubünden – Erlasssammlung BR 546.100](https://www.gr-lex.gr.ch/app/de/texts_of_law/546.100)
+- [Fedlex – Bundesrecht](https://www.fedlex.admin.ch/)
+- [Europäische Kommission – Koordinationsrecht](https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/specialised-information/eu-legislation_en)
+
+Redaktionelle Aktualisierung: **23. November 2026**.
+
+## GitHub Pages
+
+Settings → Pages → Build and deployment → Deploy from a branch → `main` → `/ (root)` → Save. Die Plattform benötigt weder einen Build-Prozess noch eine Datenbank oder Benutzeranmeldung.
