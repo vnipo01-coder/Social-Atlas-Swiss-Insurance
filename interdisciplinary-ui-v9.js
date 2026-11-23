@@ -1,6 +1,6 @@
 /* SOCIAL ATLAS V9 – Interdisziplinäres Lexikon und fachbezogene Brücken */
 window.ATLAS_HUMANITIES=(()=>{
-"use strict";const D=ATLAS_DB,S=D.v9Science,E=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;":"&quot;","'":"&#39;"}[c]));
+"use strict";const D=ATLAS_DB,S=D.v9Science,E=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const title=x=>D.topics.find(t=>t.id===x)?.title||x;
 const href=x=>"#/artikel/"+encodeURIComponent(x);
 const source=(s)=>'<a href="'+E(s.url)+'" target="_blank" rel="noopener noreferrer">'+E(s.label)+' ↗</a>';
