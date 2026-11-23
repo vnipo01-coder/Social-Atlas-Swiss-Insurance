@@ -1,0 +1,17 @@
+/* SOCIAL ATLAS 8 — Tarife, Finanzierung und Statuskompass. Stand 23.11.2026. */
+(()=>{"use strict";const D=ATLAS_DB, U=D.migration.sources, r=D.v6?.rates;if(!r)return;
+const add=(id,topic,label,value,unit,detail,key,scope,status)=>r.push({id,topics:topic,group:"Migration & Asyl 2026",label,value,unit,detail,when:"2026",scope,status,source:U[key]});
+add("mig-rate-gr-cut",["mig-s","mig-finanz","migration","grstatus","graubuenden"],"Graubünden: Grundbedarf in Individualunterkünften",20,"% Reduktion gegenüber anwendbarem SKOS-Ansatz","Amtliche kantonale Regel: In Individualunterkünften wird der Grundbedarf um 20 % gegenüber dem anwendbaren SKOS-orientierten Wert reduziert. Keine Reduktion für sämtliche Budgetposten.", "gr","GR / S / Individualunterkunft","Kantonale Bemessungsregel");
+add("mig-rate-skos-ref",["mig-s","mig-finanz","migration","grundbedarf"],"SKOS-Referenzwert Einzelperson 2026",1061,"CHF / Monat","Einpersonenhaushalt, SKOS-Richtwert im ordentlichen System; nicht pauschal für alle Unterbringungsformen und Statusgruppen gültig.","gr","SKOS Einzelpersonen-Referenz","Referenzwert");
+add("mig-rate-gr-example",["mig-s","mig-finanz","migration","graubuenden"],"GR: 80 % von CHF 1’061 (didaktischer Referenzbetrag)",848.80,"CHF / Monat","Ausschliesslich Rechenbeispiel: 1’061 × (1 − 0,20) = 848,80. Kein belegter individueller Status-S-Leistungsanspruch. Tatsächliche Zahl = anwendbarer Haushaltsansatz, kantonaler Stand, Wohnform und Bedürftigkeit.","gr","GR / S / Individualwohnung / Modell Einzelperson","Didaktisches Rechenbeispiel");
+add("mig-rate-program-s",["mig-s","mig-finanz","migration","integration"],"Programm S: Bundesbeitrag an Integrationsförderung",3000,"CHF / Person und Jahr","Der Bund beteiligt sich mit diesem Betrag an Integrationsbemühungen der Kantone, etwa Sprache, Bildung und Arbeit. Dies ist KEINE Auszahlung von CHF 3’000 an die Person.","semSU","Bund → Kanton / Programm S","Bundesfinanzierung");
+add("mig-rate-guarantee",["mig-uno","migration","mig-finanz","mig-ohne"],"Art. 12 BV: Hilfe in Notlagen","Einzelfall","kein pauschaler Frankenansatz","Der verfassungsrechtliche Notlagenanspruch ist vom individuellen gesetzlichen Leistungsanspruch zu unterscheiden; zuständige Stelle und notwendige Mindestversorgung prüfen.","asyl","Schweiz / Art. 12 BV","Rechtliche Gewährleistung");
+D.migration.rateNotes=[
+"Schweizer Migrationstarife sind keine landesweit einheitlichen Status-Ansätze: Ausweis, Kanton, Haushalt, Unterbringung und Zeitpunkt entscheiden.",
+"Für Ausweisgebühren L/B/C/G/Ci gelten besondere Gebührenordnungen mit möglichen kantonalen Komponenten. Ohne konkrete Behörde und Verfahren wird bewusst kein fester Frankenbetrag ausgewiesen.",
+"Die 2026er Bundes-Globalpauschale GP1a/GP1b wird zwischen Bund und Kanton verrechnet und kann Komponenten für Wohnung, KVG, Betreuung und andere Kosten enthalten. Sie ist kein Baranspruch der einzelnen Person.",
+"Das Programm S mit CHF 3’000 jährlich ist eine Integrationsförderung des Bundes an die Kantone und kein Taschengeld.",
+"Die 20-Prozent-Kürzung betrifft den Grundbedarf bei Individualunterkünften in Graubünden. Miete, Krankenkasse, Gesundheit und besondere Ausgaben sind eigenständig zu prüfen.",
+"Die im November 2026 geplante Änderung der Bündner Sozialhilfe für Personen mit B-Bewilligung nach fünf Jahren Schutzstatus S betrifft erst den möglichen Rechtsstand ab März 2027. Sie ist im November 2026 noch kein geltendes Gesetz."
+];
+})();
