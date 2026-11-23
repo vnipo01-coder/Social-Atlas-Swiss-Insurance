@@ -57,8 +57,8 @@
 .vq-level b{font:800 15px Manrope;background:#b72c4a;color:#fff;padding:10px 12px;border-radius:9px;min-width:72px;text-align:center}
 .vq-level strong{font-size:12px;flex:1}
 .vq-level small{font-size:11px;color:#976f7f;flex:1.4}
-.vq-level1{width:86%;border-color:#cb627b}.vq-level1 b{background:#cb627b}
-.vq-level2{width:70%;border-color:#d997a8}.vq-level2 b{background:#d18d9f}
+.vq-level1{width:100%;border-color:#cb627b}.vq-level1 b{background:#cb627b}
+.vq-level2{width:100%;border-color:#d997a8}.vq-level2 b{background:#d18d9f}
 .vq-flow{display:flex;align-items:stretch;gap:5px}
 .vq-flow .vq-item{border-top:5px solid #bc3653;min-height:155px}
 .vq-flowArrow{display:grid;align-content:center;font-size:21px;color:#bd6b80;flex:none}
