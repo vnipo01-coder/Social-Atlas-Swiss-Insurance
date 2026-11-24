@@ -97,5 +97,6 @@ const terms=[
 ["Professionelle Gesprächsführung","Systematisches, transparentes und reflexives Vorgehen in berufsbezogenen Gesprächen.","Soziale Arbeit","sa-gespraechsfuehrung"],
 ["Inhibitorische Kontrolle","Regulation dominanter Reaktionen zugunsten aufgabengerechter Handlung.","Neurowissenschaften","neuro-exekutiv"]];
 for(const x of terms){if(!D.v9Science.terms.some(t=>t.word.toLowerCase()===x[0].toLowerCase()))D.v9Science.terms.push({word:x[0],definition:x[1],area:x[2],topic:x[3],extra:""})}
+D.v9Science.terms.sort((a,b)=>a.word.localeCompare(b.word,"de",{sensitivity:"base"}));
 D.v14Science={added:items.map(x=>x.id),updated:"2026-11-24"};
 })();
