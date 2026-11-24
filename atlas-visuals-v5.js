@@ -2,7 +2,7 @@
 window.ATLAS_V5=(()=>{
 "use strict";const D=ATLAS_DB;
 const E=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const picture=(src,caption)=>'<figure class="v5-figure"><img src="assets/'+E(src)+'.svg" loading="lazy" alt="'+E(caption)+'"><figcaption>'+E(caption)+' · Eigene SVG-Infografik · Didaktische Darstellung</figcaption></figure>';
+const picture=(src,caption)=>'<figure class="v5-figure"><div class="v13-imgScroll" tabindex="0" aria-label="Breites Schaubild, seitlich scrollbar"><img src="assets/'+E(src)+'.svg" loading="lazy" alt="'+E(caption)+'"></div><figcaption>'+E(caption)+' · SVG-Originalformat · Bei Bedarf innerhalb des Rahmens seitlich scrollen <a href="#/grafik/svg-'+E(src)+'">Grossansicht und Zoom öffnen ↗</a></figcaption></figure>';
 const visual={
 "Altersvorsorge":"three-pillars","Invalidität":"coordination","Erwerbsausfall":"coordination","Gesundheit":"coordination","Sozialhilfe":"social-assistance","Querschnitt":"coordination","Kantone":"social-assistance","Europa":"europe-systems","Familie & Dienst":"coordination"};
 const refWiki=(title)=>"https://de.wikipedia.org/w/index.php?search="+encodeURIComponent(title);
