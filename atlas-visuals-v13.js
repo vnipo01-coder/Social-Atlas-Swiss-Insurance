@@ -28,7 +28,7 @@ function bindSingle(){
 const z=document.getElementById("v13ZoomIn"),a=document.getElementById("v13ZoomOut"),f=document.getElementById("v13ZoomFit"),viewport=document.getElementById("v13-graphicViewport");if(!z||!viewport)return;const img=document.getElementById("v13-svg"),body=img||viewport.querySelector(".vq-drawing");
 if(!body)return;let scale=1;
 const initial=img?1200:Math.max(680,Math.round(viewport.clientWidth||800));
-const render=()=>{if(img){img.style.width=Math.round(initial*scale)+"px";img.style.height="auto";img.style.maxWidth="none"}else{body.style.width=Math.round(initial*scale)+"px";body.style.maxWidth="none";body.style.minWidth="0"}};
+const render=()=>{if(img){img.style.width=Math.round(initial*scale)+"px";img.style.height="auto";img.style.maxWidth="none"}else{body.style.width=initial+"px";body.style.maxWidth="none";body.style.minWidth="0";body.style.zoom=String(scale)}};
 z.onclick=()=>{scale=Math.min(2.5,scale+.2);render()};a.onclick=()=>{scale=Math.max(.5,scale-.2);render()};f.onclick=()=>{scale=Math.max(.35,Math.min(1,(viewport.clientWidth-28)/initial));render()};render();
 }
 return{gallery,single,bindSingle,originals,resolve};
