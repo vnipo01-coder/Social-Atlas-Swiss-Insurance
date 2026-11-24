@@ -131,3 +131,21 @@
 @media(max-width:850px){.v13-filter{grid-template-columns:1fr 1fr}.v13-filter label{grid-column:auto}.v13-sectionIntro{display:block}.v13-sectionIntro p{margin-top:12px}.v13-graphicViewport{padding:7px}}
 @media(max-width:590px){.v13-filter{display:flex;flex-direction:column;align-items:stretch}.v13-catalogue{padding:15px}.v13-areaGrid,.v13-results,.v13-graphicList{grid-template-columns:1fr}.v13-lawRow{display:block}.v13-lawRow>span{display:block;margin-top:8px}.v13-study>summary{padding:12px}.v13-studyContent{padding:14px}}
 @media print{.v13-pages,.v13-graphicTools,.v13-breadcrumbLinks{display:none}.v13-graphicViewport{overflow:visible}.v13-study{break-inside:avoid}}
+
+/* Limited secondary sections; detailed material remains available on demand. */
+.v13-supplement{margin:19px 0;border:1px solid #eadde2;border-radius:11px;background:#fff;overflow:hidden}
+.v13-supplement>summary{list-style:none;cursor:pointer;padding:16px 18px;font-size:12px;font-weight:800;color:#943851}
+.v13-supplement>summary::-webkit-details-marker{display:none}
+.v13-supplement[open]>summary{background:#fff5f7;border-bottom:1px solid #efdce2}
+.v13-supplement>.v5-research,.v13-supplement>.a11-depth{margin:14px!important;padding:10px}
+.v13-supplement>section,.v13-supplement>div{margin:13px!important}
+.v13-lawCards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:10px}
+.v13-lawCard{border:1px solid #ebdce0;border-radius:12px;background:#fff;padding:17px}
+.v13-lawCard>div:first-child{display:flex;gap:8px;justify-content:space-between}
+.v13-lawCard>div:first-child span{font-size:10px;color:#996c80}
+.v13-lawCard>div:first-child b{font-size:11px;color:#b33552}
+.v13-lawCard h3{font-size:14px;color:#5d3a48;line-height:1.55;margin:12px 0}
+.v13-lawCard p{font-size:11.5px;color:#846b78;line-height:1.75}
+.v13-lawCard>a{display:inline-block;font-size:11px;font-weight:800;color:#a82c4d;padding:9px 0}
+.v13-lawCard>small{display:block;border-top:1px solid #eee0e4;padding-top:10px;font-size:10px;line-height:1.8;color:#907783}
+.v13-lawCard>small a{color:#92384e;margin:0 3px}
