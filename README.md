@@ -1,3 +1,73 @@
+# SOCIAL ATLAS – Umfassende Struktur- und Quellenoptimierung (Version 13)
+
+**Redaktioneller Stand: 24. November 2026.** Das klassische rot-weisse Design ist weiterhin die Grundlage. Neue Funktionen sind modular eingebaut; die Sidebar und die bisherigen Artikel bleiben erhalten.
+
+## 1. Klarer navigieren statt hunderte Themen auf einer Seite
+
+Die 92 Fachartikel verteilen sich eindeutig auf sieben eigene Wissensgebiete:
+
+| Fachgebiet | Themen |
+| --- | ---: |
+| Sozialversicherungen und Vorsorge | 21 |
+| Sozialhilfe und Kantone | 13 |
+| Migration und Asyl | 18 |
+| Recht, Verfahren und Europa | 6 |
+| Soziale Arbeit und Soziologie | 18 |
+| Psychologie und Neurowissenschaften | 9 |
+| Sucht, Gesundheit und Recovery | 7 |
+| **Total** | **92** |
+
+Die Startseite zeigt ausschliesslich wenige klar unterscheidbare Einstiegskarten und sechs wichtige Artikel. Fachgebiete besitzen eigene Unterseiten (`#/gebiet/soziologie`, `#/gebiet/versicherungen` etc.) mit Stichwortsuche und Teilgebietfilter. Je Seite erscheinen höchstens **12 Fachartikel**. Das alphabetische Fachlexikon zeigt **18 Einträge** pro Seite. Auch die Rechtsbibliothek zeigt maximal **12 Fundstellen** pro Seite.
+
+Rechner, Lernfall-Generator, Falllabor, Systemnetz, Fallvergleich und Quiz sind unter `#/werkzeuge` zusammengefasst. Die Hauptnavigation ist von 18 auf 12 Punkte gekürzt, der Schnellzugriff in der Sidebar von 16 auf 7 Artikel.
+
+## 2. Wissenschaftlich tiefer und präziser
+
+Die bisherigen **276 spezifischen wissenschaftlichen Zusatzkapitel für 92 Artikel** aus V12 bleiben erhalten und sind weiterhin ausklappbar; zusätzlich werden ältere doppelte Vertiefungsabschnitte und Rechtsquellenlisten standardmässig eingeklappt.
+
+Die fachliche Evidenz wird durch **16 sorgfältig zugeordnete Werke und Datengrundlagen** ergänzt. Zu jeder Quelle werden Autorenschaft, Jahr, vollständiger Titel, möglichst DOI oder konkrete Originalveröffentlichung, Typ der Quelle, Erkenntnis, Forschungsansatz und Grenzen der Aussagekraft angezeigt. Beispiele:
+
+- **Pierre Bourdieu (1986):** *The Forms of Capital* – theoretischer Ausgangspunkt der Kapitalsoziologie
+- **Kimberlé Crenshaw (1989):** *Demarginalizing the Intersection of Race and Sex* – intersektionale Rechts-/Sozialtheorie, [Originalpublikation](https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8/)
+- **Mark Granovetter (1973):** *The Strength of Weak Ties*, [DOI 10.1086/225469](https://doi.org/10.1086/225469)
+- **James Coleman (1988):** *Social Capital in the Creation of Human Capital*, [DOI 10.1086/228943](https://doi.org/10.1086/228943)
+- **Ryan & Deci (2000):** Selbstbestimmungstheorie, [Originalindex](https://pubmed.ncbi.nlm.nih.gov/11392867/)
+- **Albert Bandura (1977):** Selbstwirksamkeit, [Originalindex](https://pubmed.ncbi.nlm.nih.gov/847061/)
+- **Phillippa Lally et al. (2010):** Gewohnheitsbildung, [DOI 10.1002/ejsp.674](https://doi.org/10.1002/ejsp.674) – 96 Teilnehmende, nicht eine universelle Regel zur Anzahl benötigter Tage
+- **George Koob & Nora Volkow (2016):** Neurobiologischer Sucht-Review, [Volltext](https://pmc.ncbi.nlm.nih.gov/articles/PMC6135092/)
+- **D’Amour et al. (2005):** interprofessionelle Zusammenarbeit, [Originalindex](https://pubmed.ncbi.nlm.nih.gov/16096150/)
+- **WHO ICF (2001):** [Originalklassifikation als PDF](https://iris.who.int/bitstream/handle/10665/42407/9241545429-eng.pdf), ausdrücklich **keine** empirische Interventionsstudie
+- **BSV 2026:** [Amtliche Sozialversicherungsstatistik](https://www.bsv.admin.ch/de/svs)
+- **SKOS:** [Aktuelle Richtlinien](https://skos.ch/skos-richtlinien/aktuelle-richtlinien)
+
+Für jeden der **34 Wissenschaftsartikel** in Sozialer Arbeit, Soziologie, Psychologie, Neurowissenschaften und Sucht ist mindestens eine passende wissenschaftliche Originalarbeit oder fachliche Primärquelle zugeordnet. **Wichtig:** Nicht alle 16 Dokumente sind empirische Studien: Darunter befinden sich Originaltheorien, Reviews, Richtlinien, Klassifikationen und amtliche Datensätze. Sie sind im Artikel entsprechend gekennzeichnet. Das ersetzt keine vollständige einzelabsatzgenaue Literaturbegutachtung aller Inhalte.
+
+## 3. Gesetzesartikel direkt öffnen statt scrollen
+
+Die **63 konkret referenzierten Schweizer Bundesartikel** sind mit Fedlex-`#art_XX`-Ankern versehen. Beispielsweise:
+- [Art. 12 BV – Hilfe in Notlagen](https://www.fedlex.admin.ch/eli/cc/1999/404/de#art_12)
+- [Art. 43 ATSG – Abklärung des Sachverhalts](https://www.fedlex.admin.ch/eli/cc/2002/510/de#art_43)
+- [Art. 28 IVG – Rentenanspruch](https://www.fedlex.admin.ch/eli/cc/1959/827_857_845/de#art_28)
+- [Art. 66 AsylG – Beginn der Bestimmungen über vorübergehenden Schutz](https://www.fedlex.admin.ch/eli/cc/1999/358/de#art_66)
+
+Bei kantonalen Quellen ohne gesicherte Einzelbestimmungs-URL und bei bestimmten UNO-/EU-Rechtsquellen werden bewusst **keine schweizerischen Fedlex-Anker erfunden**. Das Ziel der verlinkten externen Website kann durch deren eigenes Lade-/Scrollverhalten variieren; die konkrete Artikeladresse ist nun im Link kodiert.
+
+## 4. Infografiken ohne verzerrte Inhalte
+
+Die vier ursprünglichen SVG-Grafiken liegen im Originalformat vor (jeweils 1200px breit). Sie werden nicht mehr auf unlesbare kleine Miniaturen zusammengedrückt; bei schmaler Ansicht können sie horizontal gescrollt werden.
+
+Unter `#/infografiken` befindet sich jetzt ein thematisch gruppierter Katalog statt einer Wand aus 20 vollständigen Grafiken. Jede Original- und Fachgrafik besitzt eine **eigene Vollansicht** `#/grafik/{id}` mit Zoomtasten, Scrollfunktion, fachlichem Hinweis und Link zum passenden Artikel. Auch das Systemnetz startet nun mit einem gut lesbaren Fachbereich statt einer winzigen gleichzeitigen Übersicht aller 92 Knoten.
+
+## 5. Technische Integration und Grenzen
+
+Neue Dateien: `atlas-structure-v13.js`, `atlas-evidence-v13.js`, `atlas-evidence-ui-v13.js`, `atlas-law-v13.js`, `atlas-visuals-v13.js`, `atlas-v13.css`. Weiterentwickelt wurden `atlas-v4.js`, `atlas-visuals-v5.js`, `atlas-editorial-v10.js`, `academic-v12-ui.js`, `interdisciplinary-ui-v9.js` und `index.html`.
+
+Geprüft: JavaScript-Syntax, Lade-Reihenfolge, Gruppenzuordnung aller 92 Themen, Studie-zu-Thema-Matching, Gesetzesanker und ein repräsentativer Rendering-Smoke-Test mit Startseite, Fachgebieten, Rechtsbibliothek, Infografik-Vollansichten, Netzwerk und Beispielartikeln. **Eine vollständige visuelle Prüfung im echten veröffentlichten Browser, insbesondere aller 20 Grafiken auf allen Gerätegrössen, liegt nicht vor.**
+
+Alle Tarifbeträge sind weiter **statische Referenzwerte von 2026**, keine automatisch aktualisierte Echtzeitrechtsberatung. Die Plattform ist eine Lern- und Recherchehilfe und ersetzt keine Rechtsprüfung, medizinische Diagnostik oder wissenschaftliche Originalrecherche.
+
+---
+
 # SOCIAL ATLAS – Wissenschaftliche Fachvertiefung (Ausbau 12)
 
 **Stand: 23. November 2026.** Die vertraute klassische rot-weisse Oberfläche bleibt erhalten. Jede der **92 bestehenden Artikelseiten** enthält jetzt eine ergänzende **wissenschaftliche Vertiefungsbibliothek**.
