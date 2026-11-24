@@ -73,9 +73,16 @@ const items=[
 ["Transfer in Arbeit, Bildung und Rehabilitation","Strategien der Aufgabenstrukturierung und Umweltanpassung können Belastungen im Alltag vermindern. Die Wirksamkeit muss anhand der tatsächlichen Anforderungen einer Person untersucht werden.","Die ICF kann erklären helfen, weshalb dieselbe funktionelle Einschränkung je nach Arbeitsplatz und Unterstützung unterschiedliche Teilhabefolgen hat."]
 ]}
 ];
-for(const o of items){
- const src=o.sources||["ifsw"];D.addScienceTopic({...o,sources:src,questions:[["Welche Art wissenschaftlicher Aussage wird hier gemacht?","Theoretische Erklärung, empirischer Befund und praktische Schlussfolgerung müssen getrennt bleiben."],["Was sind die Grenzen der Übertragung auf Einzelfälle?","Stichprobe, Kontext, Messung und rechtliche Zuständigkeiten sind zu beachten."]]});
-}
+const register=o=>{
+if(D.topics.some(t=>t.id===o.id))throw Error("V14 duplicate "+o.id);
+const sources=(o.sources||[]).map(k=>D.v9Science.sources[k]).filter(Boolean);
+const questions=[["Welche Art wissenschaftlicher Aussage wird hier gemacht?","Theoretische Erklärung, empirischer Befund und praktische Schlussfolgerung müssen getrennt bleiben."],["Was sind die Grenzen der Übertragung auf Einzelfälle?","Stichprobe, Kontext, Messung und rechtliche Zuständigkeiten sind zu beachten."]];
+D.topics.push({id:o.id,title:o.title,short:o.short,category:o.category,summary:o.summary,sections:[],steps:o.chapters.map(ch=>"Fachlich prüfen: "+ch[0]),related:o.related||[],sources,lawIds:[],caution:"Theoretische Modelle und Gruppenbefunde ersetzen keine klinische Diagnose oder Einzelfallentscheidung.",dossier:{chapters:[],examples:[],focus:"Wissenschaftliche Forschung und praktische Reflexion",research:"Theorie, empirische Überprüfbarkeit und Grenzen sind zu trennen."}});
+D.v7Deep[o.id]={chapters:o.chapters,faq:questions,matrix:o.chapters.map((ch,i)=>[ch[0],(ch[2]||ch[1]||"").slice(0,200),"Fachkapitel "+(i+1)])};
+D.v9Science.created.push(o.id);
+(o.related||[]).filter(id=>D.topics.some(t=>t.id===id)).forEach(id=>D.edges.push({from:o.id,to:id,label:"fachliche Verbindung"}));
+};
+for(const o of items)register(o);
 const terms=[
 ["Operationalisierung","Übersetzung eines theoretischen Begriffs in beobachtbare oder messbare Merkmale.","Psychologie","psy-methoden"],
 ["Abrufübung","Geplante Erinnerung von Inhalten ohne gleichzeitiges Nachlesen als Lernmethode.","Psychologie","psy-lernen"],
@@ -89,6 +96,6 @@ const terms=[
 ["Gesellschaftstheorie","Begrifflich geordnete Perspektive zur Erklärung sozialer Strukturen, Handlungen und Institutionen.","Soziologie","soz-theorien"],
 ["Professionelle Gesprächsführung","Systematisches, transparentes und reflexives Vorgehen in berufsbezogenen Gesprächen.","Soziale Arbeit","sa-gespraechsfuehrung"],
 ["Inhibitorische Kontrolle","Regulation dominanter Reaktionen zugunsten aufgabengerechter Handlung.","Neurowissenschaften","neuro-exekutiv"]];
-for(const x of terms){if(!D.v9Science.terms.some(t=>t.word.toLowerCase()===x[0].toLowerCase()))D.addScienceTerm(...x)}
+for(const x of terms){if(!D.v9Science.terms.some(t=>t.word.toLowerCase()===x[0].toLowerCase()))D.v9Science.terms.push({word:x[0],definition:x[1],area:x[2],topic:x[3],extra:""})}
 D.v14Science={added:items.map(x=>x.id),updated:"2026-11-24"};
 })();
