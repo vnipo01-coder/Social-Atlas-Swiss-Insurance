@@ -1,0 +1,133 @@
+/* SOCIAL ATLAS 13 – scoping: classique rot-weiss, klare Hierarchie und unbeengte Grafiken.
+   Kein Umbau der Sidebar oder des Hauptdesigns.
+*/
+.v13-homeHero{max-width:100%;margin-bottom:25px}
+.v13-sectionIntro{display:flex;gap:16px;align-items:end;justify-content:space-between;margin:32px 0 13px}
+.v13-sectionIntro h2{font-size:clamp(19px,2vw,25px);margin:7px 0 0;color:#56313d}
+.v13-sectionIntro p{color:#866b78;max-width:440px;margin:0;font-size:12px;line-height:1.75}
+.v13-areaGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;align-items:stretch;margin:18px 0 28px}
+.v13-area{display:flex;flex-direction:column;gap:7px;background:#fff;border:1px solid #ecd9df;border-radius:15px;padding:21px;text-decoration:none;color:#583644;transition:border-color .15s,transform .15s}
+.v13-area:hover{border-color:#b64b68;transform:translateY(-2px);text-decoration:none}
+.v13-areaTop{display:flex;justify-content:space-between;align-items:center;gap:9px}
+.v13-areaIcon{width:42px;height:42px;border-radius:11px;background:#fff0f3;display:grid;place-items:center;color:#ae2b49;font-size:21px;font-weight:800}
+.v13-areaCount{font-size:10px;color:#ab7686;font-weight:700}
+.v13-area>strong{font-size:15px;line-height:1.45;color:#4e2c3b;margin-top:5px}
+.v13-area p{font-size:11.5px;color:#866f79;line-height:1.8;flex:1;margin:0}
+.v13-areaArrow{font-size:11px;font-weight:800;color:#a12d49;margin-top:12px}
+.v13-areaGridCompact{grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:10px}
+.v13-areaGridCompact .v13-area{padding:16px}
+.v13-shortcuts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px;margin-bottom:26px}
+.v13-shortcuts a{display:flex;justify-content:space-between;gap:10px;border:1px solid #efdee4;background:#fff;border-radius:9px;padding:13px 16px;color:#643848;font-size:12px;font-weight:700;line-height:1.6}
+.v13-shortcuts span{color:#b83556}
+.v13-toolsTeaser{padding:22px 25px;background:#fff7f9;border:1px solid #e9d2d9;border-radius:15px;max-width:900px;margin:27px 0}
+.v13-toolsTeaser b{font-size:15px;color:#63364a}
+.v13-toolsTeaser p{font-size:12px;line-height:1.8;color:#806574}
+.v13-browse h1{margin:10px 0}
+.v13-breadcrumbLinks{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0 24px}
+.v13-breadcrumbLinks a{padding:8px 12px;border:1px solid #e6cdd6;border-radius:8px;color:#993a55;font-size:11px;font-weight:750;background:#fff}
+.v13-searchDisclosure{border:1px solid #e9d7dc;background:#fff9fa;padding:13px 17px;border-radius:10px;margin:16px 0}
+.v13-searchDisclosure summary{cursor:pointer;font-size:12px;font-weight:800;color:#a13a55;display:flex;justify-content:space-between;gap:10px;list-style:none}
+.v13-searchDisclosure summary::-webkit-details-marker{display:none}
+.v13-searchDisclosure p{color:#88717b;font-size:11px}
+.v13-catalogue{scroll-margin-top:106px;background:#fff;border:1px solid #eadadf;border-radius:15px;padding:20px 22px;margin:23px 0 36px}
+.v13-catalogue[hidden]{display:none}
+.v13-catalogueHead h2{color:#623848;font-size:20px;margin:0 0 7px}
+.v13-catalogueHead p{color:#927682;font-size:11px;line-height:1.8}
+.v13-filter{display:grid;grid-template-columns:auto minmax(170px,1.5fr) auto minmax(145px,1fr);gap:9px;align-items:center;margin:17px 0}
+.v13-filter label{font-size:11px;font-weight:750;color:#795462}
+.v13-filter input,.v13-filter select{width:100%;min-width:0}
+.v13-total{font-size:11px;color:#a13b56}
+.v13-results{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:9px;margin-top:14px}
+.v13-result{display:flex;flex-direction:column;border:1px solid #eee0e4;background:#fffdfd;border-radius:11px;padding:16px;gap:7px;min-width:0;color:#6b4553}
+.v13-result:hover{text-decoration:none;border-color:#be7990;background:#fff7f9}
+.v13-result>span{font-size:10px;color:#ae5370}
+.v13-result>strong{font-size:13px;color:#573444;line-height:1.55}
+.v13-result p{font-size:11px;line-height:1.75;color:#8c717c;max-height:76px;overflow:hidden;margin:0;flex:1}
+.v13-result small{font-size:10px;line-height:1.6;color:#a53752;border-top:1px solid #f3e7ec;padding-top:8px}
+.v13-result b{float:right}
+.v13-pages{display:flex;justify-content:center;gap:14px;align-items:center;margin-top:20px}
+.v13-pages button{padding:10px 16px;border-radius:8px;border:1px solid #e2bbc9;color:#ac3250;background:#fff;font-size:12px;cursor:pointer}
+.v13-pages button:disabled{opacity:.4;cursor:default}
+.v13-pages span{font-size:11px;color:#8d6c7b}
+.v13-toolGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:11px;margin:26px 0}
+.v13-toolCard{display:flex;flex-direction:column;gap:8px;border:1px solid #ecdce1;background:white;border-radius:12px;padding:20px;color:#674254}
+.v13-toolCard>span{font-size:22px;color:#b53656}
+.v13-toolCard>strong{color:#56303f;font-size:14px}
+.v13-toolCard small{line-height:1.7;font-size:11px;color:#8e7882}
+.v13-toolCard:hover{text-decoration:none;border-color:#bc6c82;background:#fff8fa}
+/* Visuals: do not shrink text-heavy graphics into narrow cards. Pan horizontally. */
+.v5-figure{overflow:visible!important;max-width:100%}
+.v5-figure .v13-imgScroll{overflow:auto;max-width:100%;border-radius:8px;overscroll-behavior-x:contain}
+.v5-figure .v13-imgScroll>img{display:block;width:1200px!important;height:auto!important;max-height:none!important;max-width:none!important;object-fit:initial!important;aspect-ratio:auto!important}
+.v5-figure figcaption a{font-weight:800;color:#a12d49;margin-left:10px}
+.vq-drawing{overflow-x:auto!important;overflow-y:visible!important;overscroll-behavior-x:contain}
+.vq-drawing .vq-pillars{min-width:630px!important;grid-template-columns:repeat(4,minmax(0,1fr))!important}
+.vq-drawing .vq-flow{min-width:690px!important;flex-wrap:nowrap!important}
+.vq-drawing .vq-bridge{min-width:660px!important;grid-template-columns:repeat(4,minmax(0,1fr))!important}
+.vq-drawing .vq-matrix{min-width:570px!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.vq-drawing .vq-triangle{min-width:540px!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.vq-drawing .vq-signals{min-width:680px!important;flex-wrap:nowrap!important}
+.vq-drawing .vq-orbitNodes{min-width:550px!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.vq-drawing .vq-levels{min-width:550px!important}
+.vq-drawing .vq-interact{min-width:490px!important}
+.vq-drawing .vq-balance{min-width:480px!important}
+.vq-drawing .vq-item strong{overflow-wrap:anywhere}
+.v13-visualNotice{padding:14px 18px;border-left:3px solid #b43855;background:#fff4f7;font-size:12px;line-height:1.8;color:#765667;margin:18px 0}
+.v13-graphicShelf{margin:30px 0}
+.v13-graphicShelf>h2{font-size:21px;color:#53303f}
+.v13-graphicShelf>p{font-size:12px;line-height:1.8;color:#836977}
+.v13-graphicList{display:grid;grid-template-columns:repeat(auto-fit,minmax(275px,1fr));gap:10px;margin:15px 0}
+.v13-graphicItem{display:flex;align-items:center;gap:13px;border:1px solid #e8d6dc;background:#fff;border-radius:12px;padding:16px;color:#6e4558}
+.v13-graphicItem:hover{text-decoration:none;border-color:#b95a74}
+.v13-graphicIcon{background:#fff0f3;color:#b23655;border-radius:9px;display:grid;place-items:center;width:42px;height:42px;flex-shrink:0;font-size:20px}
+.v13-graphicItem>div{flex:1;min-width:0}
+.v13-graphicItem strong{display:block;font-size:12px;color:#5d3547}
+.v13-graphicItem small{font-size:10px;line-height:1.7;color:#927582;display:block;margin-top:4px}
+.v13-graphicGroup{border:1px solid #efdee4;background:#fff;border-radius:11px;margin:10px 0;padding:14px 17px}
+.v13-graphicGroup summary{font-size:13px;font-weight:800;color:#623b4a;cursor:pointer;display:flex;justify-content:space-between}
+.v13-graphicGroup summary span{font-size:11px;color:#a66f81}
+.v13-fullGraphic{min-width:0}
+.v13-fullGraphic h1{margin:11px 0}
+.v13-back{font-size:11px;color:#a42c49;display:block;margin:9px 0 20px}
+.v13-graphicTools{display:flex;gap:9px;flex-wrap:wrap;margin:20px 0 11px}
+.v13-graphicTools button,.v13-graphicTools>a{padding:11px 14px;background:#fff;border:1px solid #e1bfcb;border-radius:8px;color:#9f2f4c;font-size:12px;font-weight:800;cursor:pointer}
+.v13-viewHint{font-size:11px;color:#917682;line-height:1.8}
+.v13-graphicViewport{overflow:auto;max-width:100%;border-radius:12px;border:1px solid #e6cad4;background:#fff8fa;padding:13px;overscroll-behavior:contain;min-height:210px}
+.v13-graphicViewportSvg img{display:block;max-width:none;height:auto}
+.v13-customViewport .vq-infographic{border:0}
+.v13-customViewport .vq-drawing{overflow:visible!important;max-width:none}
+.v13-graphicFooter{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+/* Evidence cards, compact but technically inspectable */
+.v13-evidencePanel{margin:34px 0 45px}
+.v13-evidTitle{border-bottom:1px solid #ebdce2;padding-bottom:15px}
+.v13-evidTitle h2{font-size:21px;color:#593044;margin:8px 0}
+.v13-evidTitle p{max-width:87ch;color:#806673;font-size:12px;line-height:1.85}
+.v13-studyList{display:grid;gap:10px;margin:17px 0}
+.v13-study{border:1px solid #ead9de;border-radius:12px;background:#fff;overflow:hidden}
+.v13-study>summary{display:flex;align-items:start;gap:12px;cursor:pointer;list-style:none;padding:16px 18px}
+.v13-study>summary::-webkit-details-marker{display:none}
+.v13-studyYear{background:#fff0f4;color:#b02f4d;font-weight:850;border-radius:7px;padding:6px 9px;font-size:11px}
+.v13-studySummary{flex:1;min-width:0;display:flex;flex-direction:column;gap:5px}
+.v13-studySummary b{font-size:11px;color:#906d7d}
+.v13-studySummary strong{font-size:13px;color:#613848;line-height:1.5}
+.v13-studySummary small{font-size:10.5px;color:#927783;line-height:1.6}
+.v13-studyArrow{color:#bb6b82;font-size:20px}
+.v13-studyContent{border-top:1px solid #f1e2e7;padding:17px 23px 23px}
+.v13-studyKind{font-size:10px;font-weight:850;color:#af3451}
+.v13-studyContent dl{display:grid;gap:5px;margin:15px 0}
+.v13-studyContent dt{font-size:11px;font-weight:850;color:#724a5a;margin-top:10px}
+.v13-studyContent dd{font-size:12.5px;line-height:1.85;color:#6a5660;margin:0;max-width:87ch}
+.v13-studyContent>a{display:inline-block;padding:9px 12px;border-radius:7px;border:1px solid #e3c4cf;font-size:11px;font-weight:800;color:#a32f4e}
+.v13-lawPin{margin:34px 0}
+.v13-lawList{display:grid;gap:7px;margin:17px 0}
+.v13-lawRow{display:flex;justify-content:space-between;align-items:center;gap:12px;border:1px solid #ebdfe2;border-radius:9px;background:#fff;padding:13px 15px;color:#5b394b}
+.v13-lawRow:hover{background:#fff6f8;text-decoration:none;border-color:#d7a0af}
+.v13-lawRow strong{font-size:12px;line-height:1.6;display:block}
+.v13-lawRow small{display:block;color:#917a86;font-size:10.5px;line-height:1.65;margin-top:4px}
+.v13-lawRow>span{font-size:10.5px;color:#a52f4d;white-space:nowrap;font-weight:800}
+.v13-lawNote{font-size:10.5px;color:#997b85;line-height:1.75}
+.v13-evidenceToc{border-top:1px solid #e9d9df;margin-top:12px;padding-top:7px}
+.v13-evidenceToc a{display:block;font-size:11px;padding:5px 0}
+@media(max-width:850px){.v13-filter{grid-template-columns:1fr 1fr}.v13-filter label{grid-column:auto}.v13-sectionIntro{display:block}.v13-sectionIntro p{margin-top:12px}.v13-graphicViewport{padding:7px}}
+@media(max-width:590px){.v13-filter{display:flex;flex-direction:column;align-items:stretch}.v13-catalogue{padding:15px}.v13-areaGrid,.v13-results,.v13-graphicList{grid-template-columns:1fr}.v13-lawRow{display:block}.v13-lawRow>span{display:block;margin-top:8px}.v13-study>summary{padding:12px}.v13-studyContent{padding:14px}}
+@media print{.v13-pages,.v13-graphicTools,.v13-breadcrumbLinks{display:none}.v13-graphicViewport{overflow:visible}.v13-study{break-inside:avoid}}
