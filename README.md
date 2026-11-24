@@ -1,3 +1,62 @@
+# SOCIAL ATLAS – Wissenschaftliche Arbeitsblätter & Lesebibliothek (Version 14)
+
+**Stand: 24. November 2026.** Die bestehende klassisch strukturierte GitHub-Pages-App ist erweitert, nicht durch eine neue Oberfläche ersetzt worden. Das neue Farbkonzept kombiniert **Rot, Blau, Weiss und Violett**: Rot für Hauptidentität und Sozialrecht, Blau für Forschung und Quellen, Violett für theoretische Vertiefung, Weiss für ruhige Leseflächen.
+
+## Inhaltliche Orientierung
+
+Die [Arbeitsblätter zur wissenschaftlichen Psychologie von Werner Stangl](https://arbeitsblaetter.stangl-taller.at/) dienten **als strukturelle Inspiration**: grosse Themengebiete, präzise Unterthemen, lange verständlich gegliederte Fachtexte und weiterführende Literatur. **Die Texte und Abbildungen der Referenzseite wurden nicht kopiert.** SOCIAL ATLAS besitzt eine eigenständige redaktionelle und visuelle Umsetzung; einzelne Forschungsergebnisse und Begriffe werden auf ihre Originalquellen zurückgeführt.
+
+## Neue Inhalte und Umfang
+
+- **104 Fachthemen insgesamt** (vorher 92), darunter 12 neue selbstständige, mehrkapitelige Wissenschaftsartikel:
+  - Psychologie: Forschungsmethoden, Lernen, Gedächtnis, Kognition, Entwicklungspsychologie, Emotionen und Sozialpsychologie.
+  - Soziologie: empirische Methoden, gesellschaftliche Mobilität und Gesellschaftstheorien.
+  - Soziale Arbeit: professionelle Gesprächsführung.
+  - Neurowissenschaften: exekutive Funktionen.
+- **14 ausführliche, neu redaktionell verfasste Forschungsdossiers** mit **56 zusammenhängenden, ausklappbaren Langtext-Kapiteln**: Forschungsmethoden, Lernen, Gedächtnis, Kognition, Stress, Emotionen, exekutive Funktionen, soziologische Forschungsmethoden, soziale Mobilität, Bourdieu, soziale Ungleichheit, soziologische Grundlagen, Gesprächsführung und Profession Sozialer Arbeit.
+- **118 alphabetisch geordnete Fachlexikonbegriffe**, erweitert um Konzepte wie Operationalisierung, Arbeitsgedächtnis, Emotionsregulation und soziale Mobilität.
+- **22 konkret beschriebene Quellen- und Forschungsprofile** aus den bisherigen V13-Profilen und sechs neuen Originalpublikationen, darunter:
+  - Baddeley & Hitch (1974), [Working Memory](https://doi.org/10.1016/S0079-7421(08)60452-1)
+  - Sweller (1988), [Cognitive Load During Problem Solving](https://doi.org/10.1207/s15516709cog1202_4)
+  - Cohen, Kamarck & Mermelstein (1983), [A Global Measure of Perceived Stress](https://pubmed.ncbi.nlm.nih.gov/6668417/)
+  - Roediger & Karpicke (2006), [Test-Enhanced Learning](https://pubmed.ncbi.nlm.nih.gov/16507066/)
+  - Lazarus & Folkman (1984), [Stress, Appraisal, and Coping](https://www.ncbi.nlm.nih.gov/nlmcatalog/8501102)
+  - Chetty et al. (2014), [The Geography of Intergenerational Mobility in the United States](https://doi.org/10.1093/qje/qju022)
+- Die **276 wissenschaftlichen V12-Zusatzkapitel** zu den ursprünglichen 92 Artikeln sowie bisherige Studien-, Gesetzes- und Infografikfunktionen bleiben erhalten. **Nicht alle 104 Artikel sind bereits gleich umfangreich**; die 14 Langtexte markieren den neuen redaktionellen Qualitätsstandard für den sukzessiven weiteren Ausbau.
+
+## Navigieren und lesen
+
+1. **Hauptnavigation → Forschungsdossiers:** `#/forschungsdossiers` zeigt nur die eigenständigen Langtext-Artikel.
+2. **Wissenschaftliches Fachgebiet → Psychologie oder Soziologie:** `#/gebiet/psychologie` oder `#/gebiet/soziologie` enthalten eine neue **mehrstufige, ausklappbare Themenordnung**. Die bestehende paginierte Artikelliste bleibt darunter zugänglich.
+3. **Einzelartikel öffnen:** `#/artikel/psy-lernen` oder `#/artikel/soz-bourdieu`. Ein eigenständiger Langtext steht nach der fachlichen Einordnung. Das ältere Handbuch bleibt in einem separaten ausklappbaren Bereich verfügbar; nichts wurde gelöscht.
+4. **Kapitelübersicht:** Jedes Dossier bietet vier Kapitel, deren Inhalt nacheinander oder mit «Alle Kapitel öffnen» gelesen werden kann. Die Kapitel werden nicht auf überfüllten Übersichtsseiten gleichzeitig angezeigt.
+5. **Fachliteratur:** Im Literaturteil werden Autorenschaft, Erscheinungsjahr, konkrete Originalquelle, Forschungsart und Erkenntnisgrenzen ausgewiesen. Studien, theoretische Bücher, Fachrichtlinien und klinische Klassifikationen werden nicht als gleichartige Evidenz ausgegeben.
+6. **Globale Suche:** Wissenschaftliche Langtextüberschriften und ihre Inhalte sind auffindbar; Treffer können per `?go=v14-ch-N` das entsprechende Kapitel öffnen.
+7. **Anleitung:** `#/hilfe` hat jetzt einen zehnten Schritt für die Langtexte.
+
+## Designgrundsätze
+
+- **Weiss** als ruhiger Leseraum mit gut lesbarer, begrenzter Zeilenbreite.
+- **Rot** als etabliertes Atlas-Markenzeichen und Hauptakzent.
+- **Blau** für Forschung, Studienzugang und methodisch begründete Quellen.
+- **Violett** für wissenschaftliche Begriffe, theoretische Verknüpfungen und Fachgliederung.
+- Farbkontrast, Tastaturfokus, mobile Lesbarkeit und einheitliche Seitennavigation sind berücksichtigt.
+- Keine zusätzliche überfüllte Dashboard-Startseite; die 104 Themen bleiben in sieben Fachgebiete mit paginierten Unterlisten verteilt.
+
+## Technische Dateien
+
+**Neu:** `atlas-science-v14.js`, `atlas-longreads-v14-psych.js`, `atlas-longreads-v14-society.js`, `atlas-research-sources-v14.js`, `atlas-reader-v14.js` und `atlas-v14.css`.
+
+**Aktualisiert:** `index.html`, `atlas-v4.js`, `atlas-structure-v13.js`, `atlas-editorial-v10.js`. Ein beim Test entdeckter Integrationsfehler wurde behoben: Die V9-Datenmodule entfernen am Ende ihre temporären Anlagefunktionen; V14 registriert die 12 neuen Themen daher mit einem eigenen, lokalen Mechanismus.
+
+## Quellen- und Qualitätsgrenzen
+
+Die wissenschaftlichen Texte sind didaktische Originaldarstellungen, **keine selbst peer-reviewten Forschungsartikel** und keine umfassenden systematischen Literaturreviews. Bei den verlinkten Originalwerken sind konkrete Methoden, Populationen und Übertragbarkeitsgrenzen vor einer wissenschaftlichen Zitierung im Original zu prüfen. Die externen Artikel von Stangl sind Referenz und mögliche ergänzende Lektüre, nicht automatisch als aktuelle klinische Evidenz zu behandeln. Tarif- und Rechtswerte im Atlas sind weiterhin **statische 2026er Angaben** und müssen für verbindliche Fälle auf ihren Rechtsstand überprüft werden.
+
+**Verifiziert:** JavaScript-Syntax und Lade-Reihenfolge, 104 fachliche Topics ohne Zuordnungsverlust, 14 vollständige Langtexte mit je vier Kapiteln, akademische Quellenzuordnung und simulierte Routen für Startseite, Fachbibliothek, Forschungsübersicht sowie ausgewählte Wissenschaftsartikel. **Eine vollständige Sichtprüfung im realen veröffentlichten Browser ist nicht durchgeführt worden.**
+
+---
+
 # SOCIAL ATLAS – Umfassende Struktur- und Quellenoptimierung (Version 13)
 
 **Redaktioneller Stand: 24. November 2026.** Das klassische rot-weisse Design ist weiterhin die Grundlage. Neue Funktionen sind modular eingebaut; die Sidebar und die bisherigen Artikel bleiben erhalten.
