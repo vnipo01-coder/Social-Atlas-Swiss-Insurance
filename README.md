@@ -1,3 +1,46 @@
+# SOCIAL ATLAS 16 – offene Lesebibliothek und quellenbasierte Langtexte
+
+**Entwicklungsstand: 25. November 2026 · Feature-Branch `feature/social-atlas-v15-studienatlas` · Pull Request #1.** Die öffentliche `main`-Version wird nicht vor Abschluss der Prüfung geändert.
+
+## Konzept: Weniger Dashboard, mehr echtes Lesen
+
+Die Startseite wurde als **offene redaktionelle Wissenslandschaft** neu gestaltet: grosszügige Typografie, deutlich mehr Weissraum, eine animierte und direkt anklickbare Themenkonstellation sowie eine filterbare Auswahl neuer Forschungsessays. Das bestehende Rot-Blau-Violett-Konzept bleibt als differenzierende Orientierung erhalten. Fachgebiete erscheinen als ruhige Listen, nicht als dicht gepackte Karteiwände.
+
+Das neue **Leselayout** ersetzt bei vier wichtigen Artikeln die kleinteiligen Akkordeonansichten durch 7 **vollständig sichtbare, durchgehend gesetzte Fachkapitel** pro Essay. Es besitzt eine dynamische Kapitel-Navigation, Lesefortschritt, Fokusmodus, einstellbare Schriftgrösse, Kapitel-Direktlinks (`?section=3`), Zwischenresümees und kapitelbezogene Forschungsbelege. Bestehende V14-Forschungsdossiers werden ausserhalb der vier neuen Leseseiten standardmässig geöffnet und editorial neu formatiert. Inhalte der anderen 104 Themen bleiben bestehen; ihre wissenschaftliche Tiefe wurde nicht pauschal auf das Niveau der neuen Essays gebracht.
+
+## Substanzielle Originaltexte, keine Buchcover
+
+Es gibt **vier neue ausführliche deutschsprachige Forschungsessays mit zusammen rund 6'700 Wörtern, 28 Hauptkapiteln und 112 Fliesstextabsätzen**:
+
+- **Exekutive Funktionen** (`#/artikel/neuro-exekutiv`): kognitive Kontrolle, Konstrukte, Messung, Kontext, Training, Transfer und neuroethische Grenzen
+- **Stress** (`#/artikel/psy-stress`): Allostase, Anpassungsphysiologie, soziale Stressoren, Messverfahren und gesellschaftliche Prävention
+- **Soziale Ungleichheit** (`#/artikel/soz-ungleichheit`): Lebenslagen, soziale Determinanten, Kausalität, systematische Reviews und Grenzen des Transfers auf Schweizer Sozialpolitik
+- **Professionelle Soziale Arbeit** (`#/artikel/sa-profession`): wissenschaftliche Evidenz, Betroffenenperspektive, Implementierung, Rechtsrahmen, Forschungskritik und Evaluation
+
+Die Texte sind **eigenständig geschriebene Forschungsdarstellungen**, keine Kopien aus den Publikationen, keine automatisch übernommenen Abstracts und keine behaupteten eigenen wissenschaftlichen Studien. Bei jedem Kapitel werden konkrete wissenschaftliche Original-**Volltexte** verlinkt. Fünf Publikationen sind direkt vollständig online lesbar:
+
+1. Diamond (2013), *Executive Functions*, *Annual Review of Psychology* — [Autorenmanuskript im Volltext (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4084861/)
+2. McEwen (2009), *The Brain is the Central Organ of Stress and Adaptation*, *NeuroImage* — [Volltext (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC2731652/)
+3. Kirkbride et al. (2024), *The social determinants of mental health and disorder*, *World Psychiatry* — [vollständiger Forschungsreview (Wiley)](https://onlinelibrary.wiley.com/doi/full/10.1002/wps.21160)
+4. Nicolaou et al. (2025), *Preventing depression in high-income countries*, *PLOS ONE* — [systematische Review mit 135 eingeschlossenen Studien im Volltext](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0323378)
+5. Bellamy, Bledsoe & Traube (2006), *The Current State of Evidence-Based Practice in Social Work*, *Journal of Evidence-Based Social Work* — [vollständiger Artikel (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC2943634/)
+
+Das Quellenprofil für Diamond nutzt nun auch die zugängliche PMC-Fassung. Die vier weiteren Arbeiten wurden zusätzlich in die Forschungsdatenbank aufgenommen. Der **Studienatlas trennt jetzt transparent** zwischen Veröffentlichungen, deren wissenschaftlicher Volltext verlinkt ist, und Werken, für die bisher nur ein bibliografischer Nachweis hinterlegt ist. Ein neuer Filter **«Nur nachweislich zugängliche Volltexte»** unterstützt gezielte Recherche. Bestehende bibliografische Quellen werden nicht fälschlich zu geprüften Volltexten erklärt.
+
+## Methodischer Standard und Quellenkritik
+
+Jede Quellenzuordnung benennt Artikelart, Forschungsansatz und Grenzen. Narrative Reviews sind keine randomisierten Studien; die systematische Review von Nicolaou et al. umfasst heterogene Untersuchungsdesigns und erlaubt keinen automatischen Schluss für eine konkrete Schweizer Sozialhilfeverfügung. Die neuen Essays unterscheiden Forschungsbefund, theoretische Interpretation, Anwendungshypothese und rechtliche Entscheidung. Für wissenschaftliche Zitierweisen sollen Nutzerinnen und Nutzer die konkrete Fundstelle und den Kontext im Original prüfen. Der Social Atlas ist selbst **kein peer-reviewtes Journal** und beansprucht **keine systematisch vollständige Literatursichtung**.
+
+## Technik, Prüfung und offene Punkte
+
+**Neue Dateien:** `atlas-v16.css`, `atlas-v16-fulltexts.js`, `atlas-v16-essays-neuro.js`, `atlas-v16-essays-society.js`, `atlas-v16-essay-extensions.js`, `atlas-v16-experience.js`, `tests/v16-smoke.cjs`.
+
+**Angepasst:** `index.html`, `atlas-v4.js`, `atlas-v15-studies.js`, GitHub Actions und README.
+
+Die Daten-, Essay- und Lesemodule wurden isoliert mit JavaScript evaluiert: vier Artikel, sieben Kapitel je Artikel, insgesamt rund 6'700 Wörter, konsistente Quellenverweise und vollständige HTML-Ausgabe ohne Laufzeitfehler. Der GitHub-Actions-Test prüft JavaScript-Syntax, Quellendomains, Skriptladefolge, Fliesstext-Kapitel und Direktlinks, sobald er erfolgreich gelaufen ist. **Ein vollständiger Browser-/Mobilansicht-End-to-End-Test auf der publizierten App steht noch aus; GitHub Actions ist noch nicht als erfolgreich bestätigt.**
+
+---
+
 # Wissenschaftliche Vertiefung – SOCIAL ATLAS 15.1 (25. November 2026)
 
 **Status:** Feature-Branch und [Pull Request #1](https://github.com/vnipo01-coder/Social-Atlas-Swiss-Insurance/pull/1). Nicht automatisch in der öffentlichen GitHub-Pages-Version veröffentlicht.
