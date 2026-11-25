@@ -212,3 +212,24 @@ button:focus-visible,a:focus-visible{outline:3px solid #9472e7;outline-offset:3p
 @media(max-width:530px){.v16-orbit{height:260px;max-width:340px}.v16-orbitRing{inset:8%}.v16-orbitRing.c{inset:2% 17%}.v16-orbitCore{height:92px;width:92px;font-size:26px}.v16-orbitNode{padding:10px 11px;font-size:10px;gap:5px}.v16-orbitNode b{width:20px;height:20px;font-size:9px}.v16-orbitNode.neuro{left:0;top:2%}.v16-orbitNode.stress{right:0;top:24%}.v16-orbitNode.society{left:0;bottom:18%}.v16-orbitNode.social{right:0;bottom:3%}.v16-orbitHint{display:none}.v16-homeHeroActions{align-items:stretch}.v16-mainCta{min-width:0;width:100%}.v16-heroLedger{margin-top:25px}.v16-filterStrip button{padding:8px 11px}.v16-filterResult{width:100%;margin:2px 0 0}.v16-pathCopy small{font-size:11px}.v16-readerBadge{font-size:9px}.v16-essayHero h1{font-size:37px}.v16-readerTools>span{font-size:9px}.v16-chapter h2{font-size:29px}.v16-chapterProse p{font-size:var(--v16-textsize)!important;line-height:1.8!important}.v16-inlineEvidence{padding:16px 13px}.v16-inlineCitationList{grid-template-columns:1fr}.v16-essayMetric{font-size:11px}.v16-featureNum{font-size:9px}.v16-feature{padding:25px}.v16-biblioEntry{grid-template-columns:25px 1fr;gap:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.v16-home{animation:none}.v16-orbitRing{animation:none}.v16-feature,.v16-orbitNode,.v16-pathArrow,.v16-progressTrack>div{transition:none}}
 @media print{.sidebar,.topbar,.footer,.v16-readerTools,.v16-readingRail,.v16-between button,.v16-orbit,.v16-filterStrip{display:none!important}.app{display:block!important}.content{max-width:none;padding:0}.v16-readingGrid{display:block}.v16-readingBody{max-width:none}.v16-reader,.v16-essayHero{max-width:none}.v16-chapter{break-before:page;border-top:0}.v16-chapterProse p{color:#111}.v16-inlineEvidence,.v16-marginInsight{background:white}.v16-biblioEntry,.v16-citation{break-inside:avoid}}
+
+
+/* Auch ältere Fach- und Literaturübersichten erhalten eine offenere Editorial-Hierarchie. */
+.v14-hub h1{font-size:clamp(37px,4vw,59px);line-height:1.18;max-width:1000px;color:#253651}
+.v14-hub>.lead{font-size:16px;line-height:1.85;max-width:86ch}
+.v14-longreadCards{display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid #e0e5ef}
+.v14-longreadCard{display:grid;grid-template-columns:minmax(100px,.7fr) minmax(230px,2fr) minmax(150px,1.4fr);align-items:center;gap:20px;border:0;border-bottom:1px solid #e0e5ef;border-radius:0;padding:25px 7px;background:transparent}
+.v14-longreadCard:hover{border-color:#cfc9ea;background:#f7f4ff;box-shadow:none;padding-left:17px}
+.v14-longreadCard>span{font-size:11px;letter-spacing:.06em;font-weight:800;color:#7958b7}
+.v14-longreadCard>strong{font-size:17px;line-height:1.4;color:#2d405d;letter-spacing:-.02em}
+.v14-longreadCard>p{font-size:12px;line-height:1.7;color:#748098;margin:0}
+.v14-longreadCard>small{grid-column:2/-1;font-size:11px;font-weight:750;color:#2c5c9f}
+.v14-hubNav{gap:12px}
+.v14-hubNav a{min-height:43px;font-size:13px;border-color:#dee4f2}
+.v15-paper h3{font-size:19px;line-height:1.47}
+.v15-paper .v15-open{color:#2c63a8}
+.v16-fulltextOnly{display:flex!important;flex-direction:row!important;align-items:center;gap:12px;grid-column:1/-1;cursor:pointer;padding:8px 2px;font-size:13px!important;color:#33466b!important}
+.v16-fulltextOnly input{appearance:auto!important;width:18px!important;height:18px!important;min-height:18px!important;accent-color:#7451c4;flex:none}
+.v16-verifiedText{font-size:12px!important;font-weight:800;color:#3d6b45!important;line-height:1.7}
+.v16-bibliographicOnly{font-size:12px!important;color:#817a87!important}
+@media(max-width:940px){.v14-longreadCard{grid-template-columns:1fr;gap:8px;padding:18px 6px}.v14-longreadCard>small{grid-column:auto}}
