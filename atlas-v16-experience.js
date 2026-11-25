@@ -60,7 +60,7 @@ if(pageType==="start"){
  }));
 }
 const root=document.getElementById("v16-reader");
-if(!root){document.body.classList.remove("v16-focus");const progress=document.getElementById("v16Progress");if(progress)progress.style.width="0";return;}
+if(!root){document.body.classList.remove("v16-focus");if(pageType==="artikel")document.querySelectorAll(".v14-chapterCollection .v14-chapter").forEach(section=>{section.open=true});const progress=document.getElementById("v16Progress");if(progress)progress.style.width="0";return;}
 root.querySelectorAll("[data-v16-jump]").forEach(b=>b.addEventListener("click",()=>{
  const target=document.getElementById(b.dataset.v16Jump);if(!target)return;
  target.scrollIntoView({behavior:window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches?"instant":"smooth",block:"start"});
