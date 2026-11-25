@@ -1,7 +1,7 @@
 /* SOCIAL ATLAS V15 – eigenständig redigierte Forschungsartikel und überprüfbare Primärquellen.
    Keine Text-/Bildübernahme von externen Wissensseiten. */
 (()=>{"use strict";
-const D=window.ATLAS_DB;
+const D=ATLAS_DB;
 if(!D||!D.v14Longreads||!D.v13Papers)throw Error("V15: Grunddaten fehlen");
 const P=(authors,year,title,url,kind,limit)=>({authors,year,title,url,kind,limit});
 const studies={
