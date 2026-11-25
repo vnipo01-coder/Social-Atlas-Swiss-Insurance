@@ -9,9 +9,9 @@ const html=read("index.html");
 const scripts=[...html.matchAll(/<script\s+src="([^"]+)"\s+defer><\/script>/g)].map(x=>x[1]);
 const ordered=[
  "atlas-evidence-v13.js",
- "atlas-research-sources-v14.js",
  "atlas-longreads-v14-psych.js",
  "atlas-longreads-v14-society.js",
+ "atlas-research-sources-v14.js",
  "atlas-reader-v14.js",
  "atlas-v15-data.js",
  "atlas-v15-research-depth.js",
@@ -31,8 +31,8 @@ for(const file of ["atlas-v4.js","atlas-reader-v14.js","atlas-v15-data.js","atla
 const DB={topics:[],edges:[],laws:[],v13Papers:{},v14Longreads:{},v7Deep:{},v9Science:{created:[]}};
 const ctx=vm.createContext({ATLAS_DB:DB,window:{}});
 const modelFiles=[
- "atlas-evidence-v13.js","atlas-research-sources-v14.js",
- "atlas-longreads-v14-psych.js","atlas-longreads-v14-society.js",
+ "atlas-evidence-v13.js","atlas-longreads-v14-psych.js",
+ "atlas-longreads-v14-society.js","atlas-research-sources-v14.js",
  "atlas-reader-v14.js",
  "atlas-v15-data.js","atlas-v15-research-depth.js",
  "atlas-v15-depth-methodology.js","atlas-v15-depth-interdisciplinary.js",
