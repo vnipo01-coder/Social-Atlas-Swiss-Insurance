@@ -1,3 +1,27 @@
+# SOCIAL ATLAS – Version 15: Studienatlas, Methodenkritik und Langtexte
+
+**Entwicklungsstand: 25. November 2026.** Die Weiterentwicklung erfolgt auf dem Branch `feature/social-atlas-v15-studienatlas` und wird als Pull Request geprüft, bevor sie die öffentliche GitHub-Pages-Version verändert.
+
+## Inhalt und neue Navigation
+
+- **108 Fachthemen insgesamt** (V14: 104). Vier neue, selbstständig verfasste Wissenschaftsartikel zu Replikation und Kausalität, qualitativer Sozialforschung, Wirkungsevaluation der Sozialen Arbeit sowie Urteilspsychologie.
+- **18 eigenständige Forschungsdossiers** (V14: 14) mit **72 Langtext-Kapiteln** (V14: 56) und expliziter Literatur- und Grenzenrubrik.
+- Eigenständiger **Studienatlas** `#/studienatlas`, mit Suchfunktion, Quellentypfilter, maximal acht Quellenprofilen pro Seite und separater Detailansicht `#/studie/<quellen-id>`.
+- Sechs neu erfasste und konkret verlinkte Publikationen: Open Science Collaboration (2015), Braun & Clarke (2006), Shadish/Cook/Campbell (2002), Durlak et al. (2011), Tversky/Kahneman (1974), Kahneman/Klein (2009). Die bestehende V14-Forschungssammlung bleibt erhalten.
+- Forschungsart, Studiendesign beziehungsweise methodische Anlage, spezifischer Erkenntnisbeitrag und Übertragbarkeitsgrenzen werden in den einzelnen Profilen unterschieden. Fachartikel verlinken passend zugeordnetes Quellenmaterial.
+- Die Hierarchien in Psychologie und Soziologie/Sozialer Arbeit sind um die neuen Unterthemen ergänzt, ohne sämtliche Artikel auf der Startseite zu sammeln.
+- **Design:** Rot für Atlas-Identität und rechtliche Einordnung, Blau für Studien und Recherche, Violett für wissenschaftliche Theorie, Weiss für lesefreundliche Artikelräume. Mobile Ansichten und Tastaturfokus sind berücksichtigt.
+
+## Qualität, Tests und Grenzen
+
+- Neue Dateien: `atlas-v15-data.js`, `atlas-v15-studies.js`, `atlas-v15.css`, `tests/v15-smoke.cjs`, `.github/workflows/social-atlas-v15.yml`.
+- Angepasste Dateien: `index.html`, `atlas-v4.js`, `atlas-reader-v14.js`, `README.md`.
+- Automatisierte Prüfung (sobald der PR-Workflow läuft): JavaScript-Syntax, Skriptladefolge, vier neue Forschungsartikel, sechs Quellenprofile, Literaturansichten und Quellen-Detailseiten.
+- **Wissenschaftliche Grenze:** Die Texte sind eigenständige didaktische Synthesen, keine peer-reviewten systematischen Reviews. Originalpublikationen sowie ihre Populationen, Methoden und Grenzen sind für wissenschaftliche Verwendung selbst zu kontrollieren.
+- **Technische Grenze:** Der CI-Test ersetzt keine vollständige visuelle Prüfung in einem echten veröffentlichten Browser. Die Hauptseite bleibt bis zur Freigabe des Pull Requests auf der bisher veröffentlichten Version.
+
+---
+
 # SOCIAL ATLAS – Wissenschaftliche Arbeitsblätter & Lesebibliothek (Version 14)
 
 **Stand: 24. November 2026.** Die bestehende klassisch strukturierte GitHub-Pages-App ist erweitert, nicht durch eine neue Oberfläche ersetzt worden. Das neue Farbkonzept kombiniert **Rot, Blau, Weiss und Violett**: Rot für Hauptidentität und Sozialrecht, Blau für Forschung und Quellen, Violett für theoretische Vertiefung, Weiss für ruhige Leseflächen.
