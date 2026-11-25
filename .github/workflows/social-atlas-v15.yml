@@ -1,0 +1,29 @@
+name: Social Atlas V15 Smoke Tests
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'atlas-v4.js'
+      - 'atlas-reader-v14.js'
+      - 'atlas-v15-*'
+      - 'tests/v15-smoke.cjs'
+      - '.github/workflows/social-atlas-v15.yml'
+  workflow_dispatch:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate JavaScript syntax
+        run: |
+          node --check atlas-v4.js
+          node --check atlas-reader-v14.js
+          node --check atlas-v15-data.js
+          node --check atlas-v15-studies.js
+      - name: Check data, routes and bibliography views
+        run: node tests/v15-smoke.cjs
