@@ -33,6 +33,9 @@ jobs:
           node --check atlas-v4.js
           node --check atlas-reader-v14.js
           node --check atlas-v15-data.js
+          node --check atlas-v15-research-depth.js
+          node --check atlas-v15-depth-methodology.js
+          node --check atlas-v15-depth-interdisciplinary.js
           node --check atlas-v15-studies.js
       - name: Check data, routes and bibliography views
         run: node tests/v15-smoke.cjs
