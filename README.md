@@ -1,6 +1,6 @@
 # SOCIAL ATLAS 16 – offene Lesebibliothek und quellenbasierte Langtexte
 
-**Entwicklungsstand: 25. November 2026 · Feature-Branch `feature/social-atlas-v15-studienatlas` · Pull Request #1.** Die öffentliche `main`-Version wird nicht vor Abschluss der Prüfung geändert.
+**Veröffentlicht im Hauptzweig am 25. November 2026 via [Pull Request #1](https://github.com/vnipo01-coder/Social-Atlas-Swiss-Insurance/pull/1).** Alle automatisierten Research- und Reader-Prüfungen wurden erfolgreich abgeschlossen. Die Auslieferung auf GitHub Pages und eine vollständige manuelle Browser-/Mobilprüfung sind gesondert zu kontrollieren.
 
 ## Konzept: Weniger Dashboard, mehr echtes Lesen
 
