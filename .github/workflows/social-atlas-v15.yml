@@ -1,0 +1,52 @@
+name: Social Atlas V15-V16 Research and Reader Tests
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'atlas-v4.js'
+      - 'atlas-reader-v14.js'
+      - 'atlas-v15-*'
+      - 'atlas-v16-*'
+      - 'tests/v15-smoke.cjs'
+      - 'tests/v16-smoke.cjs'
+      - '.github/workflows/social-atlas-v15.yml'
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'atlas-v4.js'
+      - 'atlas-reader-v14.js'
+      - 'atlas-v15-*'
+      - 'atlas-v16-*'
+      - 'tests/v15-smoke.cjs'
+      - 'tests/v16-smoke.cjs'
+      - '.github/workflows/social-atlas-v15.yml'
+  workflow_dispatch:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate JavaScript syntax
+        run: |
+          node --check atlas-v4.js
+          node --check atlas-reader-v14.js
+          node --check atlas-v15-data.js
+          node --check atlas-v15-research-depth.js
+          node --check atlas-v15-depth-methodology.js
+          node --check atlas-v15-depth-interdisciplinary.js
+          node --check atlas-v15-studies.js
+          node --check atlas-v16-fulltexts.js
+          node --check atlas-v16-essays-neuro.js
+          node --check atlas-v16-essays-society.js
+          node --check atlas-v16-essay-extensions.js
+          node --check atlas-v16-experience.js
+      - name: Check data, routes and bibliography views
+        run: node tests/v15-smoke.cjs
+      - name: Check open editorial reader, fulltexts and 28 chapters
+        run: node tests/v16-smoke.cjs
