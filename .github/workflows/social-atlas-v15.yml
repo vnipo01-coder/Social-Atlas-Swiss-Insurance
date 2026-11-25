@@ -1,5 +1,14 @@
 name: Social Atlas V15 Smoke Tests
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'atlas-v4.js'
+      - 'atlas-reader-v14.js'
+      - 'atlas-v15-*'
+      - 'tests/v15-smoke.cjs'
+      - '.github/workflows/social-atlas-v15.yml'
   pull_request:
     paths:
       - 'index.html'
