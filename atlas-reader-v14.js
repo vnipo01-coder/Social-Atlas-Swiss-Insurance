@@ -21,16 +21,16 @@ function toc(t){if(!get(t.id))return"";return '<div class="v14-tocLinks"><span>W
 function topicTree(slug){
 const groups={
 psychologie:[
-["Grundlagen und wissenschaftliche Methoden",["psy-grundlagen","psy-methoden","psy-kognition","psy-sozialpsychologie"]],
+["Grundlagen und wissenschaftliche Methoden",["psy-grundlagen","psy-methoden","psy-replikation","psy-heuristiken","psy-kognition","psy-sozialpsychologie"]],
 ["Lernen, Denken und Gedächtnis",["psy-lernen","psy-gedaechtnis","neuro-exekutiv","neuro-plastizitaet"]],
 ["Emotion, Motivation und Lebensspanne",["psy-emotion","psy-stress","psy-motivation","psy-entwicklung","psy-trauma","psy-krise"]],
 ["Gehirn und Funktionen",["neuro-grundlagen","neuro-belohnung","neuro-icf"]]
 ],
 soziologie:[
-["Gesellschaftstheorien und empirische Forschung",["soz-grundlagen","soz-theorien","soz-methoden","soz-bourdieu"]],
+["Gesellschaftstheorien und empirische Forschung",["soz-grundlagen","soz-theorien","soz-methoden","soz-qualitative-forschung","soz-bourdieu"]],
 ["Soziale Ungleichheit und institutionelle Chancen",["soz-ungleichheit","soz-mobilitaet","soz-armut","soz-intersektionalitaet","soz-exklusion"]],
 ["Soziale Beziehungen und Räume",["soz-netzwerke","soz-sozialraum","soz-sozialisation","soz-stigma"]],
-["Profession und Methoden der Sozialen Arbeit",["sa-profession","sa-gespraechsfuehrung","sa-lebenswelt","sa-systemisch","sa-case","sa-empowerment","sa-partizipation","sa-ethik","sa-kinderschutz"]]
+["Profession und Methoden der Sozialen Arbeit",["sa-profession","sa-gespraechsfuehrung","sa-evaluation","sa-lebenswelt","sa-systemisch","sa-case","sa-empowerment","sa-partizipation","sa-ethik","sa-kinderschutz"]]
 ]};
 const groupsHere=groups[slug];if(!groupsHere)return"";
 return '<section class="v14-thematic" id="v14-topicTree"><span class="eyebrow">WISSENSCHAFTLICHE THEMENGLIEDERUNG</span><h2>Vom Grundbegriff zur spezialisierten Forschung</h2><p>Diese mehrstufige Kapitelübersicht orientiert sich an der Gliederung wissenschaftlicher Arbeitsblätter: Beginne mit Grundlagen oder öffne gezielt ein vertiefendes Unterthema. Jede Unterseite besitzt einen eigenen Fachartikel.</p><div class="v14-thematicList">'+groupsHere.map(([name,ids],i)=>'<details '+(i===0?'open':'')+'><summary><span class="v14-treeMarker">'+String(i+1).padStart(2,"0")+'</span><strong>'+E(name)+'</strong><small>'+ids.filter(id=>D.topics.some(t=>t.id===id)).length+' Fachartikel</small></summary><div class="v14-topicLinks">'+ids.map(id=>{const t=D.topics.find(t=>t.id===id);if(!t)return"";const isDeep=Boolean(get(id));return '<a href="#/artikel/'+encodeURIComponent(id)+'"><b>'+E(t.title)+'</b><span>'+(isDeep?'Langtext mit Originalliteratur':'Vertiefter Fachartikel')+' ↗</span></a>'}).join("")+'</div></details>').join("")+'</div></section>';
@@ -39,7 +39,7 @@ function hub(){
 const ids=Object.keys(D.v14Longreads||{});
 const by=id=>D.topics.find(t=>t.id===id);
 return '<div class="v14-hub"><span class="eyebrow">WISSENSCHAFTLICHE ARBEITSBLÄTTER</span><h1>Theorien lesen. Forschung verstehen.</h1><p class="lead">Ausführliche Originaltexte zu Psychologie, Neurowissenschaften, Soziologie und Sozialer Arbeit. Jeder Langtext gliedert die wissenschaftliche Argumentation in Kapitel und verweist auf konkrete Forschungsveröffentlichungen.</p><div class="v14-hubOverview"><span><b>'+ids.length+'</b> ausführliche Langtexte</span><span><b>'+ids.reduce((n,id)=>n+D.v14Longreads[id].chapters.length,0)+'</b> wissenschaftliche Kapitel</span><span><b>4</b> Fachperspektiven</span></div>'+
-'<div class="v14-hubNav"><a href="#/gebiet/psychologie">Psychologie & Neurowissenschaften →</a><a href="#/gebiet/soziologie">Soziologie & Soziale Arbeit →</a></div>'+
+'<div class="v14-hubNav"><a href="#/gebiet/psychologie">Psychologie & Neurowissenschaften →</a><a href="#/gebiet/soziologie">Soziologie & Soziale Arbeit →</a><a href="#/studienatlas">Originalstudien und Quellenprofile →</a></div>'+
 '<div class="v14-longreadCards">'+ids.map(id=>{const t=by(id),m=get(id);if(!t)return"";return '<a href="#/artikel/'+encodeURIComponent(id)+'" class="v14-longreadCard"><span>'+E(t.category)+'</span><strong>'+E(t.title)+'</strong><p>'+E(m.subtitle)+'</p><small>'+m.chapters.length+' Kapitel · '+m.references.length+' konkrete Originalquellen <b>→</b></small></a>'}).join("")+'</div><div class="v14-externalContext"><b>Inhaltliche Orientierung</b><p>Die thematische Breite und lange Kapitelstruktur sind von wissenschaftlichen Nachschlagewerken und den Arbeitsblättern von Werner Stangl angeregt. Der Inhalt dieser Plattform ist eigenständig formuliert; fremde Texte oder Grafiken werden nicht übernommen.</p><a href="https://arbeitsblaetter.stangl-taller.at/" target="_blank" rel="noopener noreferrer">Stangls Arbeitsblätter als externe Referenz öffnen ↗</a></div></div>';
 }
 function bind(){
