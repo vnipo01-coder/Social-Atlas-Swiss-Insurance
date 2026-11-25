@@ -1,0 +1,72 @@
+/* SOCIAL ATLAS V15 – thematische Vertiefung vorhandener Fachartikel.
+   10 zusätzliche Kapitel zu Stress, Neurowissenschaften, Soziologie und Sozialer Arbeit. */
+(()=>{"use strict";const X=window.ATLAS_DEEP_V15;
+if(!X)throw Error("V15: Quellenmodul fehlt");
+const add=(id,ch,refs)=>X.added.push(X.add(id,ch,refs));
+
+add("psy-stress",[
+["Allostase, akute Anpassung und längerfristige physiologische Belastung",
+"Stress wird häufig als durchgehend schädlicher Zustand beschrieben. Das verkennt, dass körperliche Stressreaktionen zunächst Anpassungsleistungen ermöglichen. Unter Allostase wird die dynamische Aufrechterhaltung funktioneller Stabilität durch Veränderung verstanden. Kurzfristige Aktivierungen unter anderem autonomer und hormoneller Systeme können Aufmerksamkeit und Handlungsbereitschaft erhöhen. Die gleiche Reaktionsbereitschaft ist jedoch nicht in jedem zeitlichen und sozialen Kontext sinnvoll.",
+"McEwen unterscheidet adaptive Wirkungen und potenziell belastende Folgen wiederholter oder unzureichend regulierter Aktivierung von Stressmediatoren. Das Konzept der allostatischen Last soll kumulative Beanspruchung beschreiben, darf aber nicht mit einer einzelnen Laborzahl, einer subjektiven Stressskala oder einer individuellen Diagnose gleichgesetzt werden. Unterschiedliche Messungen erfassen Teilaspekte und stehen im Zusammenhang mit Alter, Tageszeit, Gesundheit und Umweltbedingungen.",
+"Eine wissenschaftliche Erklärung trennt deshalb Stressor, Bewertung, physiologische Reaktion, Verhaltensanpassung und längerfristige Folgen. Sie vermeidet die Behauptung, aus einer Hirnregion oder einem Cortisolwert liessen sich Erleben, Ursache und Krankheitsrisiko einer einzelnen Person zuverlässig ableiten. Allostatische Modelle sind heuristisch nützlich, benötigen aber empirische und klinische Einordnung."],
+["Soziale Ungleichheit, Kontrolle und psychologische Stressmodelle",
+"Belastung entsteht nicht ausschliesslich durch individuelle Denkfehler. Unsichere Wohnverhältnisse, existenzielle Sorgen, fehlende Handlungsspielräume, Diskriminierung und institutioneller Druck können dauerhafte Stressoren sein. Lazarus und Folkman betonen die Bedeutung der subjektiven Bewertung von Anforderungen und Ressourcen. Das bedeutet jedoch nicht, dass materielle Bedingungen lediglich durch eine günstigere Einstellung neutralisiert werden könnten.",
+"Bei einer fachlichen Fallanalyse sind Mikro- und Makroebenen zu verbinden: Auf der Mikroebene geht es um konkrete Anforderungen, Symptome und Bewältigungsversuche; auf der Mesoebene um Familie, Arbeitsplatz und Behördenbeziehungen; auf der Makroebene um finanzielle Sicherheit, Rechtsposition und gesellschaftliche Bedingungen. Das ist ein analytisches Ordnungsschema, kein medizinisches Diagnoseverfahren und kein lückenloser Kausalbeweis.",
+"Eine sozialarbeiterische Intervention kann sowohl kognitive und soziale Bewältigung unterstützen als auch äussere Belastungen reduzieren. Welche Veränderung tatsächlich wirksam ist, muss anhand der Person, ihrer Ziele und der institutionellen Möglichkeiten geprüft werden. Modelle über Stressmechanismen begründen weder eine automatische Therapieempfehlung noch eine sozialrechtliche Anspruchsentscheidung."]
+],[
+["mcewen1998"],["mcewen1998","lazarus1984"]
+]);
+
+add("neuro-exekutiv",[
+["Einheit und Vielfalt exekutiver Funktionen in der experimentellen Forschung",
+"Exekutive Funktionen sind keine einzelne, direkt sichtbare Eigenschaft. Unter diesem Oberbegriff werden Prozesse der inhibitorischen Kontrolle, des Arbeitsgedächtnisses und der flexiblen Anpassung von Handlungsregeln diskutiert. Diamond ordnet diese grundlegenden Fähigkeiten als Grundlage komplexerer Formen von Planung und Problemlösung ein. Gleichzeitig beeinflussen Aufgabenanforderungen, Motivation und emotionale Zustände, welche Leistung tatsächlich sichtbar wird.",
+"Miyake und Kolleginnen und Kollegen untersuchten 2000 bei 137 Studierenden mithilfe mehrerer Aufgaben und latenter Variablen unter anderem Updating, Shifting und Inhibition. Ihre Befunde stützten die Vorstellung gemeinsamer und unterscheidbarer Varianz. Das ist ein experimentelles Konstruktmodell, keine starre anatomische Karte und kein Befund, wonach jede Person anhand eines einzelnen Tests zuverlässig einem festen Exekutivtyp zugeordnet werden könnte.",
+"Für die Einordnung sind Messfehler und Aufgabenspezifität zentral. Eine Aufgabe zum Regelwechsel enthält neben der eigentlichen Kontrollanforderung auch motorische, sprachliche und motivationale Komponenten. Deshalb sind Laborwerte nicht ohne Weiteres mit Alltagsbewältigung, beruflicher Leistungsfähigkeit oder sozialrechtlichen Funktionsbewertungen gleichzusetzen."],
+["Ökologische Gültigkeit, situative Hilfen und die Grenze neurobiologischer Erklärungen",
+"Eine Person kann eine anspruchsvolle Aufgabe unter ruhigen Bedingungen erfolgreich bearbeiten und in einer konflikthaften Alltagssituation dennoch wesentliche Schritte vergessen. Eine solche Differenz beweist nicht automatisch eine neuropsychologische Erkrankung. Vielmehr verweist sie auf die Wechselwirkung zwischen kognitiven Anforderungen, Zeitdruck, Unterbrechungen, emotionaler Aktivierung, Vorerfahrungen und verfügbaren Hilfsmitteln.",
+"Die Theorie exekutiver Funktionen kann begründen, warum bestimmte Unterstützungsstrukturen sinnvoll erprobt werden: sichtbare Teilschritte, Checklisten, eindeutige Zuständigkeiten, Rückfragen und reduzierte Ablenkung. Ob eine dieser Massnahmen in einem konkreten Setting tatsächlich hilft, ist eine empirische Praxisfrage. Eine plausible Funktionsannahme ist kein belegter Interventionseffekt.",
+"Für die Soziale Arbeit ist besonders wichtig, dass Ressourcen, Beteiligungsmöglichkeiten und institutionelle Anforderungen mitberücksichtigt werden. Biologische Erklärungen beschreiben nicht automatisch die gesellschaftlichen Ursachen einer Lebenslage. Weder eingeschränkte exekutive Leistung noch eine neurobiologische Theorie rechtfertigen pauschale Zuschreibungen über Motivation, Kooperationsbereitschaft oder rechtliche Selbständigkeit."]
+],[
+["miyake2000","diamond2013"],["diamond2013","miyake2000"]
+]);
+
+add("soz-bourdieu",[
+["Feld, Habitus und Kapitalsorten als relationale Gesellschaftstheorie",
+"Pierre Bourdieu analysiert soziale Positionen nicht allein anhand von Einkommen. Ökonomisches, kulturelles und soziales Kapital bezeichnen unterschiedliche Ressourcen, die in sozialen Feldern unterschiedlich wirksam werden können. Eine schulische Qualifikation hat beispielsweise nur im Zusammenhang mit institutioneller Anerkennung und beruflichen Zugangsvoraussetzungen einen bestimmten Wert. Der Begriff des Feldes lenkt die Aufmerksamkeit auf Regeln und Machtverhältnisse, nicht bloss auf einzelne Personen.",
+"Habitus bezeichnet historisch erworbene Dispositionen des Wahrnehmens, Bewertens und Handelns. Damit werden weder Menschen vollständig determiniert noch individuelle Entscheidungen bedeutungslos. Bourdieu versucht gerade zu erklären, warum soziale Ordnung durch alltägliche Praktiken reproduziert werden kann, ohne dass alle Beteiligten die entsprechenden Regeln bewusst befolgen müssen.",
+"Die Unterscheidung zwischen Theorie und Messung bleibt wichtig. Es wäre wissenschaftlich unzulässig, aus einer einzelnen Wortwahl zuverlässig auf den Habitus einer Person zu schliessen. Um Kapitalformen empirisch zu untersuchen, braucht es konkrete, kontextsensible Indikatoren und eine reflektierte Entscheidung darüber, welche Vorteile in welchem Feld tatsächlich anerkannt werden."],
+["Reproduktion sozialer Ungleichheit und Grenzen der Kapitalmetapher",
+"Kapitalformen können sich wechselseitig verstärken. Finanzielle Mittel erleichtern unter Umständen den Zugang zu Bildung, Wohnraum und Netzwerken; bestimmte Bildungsabschlüsse ermöglichen wiederum Berufspositionen und Kontakte. Solche Mechanismen sind als plausible gesellschaftliche Reproduktionsprozesse zu untersuchen, nicht als universelle Regel für jede individuelle Biografie.",
+"Empirische Forschung zur intergenerationellen Mobilität kann Teile dieser Prozesse sichtbar machen. Chetty und Kollegen untersuchten 2014 regionale Unterschiede in den USA anhand umfangreicher Verwaltungsdaten. Die beobachteten Unterschiede geben Anlass, institutionelle und lokale Bedingungen zu vergleichen; aus den Korrelationen folgt jedoch keine einfache kausale Zuschreibung auf Bourdieus theoretische Kategorien oder eine direkte Übertragbarkeit auf die Schweiz.",
+"Für die sozialarbeiterische Praxis kann die Perspektive helfen, individuelle Defiziterzählungen kritisch zu hinterfragen. Sie ersetzt aber weder die Sichtweise betroffener Menschen noch eine konkrete Analyse von Anspruch, Handlungsfähigkeit und vorhandenen Möglichkeiten. Wer den Habitusbegriff verwendet, sollte besonders vorsichtig sein, nicht erneut stereotype Vorstellungen über soziale Gruppen zu reproduzieren."]
+],[
+["bourdieu","coleman"],["bourdieu","chetty2014"]
+]);
+
+add("soz-ungleichheit",[
+["Von Einkommensunterschieden zu mehrdimensionalen Chancenstrukturen",
+"Soziale Ungleichheit umfasst mehr als die Verteilung laufender Einkommen. Vermögen, Bildung, Gesundheit, Wohnraum, Erwerbssicherheit, Geschlecht, soziale Netzwerke und politische Teilhabe können sich gegenseitig verstärken. Statistische Untersuchungen müssen definieren, welche Dimension im Mittelpunkt steht: Absolute Armut, relative Einkommensposition und subjektive soziale Exklusion sind unterschiedliche Konzepte.",
+"Ein Querschnittsindikator kann die ungleiche Verteilung zu einem Zeitpunkt beschreiben, aber nicht automatisch erklären, weshalb Menschen ihre Position verändern oder behalten. Für Analysen sozialer Mobilität müssen Generationen, Lebensverläufe, regionale Preisniveaus und Veränderungen von Bildungssystemen oder Arbeitsmärkten berücksichtigt werden. Geeignete Längsschnittdaten liefern andere Erkenntnisse als Momentaufnahmen.",
+"Die Begriffsarbeit ist für Sozialhilfe relevant: Ein rechtlicher Anspruch auf existenzsichernde Leistungen ist nicht mit der theoretischen Frage nach gesellschaftlichen Chancenstrukturen identisch. Empirische Forschung kann Handlungsprobleme und Zielkonflikte sichtbar machen; verbindliche Leistungsentscheide müssen zusätzlich die einschlägige Rechtsordnung beachten."],
+["Regionale Mobilität, institutionelle Zusammenhänge und kausale Vorsicht",
+"Chetty und Kollegen analysierten 2014 die Geografie intergenerationeller Mobilität in den Vereinigten Staaten. Sie dokumentierten deutliche regionale Unterschiede und untersuchten statistische Zusammenhänge mit sozialen und institutionellen Merkmalen. Die Untersuchung liefert wichtige Anhaltspunkte für die Bedeutung von Orten und sozialer Umwelt.",
+"Der Befund, dass zwei regionale Grössen miteinander korrelieren, beweist noch nicht, dass die Veränderung der einen Grösse die andere verursacht. Migration zwischen Regionen, Familienmerkmale, die zeitliche Abfolge und nicht beobachtete Unterschiede können den Zusammenhang mitprägen. In der Wissenschaft muss deshalb zwischen deskriptiver Kartierung, Mechanismenhypothese und kausal identifiziertem Effekt unterschieden werden.",
+"Für den Vergleich von Schweizer Gemeinden oder Kantonen wäre eine eigene Datengrundlage erforderlich. Rechtslagen, Steuer- und Transfersysteme, Bildungswege, Raumstruktur und die Definition der Vergleichsgruppen müssen jeweils berücksichtigt werden. Eine US-Studie kann eine Fragestellung anregen, aber keine Schweizer Sozialhilfequote oder kantonale Wirkungszahl begründen."]
+],[
+["bourdieu","coleman"],["chetty2014","deaton2018"]
+]);
+
+add("sa-gespraechsfuehrung",[
+["Gesprächsführung in asymmetrischen Behördenbeziehungen reflektieren",
+"Beratungsgespräche in der Sozialhilfe sind nicht ausschliesslich Begegnungen zweier Personen, die frei über ein gemeinsames Ziel verhandeln. Die Fachperson besitzt häufig Informationen, institutionelle Autorität und möglicherweise Einfluss auf Verfahrensschritte. Diese Asymmetrie prägt, welche Fragen Klientinnen und Klienten für ungefährlich halten und ob sie Erwartungen offen widersprechen können.",
+"Professionelle Gesprächsführung unterscheidet deshalb die verschiedenen Funktionen eines Kontakts: Information, Abklärung, Verständigung über Ziele, Unterstützung und gegebenenfalls rechtliche Mitwirkung. Werden diese Aufgaben vermischt, kann eine offene Frage als verdeckte Kontrolle erlebt werden. Eine klare Erklärung von Rolle, Zweck, Datenschutz und Entscheidungszuständigkeit macht den Gesprächsrahmen überprüfbarer.",
+"Forschung mit vulnerablen Gruppen zeigt methodisch, wie das Machtgefälle Antworten beeinflussen kann. Der Transfer in professionelle Gespräche ist plausibel, jedoch kein direkter Nachweis für die Wirksamkeit einer bestimmten Gesprächsform. Die Beteiligung der betroffenen Person, verständliche Sprache und die Möglichkeit zur Korrektur von Missverständnissen sind deshalb sowohl fachlich als auch ethisch zu berücksichtigen."],
+["Gesprächsprotokoll, Beobachtung und Interpretation auseinanderhalten",
+"Ein fachlich brauchbares Protokoll unterscheidet wörtliche Angaben, beobachtbares Verhalten, eigene Deutungen und vereinbarte nächste Schritte. Die Aussage «Klient ist nicht motiviert» interpretiert eine innere Eigenschaft. Präziser wäre die Dokumentation, welche Handlung ausblieb, welche Gründe die Person selbst nannte und welche offenen Fragen bestehen. Dies ist besonders wichtig, wenn später andere Fachpersonen auf das Protokoll zurückgreifen.",
+"Gesprächsqualität lässt sich nicht allein an der Anzahl gestellter Fragen oder an der Zustimmung einer Person messen. Ein Ergebnis kann auch dann fachlich erfolgreich sein, wenn eine vorgesehene Lösung kritisch hinterfragt oder abgelehnt wird. Rückfragen, gemeinsame Zusammenfassungen und transparente Zielkonflikte können dazu beitragen, den Bedeutungsgehalt einer Aussage besser zu verstehen.",
+"Die Grenze zwischen fachlicher Reflexion und empirischem Wirksamkeitsnachweis muss klar bleiben. Aus methodischen Erkenntnissen qualitativer Forschung lässt sich nicht unmittelbar schliessen, eine bestimmte Formulierung verbessere langfristig die soziale Integration. Solche Wirksamkeitsbehauptungen benötigen eigene Untersuchungen mit geeigneten Ergebnismassen und Vergleichsbedingungen."]
+],[
+["malterud2016","braun2006"],["braun2006","kahneman2009"]
+]);
+
+})();
